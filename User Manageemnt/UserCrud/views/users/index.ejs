@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Users</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+        <!-- Custom styles -->
+        <style>
+            /* Light Theme Styles */
+            body.light {
+                background-color: #ffffff;
+                color: #000000;
+            }
+
+            .card.light {
+                background-color: #f8f9fa;
+            }
+
+            /* Dark Theme Styles */
+            body.dark {
+                background-color: #292525;
+                color: #ffffff;
+                background-image: none;
+                /* Remove background image in dark mode */
+            }
+
+            .card.dark {
+                background-color: #292525;
+            }
+
+            .card.lightdark {
+                background-color: #444040;
+            }
+
+            /* Dark Theme Background Image */
+            body.dark {
+                background-image: url('dark-mode-background.jpg');
+                /* Replace 'dark-mode-background.jpg' with your image URL */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            /* Star Glitter Effect */
+            .star-glitter {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                background: transparent;
+                z-index: 9999;
+                opacity: 0;
+            }
+
+            /* Add hover effect to buttons */
+            .btn:hover {
+                opacity: 0.8;
+            }
+
+            /* Add hover effect to table rows */
+            table tbody tr:hover {
+                color: black;
+                background-color: #dddddd;
+            }
+
+            .nav-link:hover {
+                opacity: 0.8 !important;
+            }
+
+            .user-word {
+                color: rgb(233, 133, 19);
+                font-size: 22px;
+                display: block;
+            }
+
+            /* Centered Heading Styles */
+            .centered-heading {
+                text-align: center;
+                margin-top: -60px;
+                /* Adjust margin-top as needed */
+            }
+
+            /* Styles for Table Header */
+            .table thead th {
+                background-color: #083d55e5;
+                /* Adjust the background color as needed */
+                color: #fff;
+                text-align: center;
+            }
+
+            /* Adjustments for buttons and search bar */
+            .nav-pills {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav-pills a {
+                margin-right: 15px;
+            }
+
+            .search-form {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            .search-form input {
+                flex: 1;
+            }
+
+            .search-form button {
+                margin-left: 10px;
+            }
+        </style>
+
+    </head>
+
+    <body class="container">
+
+        <div class="form-group">
+            <!-- Dark Theme Toggle Button -->
+            <button id="darkThemeButton" class="btn btn-secondary">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+        </div>
+
+        <!-- Rest of your HTML content -->
+        <% if (messages.success) { %>
+        <div class="alert alert-success" role="alert"><%- messages.success %></div>
+        <% } %>
+
+        <% if (messages.error) { %>
+        <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+        <% } %>
+
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-pills w-100">
+                    <li class="nav-pill active">
+                        <a class="nav-link"><b>User Management</b></a>
+                    </li>
+                    <li class="nav-pill">
+                        <a class="nav-link active" href="/users/add">
+                     Add User
+                        </a>
+                    </li>
+                    <li class="nav-pill">
+                        <a class="nav-link active" href="/users/export">
+                             Export All
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card-body">
+                <% if(data.length) { %>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">MobileNumber</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">PaymentAmount</th>
+                            <th scope="col">PaymentDate</th>
+                            <th width="200px">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i = 0; i< data.length; i++) { %>
+                        <tr>
+                            <th scope="row"><%= (i+1) %></th>
+                            <td><%= data[i].UserName%></td>
+                            <td><%= data[i].EmailId%></td>
+                            <td><%= data[i].MobileNumber%></td>
+                            <td><%= data[i].Gender%></td>
+                            <td><%= data[i].Age%></td>
+                            <td><%= data[i].PaymentAmount%></td>
+                            <td><%= data[i].PaymentDate%></td>
+                            <td>
+                                <a class="btn btn-success edit" href="../users/edit/<%=data[i].UserId%>"
+                                    title="Edit User"> Edit</a>
+                                <a class="btn btn-danger delete"
+                                    onclick="return alert('Are you sure want to delete this record?')"
+                                    href="../users/delete/<%=data[i].UserId%>" title="Delete User">
+                                     Delete</a>
+                            </td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <% } %>
+
+                <!-- if result is empty -->
+                <% if(!data.length) { %>
+                <p class="text-center">No users found!</p>
+                <% } %>
+            </div>
+        </div>
+
+
+        <!-- Include jQuery and other necessary scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            // Toggle between light and dark themes
+            $('#darkThemeButton').click(function () {
+                $('body').toggleClass('dark');
+                $('.card').toggleClass('lightdark');
+                $('.star-glitter').toggleClass('active');
+            });
+
+            $(document).ready(function () {
+                $('#searchButton').click(function () {
+                    const searchValue = $('#searchInput').val();
+                    $.ajax({
+                        type: 'GET',
+                        url: '/users/search',
+                        data: { query: searchValue },
+                        success: function (data) {
+                            updateTable(data);
+                        },
+                        error: function (err) {
+                            console.error('Error searching for users:', err);
+                        }
+                    });
+                });
+
+                function updateTable(data) {
+                    const tableBody = $('table tbody');
+                    tableBody.empty();
+
+                    if (data.length) {
+                        for (var i = 0; i < data.length; i++) {
+                            tableBody.append(`
+                            <tr>
+                                <th scope="row">${i + 1}</th>
+                                <td>${data[i].UserName}</td>
+                                <td>${data[i].EmailId}</td>
+                                <td>${data[i].MobileNumber}</td>
+                                <td>${data[i].Gender}</td>
+                                <td>${data[i].Age}</td>
+                                <td>${data[i].PaymentAmount}</td>
+                                <td>${data[i].PaymentDate}</td>
+                                <td>
+                                    <a class="btn btn-success edit" href="../users/edit/${data[i].Id}">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </a>
+                                    <a class="btn btn-danger delete"
+                                        onclick="return confirmDelete()"
+                                        href="../users/delete/${data[i].Id}">
+                                        <i class="fas fa-trash"></i> Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        `);
+                        }
+                    } else {
+                        tableBody.append('<tr><td colspan="9" class="text-center">No users found!</td></tr>');
+                    }
+                }
+            });
+        </script>
+    </body>
+
+</html>

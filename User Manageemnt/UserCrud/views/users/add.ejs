@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Add User</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            margin-top: 50px;
+            border: 1px solid #007bff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add styling for the home link */
+.home-link {
+    margin-right: 15px;
+    color: #007bff; /* Set the color according to your design */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Style the home icon */
+.home-icon {
+    margin-right: 5px;
+}
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        .btn-info {
+            background-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .btn-info:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function validatePaymentAmount(input) {
+            // Allow only decimal numbers
+            input.value = input.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+        }
+
+        function validateDate(input) {
+            // Ensure the input matches date format (YYYY-MM-DD)
+            var dateString = input.value;
+            var dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+            if (!dateRegex.test(dateString)) {
+                alert("Please enter a valid date in YYYY-MM-DD format.");
+                input.value = '';
+            }
+        }
+
+        function validateEmail(input) {
+            var email = input.value;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                input.value = '';
+            }
+        }
+
+        function validateAge(input) {
+            var age = parseInt(input.value);
+            if (isNaN(age) || age <= 0) {
+                alert("Please enter a valid age.");
+                input.value = '';
+            }
+        }
+    </script>
+</head>
+
+<body class="container">
+    <% if (messages.error) { %>
+    <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+    <% } %>
+    <div class="card">
+        <div class="card-header">
+            Add Users
+        </div>
+        <div class="card-body">
+            <form action="/users/add" method="post" id="formId">
+                <div class="form-group">
+                    <label>User Name:</label>
+                    <input type="text" class="form-control" id="UserName" name="UserName" value="<%= UserName %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Email ID:</label>
+                    <input type="text" class="form-control" name="EmailId" value="<%= EmailId %>"
+                        onblur="validateEmail(this)" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number:</label>
+                    <input type="text" class="form-control" name="MobileNumber" value="<%= MobileNumber %>"
+                        autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <select class="form-control" name="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Age:</label>
+                    <input type="number" class="form-control" name="Age" value="<%= Age %>" onblur="validateAge(this)"
+                        autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Payment Amount:</label>
+                    <input type="text" class="form-control" name="PaymentAmount" value="<%= PaymentAmount %>"
+                        oninput="validatePaymentAmount(this)" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <a class="nav-link home-link btn btn-info" href="/users"><i class="fas fa-home home-icon"></i> Home</a>
+                    <input type="submit" class="btn btn-info" value="Add" />
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
