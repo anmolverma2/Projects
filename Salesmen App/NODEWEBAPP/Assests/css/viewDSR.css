@@ -1,0 +1,109 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    margin-top: 50px;
+    border: 1px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card-body {
+    margin-bottom: -40px;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.btn-info {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn-info:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the image container */
+.image-container {
+    position: relative;
+    width: 150px;
+    /* Adjust width as needed */
+    height: 150px;
+    /* Adjust height as needed */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* Style for the image */
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Style for the upload button */
+.upload-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+/* CSS for the Back and Add buttons */
+.btn-info {
+background-color: #007bff;
+color: #fff;
+transition: background-color 0.3s;
+width: calc(50% - 5px); /* 50% width minus 5px margin for each button */
+margin-right: 5px; /* Adjust the margin between the buttons */
+}
+
+.btn-info:last-child {
+margin-right: 0; /* Remove margin from the last button */
+}
+
+.btn-info:hover {
+background-color: #0056b3;
+}
+.new{
+margin-top: -20px;
+}

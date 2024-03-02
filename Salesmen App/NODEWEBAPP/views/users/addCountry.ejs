@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Country</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <style>
+            body {
+                background-color: #f8f9fa;
+            }
+
+            .card {
+                margin-top: 50px;
+                border: 1px solid #007bff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-header {
+                background-color: #007bff;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            label {
+                font-weight: bold;
+                display: block;
+            }
+
+            input[type="text"],
+            select {
+                width: calc(100% - 150px);
+                padding: 10px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1px solid #79e0de;
+                border-radius: 4px;
+            }
+
+            .btn-info {
+                background-color: #007bff;
+                color: #fff;
+                transition: background-color 0.3s;
+                width: 48%;
+            }
+
+            .btn-info:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+
+    <body class="container">
+        <% if (messages.error) { %>
+        <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+        <% } %>
+        <div class="card">
+            <div class="card-header">
+                Add Country
+            </div>
+            <div class="card-body">
+                <form action="/master/addCountry" method="post" id="formId">
+                    <div class="form-group">
+                        <label>Country Name:</label>
+                        <input type="text" class="form-control" name="CountryName" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="true" name="IsEnabled"
+                                id="isEnabledCheckbox">
+                            <label class="form-check-label" for="isEnabledCheckbox">Is Enabled</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a class="btn btn-info" href="/master/country"><i class="fas fa-arrow-left"></i> Back</a>
+                        <input type="submit" class="btn btn-info" value="Add" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

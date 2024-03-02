@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>City</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<link rel="stylesheet" href="/Assests//css/city.css" >
+    </head>
+
+    <body class="container">
+        <!-- Dark Theme Toggle Button -->
+        <!-- No longer used -->
+        <% if (messages.success) { %>
+        <div class="alert alert-success" role="alert"><%- messages.success %></div>
+        <% } %>
+
+        <% if (messages.error) { %>
+        <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+        <% } %>
+
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-pills w-100">
+                    <li class="nav-pill active">
+                        <a class="nav-link"><b>City Management</b></a>
+                    </li>
+                </ul>
+            </div>
+            <form action="/master/searchCity" method="get" class="search-form">
+                <input type="text" class="form-control" name="CityName" placeholder="City Name">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Search
+                </button>
+                <a href="/master/addCity" class="btn btn-success">
+                    <i class="fas fa-plus"></i> Add City
+                </a>
+                <a href="/master" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Data Management
+                </a>
+            </form>
+
+            <div class="card-body">
+                <% if(data.length) { %>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">City Name</th>
+                            <th scope="col">State Name</th>
+                            <th scope="col">Country Name</th>
+                            <th scope="col">IsEnabled</th>
+                            <th width="200px">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i = 0; i< data.length; i++) { %>
+                        <tr>
+                            <th scope="row"><%= (i+1) %></th>
+                            <td><%= data[i].CityName %></td>
+                            <td><%= data[i].StateName %></td>
+                            <td><%= data[i].CountryName %></td>
+                            <td><%= data[i].IsEnabled ? 'Yes' : 'No' %></td>
+                            <td>
+                                <a class="btn btn-success edit" href="../master/editCity/<%=data[i].CityId%>"
+                                    title="Edit User"><i class="fas fa-edit"></i> Edit</a>
+                                <a class="btn btn-danger delete"
+                                    onclick="return confirm('Are you sure want to delete this record?')"
+                                    href="../master/deleteCity/<%=data[i].CityId%>" title="Delete User"><i
+                                        class="fas fa-trash-alt"></i> Delete</a>
+                            </td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <% } %>
+
+                <!-- if result is empty -->
+                <% if(!data.length) { %>
+                <p class="text-center">No recods found!</p>
+                <% } %>
+            </div>
+        </div>
+
+        <!-- Include jQuery and other necessary scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </body>
+
+</html>

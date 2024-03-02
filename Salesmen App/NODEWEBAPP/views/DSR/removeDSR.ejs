@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>DSR</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <style>
+            /* Light Theme Styles */
+            body.light {
+                background-color: #ffffff;
+                color: #000000;
+            }
+
+            /* Dark Theme Styles */
+            body.dark {
+                background-color: #292525;
+                color: #ffffff;
+            }
+
+            /* Add hover effect to buttons */
+            .btn {
+                transition: opacity 0.2s;
+            }
+
+            /* Button styles */
+            .btn-primary {
+                display: inline-block;
+                transition: background-color 0.3s;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+            }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                color: #fff;
+                opacity: 0.8;
+            }
+
+            /* Form style */
+            .card-header {
+                background-color: #343a40;
+                color: #ffffff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            /* Dark theme form style */
+            .dark .card-header {
+                background-color: #181a1b;
+            }
+
+            /* Error message style */
+            .error-message {
+                background-color: #ffcccc;
+                color: #ff0000;
+                padding: 10px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            /* Success message style */
+            .success-message {
+                background-color: #ccffcc;
+                color: #009900;
+                padding: 10px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            /* Custom Styles */
+            .card {
+                margin-bottom: 20px;
+            }
+
+            /* Sample File link style */
+            .sample-file {
+                display: inline-block;
+                padding: 8px 16px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+            }
+
+            .sample-file:hover {
+                background-color: #0056b3;
+                color: #fff;
+                opacity: 0.8;
+            }
+
+            .text {
+                margin-left: -615px;
+            }
+
+            /* Home link style */
+            .home-link {
+                display: inline-block;
+                margin-right: -600px;
+            }
+
+            .Ins p {
+                margin: 0;
+                padding: 0;
+                line-height: 1.5;
+            }
+
+            .container-text {
+                padding: 10px;
+                background-color: #7abbe421;
+                border-radius: 5px;
+            }
+
+            /* Additional styles for the error table */
+            .table-bordered.error-table th,
+            .table-bordered.error-table td {
+                border: 1px solid #dee2e6;
+            }
+
+            /* Additional styles for the error table */
+            .table-bordered.error-table {
+                margin-top: 20px;
+            }
+
+            .table-bordered.error-table th,
+            .table-bordered.error-table td {
+                border: 1px solid #dee2e6;
+                padding: 12px;
+                text-align: center;
+            }
+
+            .table-bordered.error-table thead {
+                background-color: #343a40;
+                color: #ffffff;
+            }
+
+            .table-bordered.error-table tbody {
+                background-color: #f8f9fa;
+            }
+
+            .table-bordered.error-table tbody tr:hover {
+                background-color: #e2e6ea;
+            }
+        </style>
+
+    </head>
+
+    <body class="container" style="margin-top: 50px;">
+
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-file-upload"></i>
+                <div class="text">Remove KYC Bulk Upload</div>
+                <a class="nav-link home-link btn btn-info" href="/master">
+                    <i class="fas fa-home home-icon"></i> Home
+                </a>
+                <a href="http://localhost:3000/RemoveDSRBulk.xlsx" class="sample-file" download>
+                    <i class="fas fa-file-excel"></i> Sample File
+                </a>
+            </div>
+            <div class="card-body">
+                <form action="/DSR/RemoveDSR" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="excelFile">Select Excel File:</label>
+                        <input type="file" class="form-control-file" name="excelFile" id="excelFile"
+                            accept=".xlsx, .xls">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-upload"></i> Upload
+                        </button>
+                    </div>
+                </form>
+                <div class="container-text">
+                    <div class="Ins">
+                        <b>Instructions : </b>
+                        <p>Mandatory Fields: DSRId</p>
+                        <p>DSRId must be numeric</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alerts -->
+        <% if (typeof errorMessage !== 'undefined' && errorMessage !== null) { %>
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-exclamation-triangle"></i> <%= errorMessage %>
+        </div>
+        <% } %>
+
+        <% if (typeof successMessage !== 'undefined' && successMessage !== null) { %>
+        <div class="alert alert-success" role="alert">
+            <i class="fas fa-check-circle"></i> <%= successMessage %>
+        </div>
+        <% } %>
+
+        <!-- Error Data Table -->
+        <% if (typeof errorData !== 'undefined' && errorData.length > 0) { %>
+        <div class="card">
+            <div class="card-body">
+                <h5>Error Data Set</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered error-table">
+                        <thead>
+                            <tr>
+                                <th>DSRId</th>
+                                <th>Error</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% errorData.forEach(function(data) { %>
+                            <tr>
+                                <td><%= data.DSRId %></td>
+                                <td><%= data.Error %></td>
+                            </tr>
+                            <% }); %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
+        <!-- Include jQuery and other necessary scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </body>
+
+</html>

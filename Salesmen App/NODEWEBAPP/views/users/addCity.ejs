@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>City</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .card {
+        margin-top: 50px;
+        border: 1px solid #007bff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-header {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+select#StateName {
+    width: 918px;
+}
+
+select#CountryName {
+    width: 918px;
+}
+
+      label {
+        font-weight: bold;
+        display: block;
+      }
+
+      input[type="text"],
+      select {
+        width: calc(100% - 150px);
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #79e0de;
+        border-radius: 4px;
+      }
+
+      .btn-info {
+        background-color: #007bff;
+        color: #fff;
+        transition: background-color 0.3s;
+        width: 48%;
+      }
+
+      .btn-info:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    <script>
+      function submitForm(action) {
+        debugger;
+        var form = document.getElementById('formId');
+
+
+
+        if (validateFormData() != false) {
+
+          form.action = '/master/addCity';
+
+
+          form.submit();
+        }
+
+      }
+
+
+
+      function validateFormData() {
+        var isValid = true;
+
+        var countryName = $("#CountryName").val().trim();
+
+        var stateName = $("#StateName").val().trim();
+
+        var cityName = $("#CityName").val().trim();
+
+
+        var Error = "";
+
+        if (countryName == "") {
+          Error = Error + "Please select Country Name" + "\n";
+        }
+        if (stateName == "") {
+          Error = Error + "Please enter State Name" + "\n";
+        }
+        if (cityName == "") {
+          Error = Error + "Please enter City Name" + "\n";
+        }
+
+        if (Error != "") {
+          alert(Error);
+          return false;
+        }
+      }
+
+    </script>
+  </head>
+
+  <body class="container">
+    <% if (messages.error) { %>
+    <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+    <% } %>
+    <div class="card">
+      <div class="card-header">Add City</div>
+      <div class="card-body">
+        <form method="post" id="formId">
+          <div class="form-group">
+            <label><b>Country Name:</b></label>
+            <select name="CountryName" id="CountryName" class="form-control">
+              <option value="">Select Country</option>
+              <% for(var count = 0; count < countryData.length; count++) { %>
+
+              <option value="<%= countryData[count].CountryId %>">
+                <%= countryData[count].CountryName %>
+              </option>
+
+              <% } %>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label><b>State Name:</b></label>
+            <select name="StateName" id="StateName" class="form-control">
+              <option value="">Select State</option>
+            </select>
+          </div>
+        <div class="form-group">
+            <label>City Name:</label>
+            <input type="text" class="form-control" name="CityName" id="CityName" value="<%= CityName %>" autocomplete="off">
+        </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="IsEnabled" id="IsEnabled">
+        <label class="form-check-label" for="IsEnabled">Is Enabled</label>
+      </div>
+          <div class="form-group">
+            <a class="btn btn-info" href="/master/city"
+              ><i class="fas fa-arrow-left"></i> Back</a>
+            <button type="button" class="btn btn-info" onclick="submitForm('approve')">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<script>
+  window.onload = function () {
+    try {
+   
+
+if(document.getElementById("IsEnabled").checked = true){
+  $('#IsEnabled').val('true');
+}
+else{
+   $('#IsEnabled').val('false');
+}
+
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
+  };
+</script>
+
+<script>
+  function _(element) {
+    return document.getElementById(element);
+  }
+
+  function fetch_data(parent_element, child_element, type) {
+    debugger;
+    fetch(
+      "/master/get_data?type="+type+"&parent_value="+parent_element.value+""
+    )
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (responseData) {
+        var jsonArray = JSON.parse(responseData);
+        var html = "";
+
+        if (type == "load_state") {
+          html = '<option value="">Select State</option>';
+        }
+
+     
+        for (var count = 0; count < jsonArray.length; count++) {
+          html +=
+            '<option value="' +
+            jsonArray[count].StateId +
+            '">' +
+            jsonArray[count].StateName +
+            "</option>";
+        }
+
+        child_element.innerHTML = html;
+      });
+  }
+
+  _("CountryName").onchange = function () {
+    debugger;
+    fetch_data(_("CountryName"), _("StateName"), "load_state");
+  };
+
+  
+</script>
