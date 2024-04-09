@@ -1,0 +1,100 @@
+﻿@model JobBoard.Models.ApplicantModel
+
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Datepicker CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<style>
+    body {
+        background-color: #007bff;
+        color: #343a40;
+    }
+
+
+    .container {
+        margin-bottom: 83px;
+        margin-top: -5px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px; /* Reduce padding */
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #007bff;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .form-control {
+        font-size: 14px; /* Reduce font size */
+        padding: 8px; /* Reduce padding */
+    }
+</style>
+<div class="container">
+    <h2>Applicant Details</h2>
+    <form>
+        <div class="form-group">
+            <label for="FullName">Full Name</label>
+            <input type="text" class="form-control" disabled value="@Model.FullName" id="FullName">
+        </div>
+        <div class="form-group">
+            <label for="Phone">Mobile Number</label>
+            <input type="text" class="form-control" disabled value="@Model.Phone" id="Phone" >
+        </div>
+
+
+        <div class="form-group">
+            <label for="Age">Age</label>
+            <input type="text" class="form-control" disabled value="@Model.Age" id="Age" >
+        </div>
+        <div class="form-group">
+            <label for="Qualification">Qualification</label>
+            <div class="input-group">
+                <input type="text" class="form-control" disabled value="@Model.Qualification" id="Qualification" >
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Email">Email Address</label>
+            <div class="input-group">
+                <input type="text" class="form-control" disabled value="@Model.Email" id="Email" >
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Experience">Experience</label>
+            <div class="input-group">
+                <input type="text" disabled value="@Model.Experience" class="form-control" id="Experience" >
+               
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="ApplicationDate">Application Date</label>
+            <div class="input-group">
+                <input type="text" disabled value="@Model.ApplicationDate" class="form-control" id="ApplicationDate">
+
+            </div>
+        </div>
+        <button type="button" onclick="RedirectToJobs()" class="btn btn-primary">Go to List</button>
+    </form>
+</div>
+<script>
+    function RedirectToJobs() {
+        location.href = '/Home/Applicants';
+    }
+</script>

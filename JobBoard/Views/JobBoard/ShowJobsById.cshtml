@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "ShowJobsById";
+    Layout = "~/Views/Shared/_LayoutResponsive.cshtml";
+}
+
+@model JobBoard.Models.JobModel
+
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Datepicker CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<style>
+    body {
+        background-color: #007bff;
+        color: #343a40;
+    }
+
+
+    .container {
+        margin-bottom: 83px;
+        margin-top: -5px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px; /* Reduce padding */
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #007bff;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .form-control {
+        font-size: 14px; /* Reduce font size */
+        padding: 8px; /* Reduce padding */
+    }
+</style>
+<div class="container">
+    <h2>Job Details</h2>
+    <form>
+        <div class="form-group">
+            <label for="JobTitle">Job Title</label>
+            <input type="text" class="form-control" disabled value="@Model.JobTitle" id="JobTitle" placeholder="Enter Job Title">
+        </div>
+        <div class="form-group">
+            <label for="Company">Company Name</label>
+            <input type="text" class="form-control" disabled value="@Model.CompanyName" id="Company" placeholder="Enter Company Name">
+        </div>
+        <div class="form-group">
+            <label for="description">Job Description</label>
+            <textarea class="form-control" id="description" rows="3" disabled placeholder="Enter Job Description">@Model.JobDescription</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="Location">Location</label>
+            <input type="text" class="form-control" disabled value="@Model.Location" id="Location" placeholder="Enter Job Location">
+        </div>
+        <div class="form-group">
+            <label for="Salary">Salary</label>
+            <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" disabled value="@Model.Salary" id="Salary" placeholder="Enter Salary">
+                <span class="input-group-text">.00</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ContactEmail">Email Address</label>
+            <div class="input-group">
+                <input type="text" class="form-control" disabled value="@Model.ContactEmail" id="ContactEmail" placeholder="Enter Contact Email">
+                <div class="input-group-append">
+                    <span class="input-group-text">@@example.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="expiry">Last Date to Apply</label>
+            <div class="input-group">
+                <input type="text" disabled value="@Model.ExpiryDate" class="form-control datepicker" id="expiry" placeholder="Select Expiry Date">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                </div>
+            </div>
+        </div>
+        <button type="button" onclick="RedirectToJobs()" class="btn btn-primary">Go to List</button>
+        <button type="button" onclick="ApplyforRole()" class="btn btn-danger">Apply for Role</button>
+    </form>
+</div>
+<script>
+    function RedirectToJobs() {
+        location.href = '/JobBoard/Index';
+    }
+    function ApplyforRole() {
+        debugger;
+        var jobtitle = $('#JobTitle').val();
+        var company = $('#Company').val();
+
+        location.href = '/JobBoard/ApplyJob?JobTitle=' + jobtitle + '&Company=' + company;
+    }
+
+</script>

@@ -1,0 +1,343 @@
+﻿    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+    <style>
+        /* Navbar styling */
+        .navbar {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+            .navbar-nav .nav-link:hover {
+                color: #007bff;
+            }
+
+        .navbar-nav .nav-item.active .nav-link {
+            color: #007bff;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+    
+
+
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tr:hover {
+            background-color: #e9ecef;
+        }
+
+        /* Search container styling */
+        .search-container {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+            .search-container input[type=text] {
+                width: 200px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            .search-container input[type=button] {
+                padding: 10px 20px;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                margin-left: 10px;
+            }
+
+                .search-container input[type=button]:hover {
+                    background-color: #0056b3;
+                }
+
+        /* Popup styling */
+        .popup-overlay {
+            visibility: hidden;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .popup-overlay.active {
+                visibility: visible;
+            }
+
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+            .popup-content h3 {
+                color: #007bff;
+                margin-bottom: 20px;
+            }
+
+            .popup-content input[type=text],
+            .popup-content input[type=email],
+            .popup-content select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            .popup-content input[type=submit],
+            .popup-content button {
+                padding: 10px 20px;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+                .popup-content input[type=submit]:hover,
+                .popup-content button:hover {
+                    background-color: #0056b3;
+                }
+
+        .header {
+            border-radius: 5px;
+            margin-top: -5px;
+            margin-bottom: 9px;
+            height: 54px;
+            background-color: #007bff;
+            color: white;
+            padding: 4px;
+            text-align: center;
+        }
+
+            .header h1 {
+                margin: 0;
+                font-size: 36px;
+                font-weight: bold;
+            }
+
+        /* Button styling */
+        .btn-export {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
+
+            .btn-export:hover {
+                background-color: #218838;
+            }
+
+    .btn-warning {
+        background-color: #df7b00;
+        color: white;
+    }
+
+        .btn-warning:hover {
+            background-color: #c66900;
+            color: white;  
+        }
+    </style>
+    <div class="text-center search-container">
+        <div class="header">
+            <h1>Applicants List</h1>
+        </div>
+    <input type="hidden" value="0" id="JobId" />
+    <input type="hidden" id="path" />
+        <label><b>Email</b></label>
+        <input type="text" id="Email" placeholder="Search by Email" />
+        <label><b>Mobile Number</b></label>
+        <input type="text" id="Mobile" placeholder="Search by Mobile Number" />
+        <input type="button" value="Search" onclick="Search()" />
+        <input type="button" value="Reset" onclick="reset()" />
+        <input type="button" value="Export" class="btn-export" onclick="Export()" />
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Mobile Number</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Qualification</th>
+                    <th>Experience</th>
+                    <th>Company Name</th>
+                    <th>Applied Date</th>
+                    <th colspan="3">Action</th>
+                </tr>
+            </thead>
+            <tbody id="Custtable"></tbody>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            Search();
+        });
+
+        function Search() {
+            debugger;
+            var Email = $('#Email').val();
+            var Mobile = $('#Mobile').val();
+            $.ajax({
+                url: "/Home/SearchApplicant",
+                dataType: 'json',
+                data: { 'Email': Email, 'Mobile': Mobile },
+                type: 'Get',
+                success: function (res) {
+                    debugger;
+                    if (res != null) {
+
+                        if (Array.isArray(res) && res.length === 0) {
+                            $('#Custtable').html('');
+                            alert("No results found.");
+                        } else {
+                            if (res.length > 0) {
+                                res.resumeFilePath;
+                                $('#Custtable').html('');
+                                for (var cut of res) {
+                                var path = cut.resumeFilePath.toString();
+                                var extent = path.split('.');
+                                var prefix = extent[0].toString();
+                                var suffix = extent[1].toString();
+                                var arr = [prefix, suffix]; // Removed [] from here
+                                    $('#path').val(path);
+
+                                var showaction = "<input type='button' class='btn btn-success' onclick='return ShowbyId(" + cut.applicantID + ");' value='Show'/>";
+                                var deleteaction = "<input type='button' class='btn btn-danger' onclick='return RejectbyId(" + cut.applicantID + ")' value='Reject'/>"; 
+                                var downloadCV = "<input type='button' class='btn btn-warning' onclick='return downloadCV(" + cut.applicantID + ")' value='Download CV'/>";
+
+                                    var cutrow = "<tr><td>" + cut.fullName + "</td><td>" + cut.email + "</td><td>" + cut.phone + "</td><td>" + cut.age + "</td><td>" + cut.gender + "</td><td>" + cut.qualification + "</td><td>" + cut.experience + "</td><td>" + cut.companyName + "</td><td>" + cut.applicationDate + "</td><td>" + showaction + "</td><td>" + deleteaction + "</td><td>" + downloadCV + "</td></tr>";
+                                    $('#Custtable').append(cutrow);
+                                }
+                            }
+                        }
+                    }
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(thrownError);
+                }
+            });
+        }
+
+
+   
+
+    function downloadCV(ApplicantID) {
+        debugger;
+        $.ajax({
+            url: "/Home/ShowResumeById",
+            dataType: 'json',
+            data: { 'ApplicantID': ApplicantID },
+            type: 'Get',
+            success: function (res) {
+                debugger;
+
+                if (res != null || res != '') {
+                    debugger;
+
+                    var path = res.resumeFilePath;
+
+                    // location.href = 'http://localhost:5247/UsersUpload/' + path;
+
+                    window.open('http://localhost:5247/UsersUpload/' + path, '_blank');
+
+                
+                }
+
+
+               
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert(thrownError);
+            }
+        });
+    }
+
+
+        function reset() {
+            $('#Email').val('');
+            $('#Mobile').val('');
+            Search();
+        }
+
+        function ShowbyId(ApplicantId) {
+            location.href = '/Home/ShowApplicantsById?ApplicantID=' + ApplicantId;
+        }
+
+        function RejectbyId(ApplicantID) {
+            $.ajax({
+                url: "/Home/RejectApplicant",
+                dataType: 'json',
+                data: { 'ApplicantID': ApplicantID },
+                type: 'Post',
+                success: function (res) {
+                    alert(res);
+                    reset();
+                    Search();
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(thrownError);
+                }
+            });
+        }
+
+        function Export() {
+            var email = $('#Email').val();
+            var mobile = $('#Mobile').val();
+            location.href = '/Home/ExportApplicantsToExcel?email=' + email + '&mobile=' + mobile;
+        }
+    </script>

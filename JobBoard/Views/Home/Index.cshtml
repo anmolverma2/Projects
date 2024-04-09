@@ -1,0 +1,296 @@
+﻿
+@{
+    ViewData["Title"] = "Job List";
+}
+@model JobBoard.Models.JobModel
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+<style>
+    /* Navbar styling */
+    .navbar {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .navbar-nav .nav-link {
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+
+    .navbar-nav .nav-item.active .nav-link {
+        color: #007bff;
+    }
+
+    /* Table styling */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tr:hover {
+        background-color: #e9ecef;
+    }
+
+    /* Search container styling */
+    .search-container {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+        .search-container input[type=text] {
+            width: 400px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .search-container input[type=button] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .search-container input[type=button]:hover {
+                background-color: #0056b3;
+            }
+
+    /* Popup styling */
+    .popup-overlay {
+        visibility: hidden;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .popup-overlay.active {
+            visibility: visible;
+        }
+
+    .popup-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+        .popup-content h3 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .popup-content input[type=text],
+        .popup-content input[type=email],
+        .popup-content select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .popup-content input[type=submit],
+        .popup-content button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .popup-content input[type=submit]:hover,
+            .popup-content button:hover {
+                background-color: #0056b3;
+            }
+
+    .header {
+        border-radius: 5px;
+        margin-top: -5px;
+        margin-bottom: 9px;
+        height: 54px;
+        background-color: #007bff;
+        color: white;
+        padding: 4px;
+        text-align: center;
+    }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+</style>
+
+
+<div class="text-center search-container">
+    <div class="header">
+        <h1 >Job List</h1>
+    </div>
+
+    <input type="hidden" value="0" id="JobId" />
+    <label><b>Job Title</b></label>
+    <input type="text" id="keyword" placeholder="Search by Job Title" />
+    <label><b>Location</b></label>
+    <input type="text" id="location" placeholder="Search by Location" />
+    <input type="button" value="Search" onclick="Search()" />
+    <input type="button" value="Reset" onclick="reset()" />
+</div>
+
+<div>
+    <table style="width: 100%;padding: 5px;">
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Salary</th>
+                <th>Posted Date</th>
+                <th>Contact Email</th>
+                <th>No Of Applications</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody id='Custtable'>
+        </tbody>
+    </table>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+        Search();
+    });
+
+    function Search() {///for list
+        debugger;
+        var keyword = $('#keyword').val();
+        var location = $('#location').val();
+        $.ajax({
+            url: "/Home/Search",
+            dataType: 'json',
+            data: { 'keyword': keyword, 'location': location },
+            type: 'Get',
+            success: function (res) {
+                debugger;
+                if (res != null) {
+                    debugger;
+                    if (Array.isArray(res) && res.length === 0) {
+
+                        $('#Custtable').html('');
+                        alert("No results found.");
+                    } else {
+                        if (res.length > 0) {
+                            debugger;
+                            $('#Custtable').html('');
+                            for (var cut of res) {
+                                var showaction = "<input type='button' class='btn btn-success' onclick='return ShowbyId(" + cut.jobId + ")' value='View'/>";
+
+                                var deleteaction = "<input type='button' class='btn btn-danger' onclick='return RemoveJob(" + cut.jobId + ")' value='Remove'/>";
+                                var cutrow = "<tr><td>" + cut.jobTitle + "</td><td>" + cut.companyName + "</td><td>" + cut.location + "</td><td>" + cut.salary + "</td><td>" + cut.postedDate + "</td><td>" + cut.contactEmail + "</td><td>" + cut.noOfApplied + "</td><td>" + showaction + "</td><td>" + deleteaction + "</td></tr>";
+                                $('#Custtable').append(cutrow);
+                            }
+                        }
+                    }
+                }
+            },
+
+            error: function (xhr, ajaxOptions, thrownError) {
+
+                alert(thrownError);
+            }
+        });
+
+    }
+
+    
+    function reset() {
+      
+        $('#keyword').val('');
+        $('#location').val('');
+        
+        Search();
+
+    }
+
+
+    function ShowbyId(JobId) {
+        debugger;
+        location.href = '/Home/ShowJobsById?JobId=' + JobId;
+
+        }
+
+
+    function RemoveJob(JobId) {
+
+        $.ajax({
+            url: "/Home/DeleteJob",
+            dataType: 'json',
+            data: { 'JobId': JobId },
+            type: 'Post',
+            success: function (res) {
+                alert(res);
+                reset();
+                Search();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+
+                alert(thrownError);
+            }
+        });
+    }
+
+
+
+
+
+</script>
