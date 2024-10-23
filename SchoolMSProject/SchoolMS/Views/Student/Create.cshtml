@@ -1,0 +1,64 @@
+﻿@model SchoolMSDataAccess.Entities.Model.StudentModel
+
+<h2>Create Student</h2>
+
+<form asp-action="Create" asp-controller="Student" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Name" class="form-control" asp-for="Name" />
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Age">Age</label>
+        <input type="number" id="Age" name="Age" class="form-control" asp-for="Age" />
+        <span class="text-danger" asp-validation-for="Age"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Class">Class</label>
+        <input type="text" id="Class" name="Class" class="form-control" asp-for="Class" />
+        <span class="text-danger" asp-validation-for="Class"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="RollNumber">Roll Number</label>
+        <input type="text" id="RollNumber" name="RollNumber" class="form-control" asp-for="RollNumber" />
+        <span class="text-danger" asp-validation-for="RollNumber"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="SubjectId">Subject</label>
+        <select id="SubjectId" name="SubjectId" class="form-control" asp-for="SubjectId">
+            <option value="">-- Select Subject --</option>
+            @if (Model.subjects != null)
+            {
+                foreach (var item in Model.subjects)
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+        <span class="text-danger" asp-validation-for="SubjectId"></span>
+    </div>
+
+
+    <div class="form-group">
+        <label for="formFile">Image</label>
+        <input type="file" id="formFile" name="formFile" class="form-control-file" asp-for="formFile" />
+        <span class="text-danger" asp-validation-for="formFile"></span>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+@section Scripts {
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+}
+

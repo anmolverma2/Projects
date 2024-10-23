@@ -1,0 +1,12 @@
+E:\SchoolMSProject\SchoolMSDataAccess\bin\Debug\net6.0\SchoolMSDataAccess.deps.json
+E:\SchoolMSProject\SchoolMSDataAccess\bin\Debug\net6.0\SchoolMSDataAccess.dll
+E:\SchoolMSProject\SchoolMSDataAccess\bin\Debug\net6.0\SchoolMSDataAccess.pdb
+E:\SchoolMSProject\SchoolMSDataAccess\obj\Debug\net6.0\SchoolMSDataAccess.csproj.AssemblyReference.cache
+E:\SchoolMSProject\SchoolMSDataAccess\obj\Debug\net6.0\SchoolMSDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\SchoolMSProject\SchoolMSDataAccess\obj\Debug\net6.0\SchoolMSDataAccess.AssemblyInfoInputs.cache
+E:\SchoolMSProject\SchoolMSDataAccess\obj\Debug\net6.0\SchoolMSDataAccess.AssemblyInfo.cs
+E:\SchoolMSProject\SchoolMSDataAccess\obj\Debug\net6.0\SchoolMSDataAccess.csproj.CoreCompileInputs.cache
+E:\SchoolMSProject\SchoolMSDataAccess\obj\Debug\net6.0\SchoolMSDataAccess.dll
+E:\SchoolMSProject\SchoolMSDataAccess\obj\Debug\net6.0\refint\SchoolMSDataAccess.dll
+E:\SchoolMSProject\SchoolMSDataAccess\obj\Debug\net6.0\SchoolMSDataAccess.pdb
+E:\SchoolMSProject\SchoolMSDataAccess\obj\Debug\net6.0\ref\SchoolMSDataAccess.dll

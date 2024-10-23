@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SchoolMSDataAccess.Entities.Model.DetailsModel>
+
+<h2>Student Wise Details</h2>
+@if (TempData["Message"] != null)
+{
+    <div class="container">
+        <div class="alert alert-success alert-dismissible">
+            @TempData["Message"]
+        </div>
+
+    </div>
+}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+
+            <th>Student Name</th>
+            <th>Teacher Name</th>
+            <th>Subject Name</th>
+            <th>Language</th>
+            <th>Class</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var detail in Model)
+            {
+                <tr>
+                    <td>@detail.StudentName</td>
+                    <td>@detail.TeacherName</td>
+                    <td>@detail.SubjectName</td>
+                    <td>@detail.Language</td>
+                    <td>@detail.Class</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">No details available</td>
+            </tr>
+        }
+    </tbody>
+</table>
