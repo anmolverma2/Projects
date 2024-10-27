@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Users</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Light Theme Styles */
+        body.light {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .card.light {
+            background-color: #f8f9fa;
+        }
+
+        /* Dark Theme Styles */
+        body.dark {
+            background-color: #292525;
+            color: #ffffff;
+        }
+        .card.dark {
+            background-color: #292525;
+        }
+        .card.lightdark {
+    background-color: #444040;
+}
+
+        /* Add hover effect to buttons */
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Add hover effect to table rows */
+        table tbody tr:hover {
+            color:black;
+            background-color: #dddddd;
+        }
+        .nav-link:hover{
+            opacity: 0.8 !important;
+        }
+        .user-word{
+            color: rgb(233, 133, 19);
+            font-size: 22px;
+            display: block;
+            /* background-color: white;
+            border-radius: 5px; */
+        }
+        /* Centered Heading Styles */
+        .centered-heading {
+            text-align: center;
+            margin-top: -60px; /* Adjust margin-top as needed */
+        }
+    </style>
+</head>
+<body class="container light" style="margin-top: 50px;">
+    <div class="form-group">
+        <!-- Dark Theme Toggle Button -->
+        <button id="darkThemeButton" class="btn btn-secondary">
+            <i class="fas fa-moon"></i> Dark Theme
+        </button>
+    </div>
+
+
+    <% if (messages.success) { %>
+    <div class="alert alert-success" role="alert"><%- messages.success %></div>
+    <% } %>
+
+    <% if (messages.error) { %>
+    <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+    <% } %>
+    <div class="centered-heading user-word">
+        <h2>User Management</h2>
+    </div>
+    <div class="card light"> 
+        <div class="card-header">
+            <ul class="nav nav-pills w-100">            
+                <li class="nav-pill ">
+                    <a class="nav-link active" href="/users/add">
+                        <i class="fas fa-plus"></i> Add User
+                    </a>
+                </li>
+                <li class="nav-pill mx-3">
+                    <a class="nav-link active" href="/users/export">
+                        <i class="fas fa-file-export"></i> Export
+                    </a>
+                </li>
+                <li class="nav-pill">
+                    <a class="nav-link active" href="/users/bulkupload">
+                        <i class="fas fa-upload"></i> Bulk Upload
+                    </a>
+                </li>
+                <li class="nav-pill mx-3">
+                    <a class="nav-link active" href="/users/">
+                        <i class="fas fa-file-invoice"></i> Reset
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+       
+        <!-- <div class="card-body">        
+         
+            <form action="/users/search" method="GET">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group d-flex justify-content-center align-items-center">
+                            <input type="text" id="searchInput" class="form-control" name="query" placeholder="Search by User Name">
+                            <button type="submit" id="searchButton" class="btn btn-primary">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> -->
+
+        <form action="/users/search" method="get" class="form-inline">
+            <div class="input-group">
+                <input type="text" class="form-control" name="username" placeholder="User Name">
+                <input type="text" class="form-control" name="fname" placeholder="Father's Name">
+                <input type="text" class="form-control" name="mobile" placeholder="Mobile">
+                <input type="text" class="form-control" name="country" placeholder="Country">
+                <input type="text" class="form-control" name="state" placeholder="State">
+                <input type="text" class="form-control" name="city" placeholder="City">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        
+         
+
+            <% if(data.length) { %>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">User Name</th>
+                        <th scope="col">Father's Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">State</th>
+                        <th scope="col">City</th>
+                        <th width="200px">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <% for(var i = 0; i< data.length; i++) { %>
+                    <tr>
+                        <th scope="row"><%= (i+1) %></th>
+                        <td><%= data[i].Name %></td>
+                        <td><%= data[i].FathersName %></td>
+                        <td><%= data[i].Email %></td>
+                        <td><%= data[i].Mobile %></td>
+                        <td><%= data[i].Country %></td>
+                        <td><%= data[i].State %></td>
+                        <td><%= data[i].City %></td>
+                        <td>
+                            <a class="btn btn-success edit" href="../users/edit/<%=data[i].Id%>">
+                                <i class="fas fa-edit"></i> Edit
+                            </a>
+                            <a class="btn btn-danger delete" onclick="return confirm('Are you sure want to delete ?')" href="../users/delete/<%=data[i].Id%>">
+                                <i class="fas fa-trash"></i> Delete
+                            </a> 
+                        </td>
+                    </tr>
+                <% } %>
+                </tbody>
+            </table>
+            <% } %>
+            
+            <!-- if result is empty -->
+            <% if(!data.length) { %>
+                <p class="text-center">No users found!</p>
+            <% } %>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Toggle between light and dark themes
+        $('#darkThemeButton').click(function() {
+           
+            $('body').toggleClass('dark');
+            $('.card').toggleClass('lightdark');
+        });
+
+        $(document).ready(function() {
+            $('#searchButton').click(function() {
+                const searchValue = $('#searchInput').val();
+                $.ajax({
+                    type: 'GET',
+                    url: '/users/search',
+                    data: { query: searchValue },
+                    success: function(data) {
+                        updateTable(data);
+                    },
+                    error: function(err) {
+                        console.error('Error searching for users:', err);
+                    }
+                });
+            });
+
+            function updateTable(data) {
+                const tableBody = $('table tbody');
+                tableBody.empty();
+
+                if (data.length) {
+                    for (var i = 0; i < data.length; i++) {
+                        tableBody.append(`
+                            <tr>
+                                <th scope="row">${i + 1}</th>
+                                <td>${data[i].Name}</td>
+                                <td>${data[i].FathersName}</td>
+                                <td>${data[i].Email}</td>
+                                <td>${data[i].Mobile}</td>
+                                <td>${data[i].Country}</td>
+                                <td>${data[i].State}</td>
+                                <td>${data[i].City}</td>
+                                <td>
+                                    <a class="btn btn-success edit" href="../users/edit/${data[i].Id}">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </a>
+                                    <a class="btn btn-danger delete" onclick="return confirmDelete()" href="../users/delete/${data[i].Id}">
+                                        <i class="fas fa-trash"></i> Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        `);
+                    }
+                } else {
+                    tableBody.append('<tr><td colspan="9" class="text-center">No users found!</td></tr>');
+                }
+            }
+       
+        });
+    </script>
+</body>
+</html>

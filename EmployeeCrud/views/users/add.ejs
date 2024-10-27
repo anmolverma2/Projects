@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Add User</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Light Theme Styles */
+        body.light {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark Theme Styles */
+        body.dark {
+            background-color: #292525;
+            color: #ffffff;
+        }
+
+        /* Add hover effect to buttons */
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Form style */
+        .card-header {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        /* Dark theme form style */
+        .dark .card-header {
+            background-color: #181a1b;
+        }
+    </style>
+</head>
+<body class="container" style="margin-top: 50px;">
+    <% if (messages.error) { %>
+    <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+    <% } %>
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-user-plus"></i> Add Users
+        </div>
+        <div class="card-body">
+            <!-- Add a button to go to the home page -->
+            <a href="/users" class="btn btn-primary">
+                <i class="fas fa-home"></i> Go to Home
+            </a>
+            <br><br>
+
+            <form action="/users/add" method="post">
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" id="username" class="form-control" name="Name" value="<%= Name %>" autocomplete="off">
+                    <span id="nameError" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Father's Name:</label>
+                    <input type="text" id="fnameinput" class="form-control" name="FathersName" value="<%= FathersName %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" id="email" class="form-control" name="Email" value="<%= Email %>" autocomplete="off">
+                    <span id="emailError" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Mobile:</label>
+                    <input type="text" id="mobileno" class="form-control" name="Mobile" value="<%= Mobile %>" autocomplete="off">
+                    <span id="mobileError" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Country:</label>
+                    <select id="country" class="form-control" name="Country">
+                        <option value="select">Select Country</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>State:</label>
+                    <select id="state" class="form-control" name="State" disabled>
+                        <option value="select">Select State</option>
+                        <!-- State options will be populated dynamically based on the selected country -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>City:</label>
+                    <select id="city" class="form-control" name="City" disabled>
+                        <option value="select">Select City</option>
+                        <!-- City options will be populated dynamically based on the selected country and state -->
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info">
+                        <i class="fas fa-plus"></i> Add
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Check for the theme preference in local storage
+        const isDarkTheme = localStorage.getItem('theme') === 'dark';
+
+        // Apply the theme preference
+        if (isDarkTheme) {
+            $('body').addClass('dark');
+            $('.card').addClass('dark');
+        }
+
+        // Toggle between light and dark themes
+        $('#darkThemeButton').click(function() {
+            $('body').toggleClass('dark');
+            $('.card').toggleClass('dark');
+            // Store the theme preference in local storage
+            localStorage.setItem('theme', $('body').hasClass('dark') ? 'dark' : 'light');
+        });
+
+        // Email validation function
+        function validateEmail(email) {
+            const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+            return emailRegex.test(email);
+        }
+
+        $('#email').on('blur', function() {
+            const email = $(this).val();
+            if (!validateEmail(email)) {
+                $('#emailError').text('Invalid email format').show();
+            } else {
+                $('#emailError').text('').hide();
+            }
+        });
+
+        // Mobile number validation function
+        $('#mobileno').on('keypress', function(e) {
+            // Get the pressed key as a character
+            var char = String.fromCharCode(e.which);
+
+            // Define a regular expression pattern to match numeric characters
+            var numericPattern = /^[0-9]+$/;
+
+            // Test if the character matches the numeric pattern
+            if (!numericPattern.test(char)) {
+                e.preventDefault();
+                $('#mobileError').text('Mobile number must be digits only').show();
+            } else {
+                $('#mobileError').text('').hide();
+            }
+        });
+
+        $('#mobileno').on('blur', function() {
+            const mobile = $(this).val();
+            if (mobile.length !== 10 || isNaN(mobile)) {
+                $('#mobileError').text('Mobile number must be 10 digits long and contain only numbers').show();
+            } else {
+                $('#mobileError').text('').hide();
+            }
+        });
+
+        $('#fnameinput').on('input', function() {
+            var inputValue = $(this).val();
+            var alphabeticPattern = /^[a-zA-Z]*$/;
+
+            if (!alphabeticPattern.test(inputValue)) {
+                $(this).val(inputValue.replace(/[^a-zA-Z]/g, ''));
+            }
+        });
+
+        
+    </script>
+
+    <script>
+        // Define state and city options for each country
+        const countryData = {
+            india: {
+                states: ["haryana", "maharashtra", "uttar-pradesh", "andhra-pradesh", "telangana", "karnataka", "tamil-nadu", "kerala"],
+                cities: {
+                    haryana: ["gurgaon", "faridabad", "chandigarh"],
+                    maharashtra: ["mumbai", "pune", "nagpur"],
+                    "uttar-pradesh": ["lucknow", "kanpur", "varanasi"],
+                    "andhra-pradesh": ["hyderabad", "visakhapatnam", "vijayawada"],
+                    telangana: ["hyderabad", "warangal", "karimnagar"],
+                    karnataka: ["bangalore", "mangalore", "mysore"],
+                    "tamil-nadu": ["chennai", "coimbatore", "madurai"],
+                    kerala: ["thiruvananthapuram", "kochi", "kozhikode"],
+                }
+            },
+            usa: {
+                states: ["california", "new-york", "texas"],
+                cities: {
+                    california: ["los-angeles", "san-francisco", "san-diego"],
+                    "new-york": ["new-york-city", "buffalo", "albany"],
+                    texas: ["houston", "dallas", "austin"],
+                },
+            },
+            // Add data for more countries here
+        };
+
+        // Function to populate the state dropdown based on the selected country
+        function populateStates() {
+            const selectedCountry = $("#country").val();
+            const $stateDropdown = $("#state");
+            const $cityDropdown = $("#city");
+
+            $stateDropdown.empty().append("<option value='select'>Select State</option>");
+            $cityDropdown.empty().append("<option value='select'>Select City</option>");
+
+            if (selectedCountry !== "select") {
+                const states = countryData[selectedCountry].states;
+                states.forEach(state => {
+                    $stateDropdown.append(`<option value="${state}">${state}</option>`);
+                });
+                $stateDropdown.prop("disabled", false);
+            } else {
+                $stateDropdown.prop("disabled", true);
+            }
+        }
+
+        // Function to populate the city dropdown based on the selected state
+        function populateCities() {
+            const selectedCountry = $("#country").val();
+            const selectedState = $("#state").val();
+            const $cityDropdown = $("#city");
+
+            $cityDropdown.empty().append("<option value='select'>Select City</option>");
+
+            if (selectedCountry !== "select" && selectedState !== "select") {
+                const cities = countryData[selectedCountry].cities[selectedState];
+                cities.forEach(city => {
+                    $cityDropdown.append(`<option value="${city}">${city}</option>`);
+                });
+                $cityDropdown.prop("disabled", false);
+            } else {
+                $cityDropdown.prop("disabled", true);
+            }
+        }
+
+        // Event listeners to trigger population of state and city dropdowns
+        $("#country").on("change", populateStates);
+        $("#state").on("change", populateCities);
+    </script>
+    <script>
+        $(document).ready(function() {
+           
+        
+        $("#username").on("keyup", function() {
+        const username = $(this).val();
+    
+        // Make an AJAX request to check username availability
+        $.get("/users/check-username", { username: username }, function(data) {
+          if (data.success) {
+            $("#validateEmail").prop("disabled", false);
+            // Username is available, you can provide visual feedback to the user
+            $("#usernameAvailability").text("Username is available").removeClass("text-danger").addClass("text-success");
+          } else {
+            // Username is already taken, provide visual feedback
+            $("#validateEmail").prop("disabled", true);
+            alert('User already exist! \nउपयोगकर्ता पहले से ही मौजूद है!');
+            $("#usernameAvailability").text("Username is already taken").removeClass("text-success").addClass("text-danger");
+          }
+        });
+      });
+    
+      });
+       
+    </script>
+</body>
+</html>

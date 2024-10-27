@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+</head>
+<body>
+    <h1>Invoice</h1>
+    <p>Invoice Number: <%= invoiceNumber %></p>
+    <p>Customer: <%= customerName %></p>
+    <!-- Display other invoice details here -->
+
+    <!-- Add a button to generate the PDF -->
+    <button id="generate-pdf">Generate PDF</button>
+
+    <script>
+        document.getElementById('generate-pdf').addEventListener('click', () => {
+            // Redirect to a route that generates the PDF
+            window.location.href = '/generate-pdf?invoiceNumber=<%= invoiceNumber %>&customerName=<%= customerName %>';
+        });
+    </script>
+</body>
+</html>

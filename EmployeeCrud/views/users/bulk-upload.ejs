@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bulk Upload</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Light Theme Styles */
+        body.light {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark Theme Styles */
+        body.dark {
+            background-color: #292525;
+            color: #ffffff;
+        }
+
+        /* Add hover effect to buttons */
+        .btn {
+            transition: opacity 0.2s;
+        }
+
+        /* Button styles */
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.8;
+        }
+
+        /* Form style */
+        .card-header {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        /* Dark theme form style */
+        .dark .card-header {
+            background-color: #181a1b;
+        }
+
+        /* Error message style */
+        .error-message {
+            background-color: #ffcccc;
+            color: #ff0000;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Success message style */
+        .success-message {
+            background-color: #ccffcc;
+            color: #009900;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="container" style="margin-top: 50px;">
+    <% if (typeof errorMessage !== 'undefined' && errorMessage !== null) { %>
+    <div class="error-message">
+        <i class="fas fa-exclamation-triangle"></i> <%= errorMessage %>
+    </div>
+    <% } %>
+
+    <% if (typeof successMessage !== 'undefined' && successMessage !== null) { %>
+    <div class="success-message">
+        <i class="fas fa-check-circle"></i> <%= successMessage %>
+    </div>
+    <% } %>
+
+    <!-- "Go to Home" button -->
+   
+
+    <div class="card"> 
+        <div class="card-header">
+            <i class="fas fa-file-upload"></i> Bulk Upload
+        </div>
+        <a href="/users/" class="btn btn-primary" style="position: absolute; top: 10px; right: 10px;">
+            <i class="fas fa-home"></i> Go to Home
+        </a>
+        <div class="card-body">
+            <!-- Add this form to your EJS view -->
+            <form action="/users/bulk-upload" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="excelFile">Select Excel File:</label>
+                    <input type="file" class="form-control-file" name="excelFile" id="excelFile" accept=".xlsx, .xls">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-upload"></i> Upload
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Check for the theme preference in local storage
+        const isDarkTheme = localStorage.getItem('theme') === 'dark';
+
+        // Apply the theme preference
+        if (isDarkTheme) {
+            $('body').addClass('dark');
+            $('.card').addClass('dark');
+        }
+
+        // Toggle between light and dark themes
+        $('#darkThemeButton').click(function() {
+            $('body').toggleClass('dark');
+            $('.card').toggleClass('dark');
+            // Store the theme preference in local storage
+            localStorage.setItem('theme', $('body').hasClass('dark') ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>
