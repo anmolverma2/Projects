@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<html>
+<head>
+        <h1 class="display-4 text-center">Welcome To The Hospital Management System</h1>
+</head>
+<body>
+    <div style="padding: 43px;">
+        <div class="card" onclick="location.href='/Home/AppointmentView';">
+            <img src="/lib/appointment-icon-png-7.jpg">
+            <h2>Today's Appointments</h2>
+
+        </div>
+        <div class="card" onclick="location.href='/Home/CreateUpdatePatient';">
+            <img src="/lib/\3992304-200.png">
+            <h2>Patient Database</h2>
+
+        </div>
+        <div class="card" onclick="location.href='/Home/BillingView';">
+            <img src="/lib/images.png">
+            <h2>Billing</h2>
+            <p></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    .card {
+        display: inline-block;
+        width: 300px;
+        height: 366px;
+        background-color: #f0f0f0;
+        margin: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+        .card img {
+            width: 80%;
+            height: 55%;
+            margin-top: 44px;
+        }
+
+        .card h2 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+</style>
+
+
