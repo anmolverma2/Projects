@@ -1,0 +1,88 @@
+<div id="main">
+    <div class="container-fluid box">
+        <div class="card border-0 shadow-none bg-color ">
+
+            <div class="card-body ">
+                <div class="title mb-2">
+                    <h5>Dashboard</h5>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card cursor border-0 shadow-none mb-3" onclick="salesmanEnrollment()">
+                            <div class="card-body">
+
+                                <div class="ribbon-pop">Salesman Enrollment Tracker</div>
+                                <div id="dsr-enrollment" class="mt-5"></div>
+                                <div class="grid-progres mt-3">
+                                    <div>
+                                        <div class="d-flex border-bottom  justify-content-between"> <small class="d-flex font-color font-responsive align-items-center border-bottom"><i
+                                                    class="Approved pe-2 bx bxs-circle"></i></span>
+                                                Approved</small><span class="Approved number"><%= data[0].ApprovedCount %></span></div>
+
+                                    </div>
+                                    <div>
+                                        <div class="d-flex border-bottom  justify-content-between"> <small class="d-flex font-color font-responsive align-items-center border-bottom"><i
+                                                    class="Rejected pe-2 bx bxs-circle"></i>
+                                                Rejected</small><span class="Rejected number"><%= data[0].RejectedCount %></span></div>
+
+                                    </div>
+                                    <div>
+                                        <div class="d-flex border-bottom  justify-content-between"> <small class="d-flex font-color  font-responsive align-items-center border-bottom"><i
+                                                    class="Enrolment pe-2 bx bxs-circle"></i>Pending for
+                                                Enrolment</small><span class="Enrolment number"><%= data[0].PendingforSubmission %></span></div>
+
+                                    </div>
+                                    <div>
+                                        <div class="d-flex border-bottom  justify-content-between"> <small class="d-flex font-color font-responsive align-items-center border-bottom"><i
+                                                    class="Verification pe-2 bx bxs-circle"></i>Pending for
+                                                Verification</small><span class="Verification number"><%= data[0].PendingForVerification %></span></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card cursor border-0 shadow-none mb-3" onclick="salesmanPayment()">
+                            <div class="card-body">
+
+                                <div class="ribbon-pop">Salesman Payment Tracker</div>
+                                <div id="dsr-payment" class="mt-5"></div>
+                                <div class="grid-progres ">
+                                    <div>
+                                        <div class="d-flex border-bottom  justify-content-between"> <small class="d-flex font-color font-responsive align-items-center border-bottom"><i
+                                                    class="Approved pe-2 bx bxs-circle"></i></span>
+                                                Total Payments</small><span class="Approved number"><%= data[0].IncentiveCount %></span></div>
+
+                                    </div>
+                                    <div>
+                                        <div class="d-flex border-bottom  justify-content-between"> <small class="d-flex font-color font-responsive align-items-center border-bottom"><i
+                                                    class="Rejected pe-2 bx bxs-circle"></i>
+                                                Payment done</small><span class="Rejected number"><%= data[0].CountPaymnetDone %></span></div>
+
+                                    </div>
+                                    <div>
+                                        <div class="d-flex border-bottom  justify-content-between"> <small class="d-flex font-color  font-responsive align-items-center border-bottom"><i
+                                                    class="Enrolment pe-2 bx bxs-circle"></i>On Hold
+                                                </small><span class="Enrolment number"><%= data[0].CountOnHold %></span></div>
+
+                                    </div>
+                                    <div>
+                                        <div class="d-flex border-bottom  justify-content-between"> <small class="d-flex font-color font-responsive align-items-center border-bottom"><i
+                                                    class="Verification pe-2 bx bxs-circle"></i>Initiated For Payment
+                                                </small><span class="Verification number"><%= data[0].CountInitiatedPayment %></span></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

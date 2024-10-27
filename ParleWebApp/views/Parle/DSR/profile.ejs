@@ -1,0 +1,403 @@
+<input type="hidden" id="UUID" value="<%= UUID %>" />
+<div id="main">
+  <div class="container-fluid box">
+    <div class="card border-none">
+      <div class="card-body">
+        <div class="title">
+          <h5>My Profile</h5>
+        </div>
+
+        <div class="card border-0 mt-4">
+          <div class="card-header bg-header border-0">
+            <div class="h-100 d-flex justify-content-between align-items-end">
+              <div
+                class="position-relative d-inline-block profile-block pointer-event-none"
+              >
+                <label for="profile-upload">
+                  <img
+                    class="cursor profile-circle"
+                    src="/public/image/user.png"
+                  />
+                  <i class="bx bxs-camera d-none profile-camera"></i>
+                </label>
+                <input
+                  class="d-none"
+                  id="profile-upload"
+                  type="file"
+                  accept="image/*"
+                />
+              </div>
+              <button class="btn btn-sm btn-primary edit-details">
+                <i class="bx bxs-edit edit-chevron"></i> Edit
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="grid-table">
+              <div>
+                <p class="mb-0">User Code</p>
+                <p class="mb-0 text-primary" name="UserCode" id="UserCode">
+                  <%= user[0].UserCode%>
+                </p>
+              </div>
+              <div>
+                <p class="mb-0">User Name</p>
+                <p class="mb-0 text-primary" name="UserName" id="UserName">
+                  <%= user[0].UserName%>
+                </p>
+              </div>
+              <div>
+                <p class="mb-0">Mobile Number</p>
+                <p class="mb-0 text-primary" name="Mobile" id="Mobile">
+                  <%= user[0].MobileNumber%>
+                </p>
+              </div>
+              <div>
+                <p class="mb-0">Email</p>
+                <p class="mb-0 text-primary email-edit" name="Email" id="Email">
+                  <%= user[0].Email%>
+                </p>
+              </div>
+              <div>
+                <p class="mb-0">Address</p>
+                <p
+                  class="mb-0 text-primary address-edit"
+                  name="Address"
+                  id="Address"
+                >
+                  <%= user[0].Address%>
+                </p>
+              </div>
+            </div>
+
+            <div class="text-end mt-3">
+              <button
+                class="btn btn-sm btn-primary save-detail d-none"
+                onclick="GenerateOtp()"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="modal"
+  id="otpmodal"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0">
+      <div class="modal-header p-2 bg-blue position-relative">
+        <h6 class="modal-title text-white">OTP Verification</h6>
+        <i data-bs-dismiss="modal" class="bx bx-x fs-4"></i>
+      </div>
+      <div class="modal-body text-center">
+        <div class="border-bottom-0 d-flex flex-column">
+          <p class="text-center">
+            Please enter the OTP we sent over SMS to
+            <b> <%= formattedMobileNumber %> </b>
+          </p>
+        </div>
+        <input
+          type="text"
+          class="form-control otp-val form-control-sm"
+          id="OTP1"
+          maxlength="6"
+        />
+
+        <div class="pt-3 pb-2">
+          <button
+            class="btn btn-primary px-4 rounded-pill btn-sm submit-btn"
+            onclick="ValidateOTP()"
+            data-bs-dismiss="modal"
+          >
+            Submit
+          </button>
+        </div>
+        <small class=""
+          >Resend Authorisation code send in
+          <b class="text-dark timer"></b></small
+        >
+        <br />
+        <a
+          href="javascript:void(0)"
+          class="text-primary text-center font-14 d-none text-decoration-underline"
+          id="resend" onclick="GenerateOtp()"
+          >Resend</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function GenerateOtp() {
+    debugger;
+    var UUID = $("#UUID").val();
+    var UserCode = $("#UserCode").text();
+    var UserName = $("#UserName").text();
+    var Email = $("#Email").text();
+    var Address = $("#Address").text();
+    var Mobile = $("#Mobile").text();
+    var code = UserCode.split("\n");
+    var name = UserName.split("\n");
+    var phone = Mobile.split("\n");
+    var mail = Mobile.split("\n");
+    var addres = Mobile.split("\n");
+    
+    if(UserCode != ""){
+    UserCode = code[1].trim();
+    }
+    if(UserName != ""){
+    UserName = name[1].trim();
+    }
+    if(Email != "" && Email != null && Email != undefined && Email != 'null' && Email != 'undefined'){
+    Email = mail[0].trim() == "" ? mail[1].trim() : mail[0].trim();
+    }
+    if(Address != "" && Address != null && Address != undefined && Address != 'null' && Email != 'undefined'){
+    Address = addres[1].trim();
+    }
+    if(Mobile != ""){
+    Mobile = phone[1].trim();
+    }
+
+    var errormessage = "";
+
+    if (Email == null || Email == undefined || Email == "") {
+      errormessage += "Please enter Email. \n";
+      $("#Email").css({ "border-bottom": "1px solid red", outline: "unset" });
+    } else {
+      $("#Email").css({
+        "border-bottom": "1px solid #dee2e6",
+        outline: "unset",
+      });
+      $("#Email").attr("contenteditable", false);
+      $(".email-edit").parent().prev().css("width", "unset");
+    }
+    if (Address == null || Address == undefined || Address == "") {
+      errormessage += "Please enter address. \n";
+      $("#Address").css({ "border-bottom": "1px solid red", outline: "unset" });
+    } else {
+      $("#Address").css({
+        "border-bottom": "1px solid #dee2e6",
+        outline: "unset",
+      });
+      $("#Address").attr("contenteditable", false);
+      $(".address-edit").parent().prev().css("width", "unset");
+    }
+    
+
+    if (errormessage != "") {
+      alert(errormessage);
+      return false;
+    } else {
+      debugger;
+      var param = {
+        Email: Email,
+        Address: Address,
+        UserName: UserName,
+        UserCode: UserCode,
+        Mobile: Mobile,
+        UUID: UUID,
+      };
+      var formdata = { param: JSON.stringify(param) };
+
+      $.ajax({
+        type: "POST",
+        dataType: "JSON",
+        data: {
+          UUID: UUID,
+          Email: Email,
+          Address: Address,
+          UserName: UserName,
+          Mobile: Mobile,
+          UserCode: UserCode,
+        },
+        url: "InsertOTP?UUID=" + UUID + "&param" + JSON.stringify(param),
+        success: function (response) {
+          if (response.result[''] == 1) {
+            debugger;
+
+            Clear();
+            save();
+          } else {
+            alert("Error to save profile details.");
+          }
+        },
+      });
+    }
+  }
+
+  function Clear() {
+     $("#OTP1").val(" ");
+ }
+
+  function ValidateOTP() {
+    debugger;
+
+    var UUID = $("#UUID").val();
+    var OTPNumber = $("#OTP1").val();
+
+    $("#otpmodal").modal({
+      backdrop: "static",
+    });
+
+    if (OTPNumber == null || OTPNumber == "") {
+      $("#otpmodal").modal("show");
+
+      Swal.fire({
+        icon: "warning",
+        text: "Please enter OTP ",
+      });
+      return false;
+    } else if (OTPNumber.length != 6) {
+      $("#otpmodal").modal("show");
+      Swal.fire({
+        icon: "warning",
+        text: "Please enter valid OTP ",
+      });
+      $("#OTP1").val("");
+      return false;
+    } else {
+      $.ajax({
+        type: "POST",
+        dataType: "JSON",
+        url: "VerifyOTP?UUID=" + UUID + "&OTPNumber=" + OTPNumber,
+        success: function (response) {
+          debugger;
+
+          if (response.result[''] == 1) {
+            // Assuming result is returned from the server
+            debugger;
+            hideModal();
+            Swal.fire({
+              icon: "success",
+              text: "Profile Details Updated Successfully ",
+              confirmButtonText: "Okay",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                $("#otpmodal").modal("hide");
+                $(".save-detail").addClass("d-none");
+                $(".email-edit,.address-edit").attr("contenteditable", false);
+                $(".email-edit,.address-edit").css({
+                  "border-bottom": "unset",
+                  outline: "unset",
+                });
+                $(".edit-details").removeClass("d-none");
+                $(".profile-block").addClass("pointer-event-none");
+                $(".profile-camera").toggleClass("d-none d-flex");
+              }
+            });
+            $(".masked-text").removeClass("masked-text");
+            $(".view").hide();
+            UpdateSODetails();
+          } else {
+            debugger;
+            $("#otpmodal").modal("show");
+            Swal.fire({
+              icon: "warning",
+              text: "Please Enter Correct OTP ",
+            });
+
+            $("#OTP1").val("");
+            return false;
+          }
+        },
+      });
+    }
+  }
+
+  function UpdateSODetails() {
+    debugger;
+    var errormessage = "";
+    var ProfilePhoto = $("#ProfilePhoto").val();
+    var UUID = $("#UUID").val();
+    
+    var UserCode = $("#UserCode").text();
+    var UserName = $("#UserName").text();
+    var Email = $("#Email").text();
+    var Address = $("#Address").text();
+    var Mobile = $("#Mobile").text();
+    var code = UserCode.split("\n");
+    var name = UserName.split("\n");
+    var mail = Email.split("\n");
+    var phone = Mobile.split("\n");
+    var addres = Address.split("\n");
+    UserCode = code[1].trim();
+    UserName = name[1].trim();
+    Email = mail[1].trim();
+    Address = addres[1].trim();
+    Mobile = phone[1].trim();
+
+    if (Email == null || Email == undefined || Email == "") {
+      errormessage += "Please enter Email. \n";
+      $("#Email").css({ "border-bottom": "1px solid red", outline: "unset" });
+    } else {
+      $("#Email").css({
+        "border-bottom": "1px solid #dee2e6",
+        outline: "unset",
+      });
+      $("#Email").attr("contenteditable", false);
+      $(".email-edit").parent().prev().css("width", "unset");
+    }
+    if (Address == null || Address == undefined || Address == "") {
+      errormessage += "Please enter address. \n";
+      $("#Address").css({ "border-bottom": "1px solid red", outline: "unset" });
+    } else {
+      $("#Address").css({
+        "border-bottom": "1px solid #dee2e6",
+        outline: "unset",
+      });
+      $("#Address").attr("contenteditable", false);
+      $(".address-edit").parent().prev().css("width", "unset");
+    }
+
+    debugger;
+
+    if (errormessage != "") {
+      alert(errormessage);
+      return false;
+    } else {
+        var param = {
+        Email: Email,
+        Address: Address,
+        UserName: UserName,
+        UserCode: UserCode,
+        Mobile: Mobile,
+        UUID: UUID,
+      //  ProfilePhoto: ProfilePhoto,
+      };
+     
+      var formdata = { param: JSON.stringify(param) };
+      $.ajax({
+        type: "POST",
+        dataType: "JSON",
+        //data: formData,
+        contentType: false,
+        data: {
+          UUID: UUID,
+          Email: Email,
+          Address: Address,
+          UserName: UserName,
+          Mobile: Mobile,
+          UserCode: UserCode,
+         // ProfilePhoto: ProfilePhoto,
+        },
+        url:
+          "UpdateSOProfileDetails?UUID=" + UUID + "&Email=" + Email + "&Address=" + Address,
+        success: function (response) {
+          if (response.result[''] == 1) {
+            Clear();
+          } else {
+            alert("Error to save profile details.");
+          }
+        },
+      });
+    }
+  }
+</script>

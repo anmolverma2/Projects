@@ -1,0 +1,91 @@
+<input type="hidden" id="parentUUID" name="parentUUID" value="<%= UUID %>">
+<div id="main">
+    <div class="container-fluid box">
+        <div class="card border-none ">
+            <div class="card-body ">
+                <div class="title mb-2">
+                    <h5>Salesman KYC</h5>
+                </div>
+                <div class="multiple-items mt-4">
+                    <div class="card mx-1 box-shadow-none active-slick-slide " onclick="filterSelection('all')">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center  ">
+                                <p>All</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-1 box-shadow-none" onclick="filterSelection('submission-card')">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center ">
+                                <p>Pending for Submission </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-1 box-shadow-none" onclick="filterSelection('approved-card')">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center ">
+                                <p>Approved</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-1 box-shadow-none" onclick="filterSelection('rejected-card')">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center ">
+                                <p>Rejected</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-1 box-shadow-none" onclick="filterSelection('verficiation-card')">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center ">
+                                <p>Pending for Verficiation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-sm" id="search-input" placeholder="Enter Retailer Code or Name">
+                        <button class="btn btn-outline-primary btn-sm" type="button" id="search">Search</button>
+                    </div>
+                </div>
+                <div class="row">
+                               
+
+                    <% for(let i = 0; i < data.length; i++) { %>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-12 filterContainer">
+                            <% if (data[i].KYCStatus.toLowerCase() == 'pending for submission') { %>
+                                <div class="card box-shadow submission-card my-3" onclick="redirectToUploadDocument('<%= data[i].KYCUUID %>')">
+                            <% } else if (data[i].KYCStatus.toLowerCase() == 'pending for verification') { %>
+                                <div class="card box-shadow verficiation-card my-3" onclick="pending()">
+                            <% } else if (data[i].KYCStatus.toLowerCase() == 'approved') { %>
+                                <div class="card box-shadow approved-card my-3" onclick="redirectToApproval()">
+                            <% } else { %>
+                                <div class="card box-shadow rejected-card my-3" onclick="redirectToRejected()">
+                            <% } %>
+                                <div class="card-body py-2">
+                                    <div>
+                                        <p class="mb-0 fw-bold"><%= data[i].DSRCode %></p>
+                                        <small class="bglight"><%= data[i].DSRName %></small>
+                                    </div>
+                                    <% if (data[i].KYCStatus.toLowerCase() == 'pending for submission') { %>
+                                        <p class="text-primary orange-label mt-1 p-1"><%= data[i].KYCStatus %></p>
+                                    <% } else if (data[i].KYCStatus.toLowerCase() == 'pending for verification') { %>
+                                        <p class="text-primary lightblue-label p-1 mt-1"><%= data[i].KYCStatus %></p>
+                                    <% } else if (data[i].KYCStatus.toLowerCase() == 'approved') { %>
+                                        <p class="green-label p-1 mt-1"><%= data[i].KYCStatus %></p>
+                                    <% } else { %>
+                                        <p class="red-label p-1 mt-1"><%= data[i].KYCStatus %></p>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

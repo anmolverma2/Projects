@@ -1,0 +1,76 @@
+<div id="main">
+    <div class="container-fluid box">
+        <div class="card border-none ">
+            <div class="card-body ">
+                <div class="col-sm-4">
+                    <div>
+                        <div class="title mb-2">
+                            <h5>Terms & Conditions</h5>
+                        </div>
+                        <div class="form-check my-2 mt-3">
+                            <input class="form-check-input" type="checkbox" checked value="">
+                            <label class="form-check-label">
+                                    <p class="fw-bold mb-1 font-5 "> Agree to all the<a href="terms-nd-conditions.html" class="terms-line">  Terms And  Conditions</a> Of The Program </p>
+
+                                </label>
+                        </div>
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="" checked>
+                            <label class="form-check-label">
+                                    <p class="fw-bold mb-1 font-5 "> Agree to receive Communication</p>
+                                </label>
+                        </div>
+
+
+                    </div>
+                    <!-- signature html -->
+                    <div class="mt-4 m-2">
+                        <label class=" form-label">Add Digital Signature *</label>
+                    </div>
+                    <div class=" d-flex justify-content-center m-2 signature">
+                        <canvas id="sig-canvas" class="border" height="160" width="286">Get a better browser,
+                                bro.</canvas>
+                    </div>
+                    <div>
+                        <div class="text-center my-2  mt-4">
+                            <button class="btn btn-danger px-4 rounded-pill btn-sm fw-bold me-2" id="clear">Clear</button>
+                            <button class="btn btn-primary px-4 rounded-pill btn-sm fw-bold" onclick="SaveSignature()">Submit</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal" id="otpModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0">
+            <div class="modal-header px-2 p-1 bg-blue">
+                <h6 class="modal-title  text-white">OTP Verification</h6>
+                <i class='bx bx-x fs-4' data-bs-dismiss="modal"></i>
+            </div>
+            <div class="modal-body text-center">
+                <div class=" border-bottom-0 d-flex flex-column">
+
+                    <p class="text-center m-auto mt-2">Enter the OTP we sent over SMS to
+                        <b>88688XXXXX</b>
+                    </p>
+                </div>
+                <div>
+                    <input type="text" class="form-control form-control-sm" maxlength=6>
+
+                    <div class="py-3"> <button class="btn btn-primary px-4 rounded-pill btn-sm fw-bold" onclick="success()" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                    <small class="my-2">Resend Authorisation code in <b class="text-dark timer">59</b> sec</small>
+                    <br>
+                    <a href="javascript:void(0)" class="text-primary text-center font-14 d-none text-decoration-underline" id="resend">Resend OTP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
