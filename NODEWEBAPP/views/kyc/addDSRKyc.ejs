@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title><%= DSRCode %>-KYC Verification</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .card {
+        margin-top: 50px;
+        border: 1px solid #007bff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-header {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      .card-body {
+        margin-bottom: -40px;
+        padding: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="date"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+      }
+
+      .btn-info {
+        background-color: #007bff;
+        color: #fff;
+        transition: background-color 0.3s;
+      }
+
+      .btn-info:hover {
+        background-color: #0056b3;
+      }
+
+      /* Style for the image container */
+      .image-container {
+        position: relative;
+        width: 150px;
+        /* Adjust width as needed */
+        height: 150px;
+        /* Adjust height as needed */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+      }
+
+      /* Style for the image */
+      .image-container img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      /* Style for the upload button */
+      .upload-btn {
+        position: absolute;
+        top: 35px;
+        right: -95px;
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .upload-btn:hover {
+        background-color: #0056b3;
+      }
+      /* CSS for the Back and Add buttons */
+      .btn-info {
+        background-color: #007bff;
+        color: #fff;
+        transition: background-color 0.3s;
+        width: calc(50% - 5px); /* 50% width minus 5px margin for each button */
+        margin-right: 5px; /* Adjust the margin between the buttons */
+      }
+
+      .btn-info:last-child {
+        margin-right: 0; /* Remove margin from the last button */
+      }
+
+      .btn-info:hover {
+        background-color: #0056b3;
+      }
+      .new {
+        margin-top: -20px;
+      }
+      .nxt{
+        margin-left: 20px;
+        width: 240px;
+      }
+    </style>
+    <script>
+      // JavaScript function to preview the selected image
+      function previewImage(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            $("#salesmanPhotoPreview").attr("src", e.target.result);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+    </script>
+  </head>
+
+  <body class="container">
+    <% if (messages.error) { %>
+    <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+    <% } %>
+    <div class="card">
+      <div class="card-header">Add Salesman KYC</div>
+      <div class="card-body">
+        <form
+          
+          method="post"
+          id="formId"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group row">
+            
+            <div class="col-md-3">
+              <label>DSR Code:</label>
+                <input type="hidden" class="form-control" disabled id="DSRId" name="DSRId" value="<%= DSRId %>"
+                  autocomplete="off" />
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                id="DSRCode"
+                name="DSRCode"
+                value="<%= DSRCode %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-md-3">
+              <label>DSR Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                disabled
+                id="DSRName"
+                name="DSRName"
+                value="<%= DSRName %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-md-3">
+              <label>Mobile Number:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="MobileNumber"
+                name="MobileNumber"
+                value="<%= MobileNumber %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-md-3">
+              <label>Email ID:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="EmailId"
+                name="EmailId"
+                value="<%= EmailId %>"
+                onblur="validateEmail(this)"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-3">
+              <label>Address Line 1:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="AddressLine1"
+                name="AddressLine1"
+                value="<%= AddressLine1 %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-md-3">
+              <label>Address Line 2:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="AddressLine2"
+                name="AddressLine2"
+                value="<%= AddressLine2 %>"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="col-md-3">
+              <label>Country Name:</label>
+              <select name="CountryName" id="CountryName" class="form-control">
+                <option value="">Select Country</option>
+                <% for(var count = 0; count < countryData.length; count++) { %>
+
+                <option value="<%= countryData[count].CountryId %>">
+                  <%= countryData[count].CountryName %>
+                </option>
+
+                <% } %>
+              </select>
+            </div>
+
+            <div class="form-group nxt">
+              <label>State Name:</label>
+              <select name="StateName" id="StateName" class="form-control">
+                <option value="">Select State</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-3">
+              <label>City Name:</label>
+              <select name="CityName" id="CityName" class="form-control">
+                <option value="">Select City</option>
+              </select>
+            </div>
+
+            <div class="col-md-3">
+              <label>Pin Code:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="PinCode"
+                name="PinCode"
+                value="<%= PinCode %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-md-3">
+              <label>Gender:</label>
+              <select class="form-control" id="Gender" name="Gender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label>Date of Birth:</label>
+              <input
+                type="date"
+                class="form-control"
+                id="DateOfBirth"
+                name="DateOfBirth"
+                value="<%= DateofBirth %>"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-3">
+              <label>PAN Number:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="PANNumber"
+                name="PANNumber"
+                value="<%= PANNumber %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-md-3">
+              <!-- Image container for Salesman Photo -->
+              <div class="image-container">
+                <img id="salesmanPhotoPreview" src="#" alt="upload image" />
+
+                <input
+                  type="file"
+                  accept="image/*"
+                  id="SalesmanPhoto"
+                  name="SalesmanPhoto"
+                  onchange="previewImage(this);"
+                  style="display: none"
+                />
+
+                <button
+                  type="button"
+                  class="upload-btn"
+                  onclick="document.getElementById('SalesmanPhoto').click();"
+                >
+                  Upload
+                </button>
+              </div>
+            </div>
+            <!-- Add other fields here -->
+          </div>
+          <div class="form-group new" style="color: white">
+            <a class="home-link btn btn-info" href="/salesmenKyc/KycRecords">
+              <i class="fas fa-arrow-left"> </i> Back
+            </a>
+         
+            <button type="button" class="btn btn-info" onclick="submitForm('approve')">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+
+
+    function submitForm(action) {
+        debugger;
+        var form = document.getElementById('formId');
+      
+
+
+        if(validateFormData() != false){
+          
+          var DSRId = '<%= DSRId %>'; 
+
+            form.action = '/salesmenKyc/addkycData/' + DSRId;
+
+
+            form.submit();
+        }
+        
+    }
+
+
+
+      function validateFormData() {
+        var isValid = true;
+
+        var dsrode = $("#DSRCode").val().trim();
+
+        var dsrname = $("#DSRName").val().trim();
+
+        var addressLine1 = $("#AddressLine1").val().trim();
+
+        var countryName = $("#CountryName").val().trim();
+
+        var stateName = $("#StateName").val().trim();
+
+        var cityName = $("#CityName").val().trim();
+
+        var pinCode = $("#PinCode").val().trim();
+
+        var gender = $("#Gender").val().trim();
+
+        var dateOfBirth = $("#DateOfBirth").val().trim();
+
+        var salesmanPhoto = $("#SalesmanPhoto").val().trim();
+
+        var mobileNumber = $("#MobileNumber").val().trim();
+
+        var panNumber = $("#PANNumber").val().trim();
+
+        var emailId = $("#EmailId").val().trim();
+
+        var Error = "";
+
+        //  Error = Error + "Please Enter User Name !!" + "\n";
+
+        if (dsrode == "") {
+          Error = Error + "DSR Code is required" + "\n";
+        }
+        if (dsrname == "") {
+          Error = Error + "DSR Name is required'" + "\n";
+        }
+        if (addressLine1 == "") {
+          Error = Error + "Address Line1 is required" + "\n";
+        }
+        if (countryName == "") {
+          Error = Error + "Please select Country Name" + "\n";
+        }
+        if (stateName == "") {
+          Error = Error + "Please select State Name" + "\n";
+        }
+        if (cityName == "") {
+          Error = Error + "Please select City Name" + "\n";
+        }
+        if (pinCode == "") {
+          Error = Error + "PinCode is required" + "\n";
+        }
+        if (gender == "") {
+          Error = Error + "Please select Gender" + "\n";
+          isValid = false;
+        }
+        if (dateOfBirth == "") {
+          Error = Error + "Please select Date Of Birth" + "\n";
+        }
+
+        if (mobileNumber == "") {
+          Error = Error + "Mobile Number is required" + "\n";
+        } else if (!/^\d+$/.test(mobileNumber)) {
+          Error = Error + "Mobile Number must contain only digits" + "\n";
+        }
+
+        if (emailId === "") {
+          Error = Error + "Email ID is required" + "\n";
+        } else if (!isValidEmail(emailId)) {
+          Error = Error + "Invalid Email ID" + "\n";
+        }
+
+        if (panNumber === "") {
+          Error = Error + "PAN Number is required" + "\n";
+        } else if (!isValidPAN(panNumber)) {
+          Error = Error + "Invalid PAN Number" + "\n";
+        }
+
+        var salesmanPhoto = $("#SalesmanPhoto").val().trim();
+        if (salesmanPhoto === "") {
+          Error = Error + "Salesman Photo is required" + "\n";
+        }
+        if (Error != "") {
+          alert(Error);
+          return false;
+        }
+      }
+
+      function isValidEmail(email) {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      function isValidPAN(pan) {
+        var panRegex = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+        return panRegex.test(pan);
+      }
+
+    
+    </script>
+
+    <script>
+      function _(element) {
+        return document.getElementById(element);
+      }
+
+      function fetch_data(parent_element, child_element, type) {
+        debugger;
+        fetch(
+          "/master/get_data?type=" +
+            type +
+            "&parent_value=" +
+            parent_element.value +
+            ""
+        )
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (responseData) {
+            var jsonArray = JSON.parse(responseData);
+            var html = "";
+
+            if (type == "load_state") {
+              html = '<option value="">Select State</option>';
+              for (var count = 0; count < jsonArray.length; count++) {
+                html +=
+                  '<option value="' +
+                  jsonArray[count].StateId +
+                  '">' +
+                  jsonArray[count].StateName +
+                  "</option>";
+              }
+            }
+
+            if (type == "load_city") {
+              html = '<option value="">Select City</option>';
+              for (var count = 0; count < jsonArray.length; count++) {
+                html +=
+                  '<option value="' +
+                  jsonArray[count].CityId +
+                  '">' +
+                  jsonArray[count].CityName +
+                  "</option>";
+              }
+            }
+
+            child_element.innerHTML = html;
+          });
+      }
+
+      _("CountryName").onchange = function () {
+        debugger;
+        fetch_data(_("CountryName"), _("StateName"), "load_state");
+      };
+      _("StateName").onchange = function () {
+        fetch_data(_("StateName"), _("CityName"), "load_city");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+.logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffa806;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.new-card {
+    background-color: #b5b8bd54;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;            
+    margin-right: 60px;
+    animation: fadeInCard 1s ease-in-out;
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: calc(33.33% 50px);
+    box-sizing: border-box;
+    margin-left: -180px;
+    margin-right: -180px;
+    animation: fadeInCard 1s ease-in-out;
+}
+
+.card:hover {
+    background-color: #f9f9f9;
+}
+
+/* Different colors for cards */
+.card:nth-child(odd) {
+    background-color: #e0f7fa;
+}
+
+.card:nth-child(even) {
+    background-color: #f8eabb;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.Mcard {
+    text-align: center;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: calc(33.33% -36px);
+    box-sizing: border-box;
+    margin-left: -180px;
+    margin-right: -180px;
+    animation: fadeInCard 1s ease-in-out;
+}
+
+.Mcard:hover {
+    background-color: #f9f9f9;
+}
+
+/* Different colors for cards */
+.Mcard:nth-child(odd) {
+    background-color: #e0f7fa;
+}
+
+.Mcard:nth-child(even) {
+    background-color: #f8eabb;
+}
+
+.Mcard h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.Mcard a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.Mcard a:hover {
+    text-decoration: underline;
+}
+
+/* Add hover effect to all div cards */
+div.card:hover,
+div.Mcard:hover {
+  
+
+   filter: brightness(90%);
+}

@@ -1,0 +1,81 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* Card Styling */
+.card {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect only for DSR code and DSR name */
+.card .card-body:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 1.25rem;
+    background-color: #f8f9fa;
+    /* Light gray background color */
+    border-top: 1px solid #ced4da;
+}
+
+/* Add space between cards */
+.card-body:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* DSR Code Styling */
+.dsr-code {
+    font-size: 18px;
+    color: #007bff;
+    /* Blue color for DSR code */
+}
+
+/* DSR Name Styling */
+.dsr-name {
+    font-size: 16px;
+    color: #6c757d;
+    /* Gray color for DSR name */
+}
+
+/* Search form styling */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-form .form-control {
+    margin-right: 10px;
+        margin-left: 10px;
+}
+
+/* Button styling */
+.btn-primary {
+        margin-right: 10px;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Salesman KYC Section Styling */
+.salesman-kyc {
+    background-color: #007bff;
+    /* Add color to the section */
+    color: #fff;
+    /* Set text color to white */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* Add border radius */
+}

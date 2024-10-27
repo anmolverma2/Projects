@@ -1,0 +1,206 @@
+ 
+
+ <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title><%= DSRCode %>-Audit KYC</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        
+        <link rel="stylesheet" href="/Assests//css/viewDSRKyc.css" >
+
+      
+      
+    </head>
+
+    <body class="container">
+        <% if (messages.error) { %>
+        <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+        <% } %>
+        <div class="card">
+            <div class="card-header">
+                KYC Details
+            </div>
+            <div class="card-body">
+                <form method="post" id="formId" enctype="multipart/form-data">
+                    <div class="form-group row">
+                        <div class="col-md-3">
+                            <label>DSR Code:</label>
+                             <input type="text" class="form-control" disabled id="DSRCode" name="DSRCode" value="<%= DSRCode %>"
+                                autocomplete="off">
+                        </div>
+                        <div class="col-md-3">
+                            <label>DSR Name:</label>
+                            <input type="text" class="form-control" disabled id="DSRName" name="DSRName" value="<%= DSRName %>"
+                                autocomplete="off">
+                        </div>
+                        <div class="col-md-3">
+                            <label>Mobile Number:</label>
+                            <input type="text" class="form-control" disabled id="MobileNumber" name="MobileNumber"
+                                value="<%= MobileNumber %>" autocomplete="off">
+                        </div>
+                        <div class="col-md-3">
+                            <label>Email ID:</label>
+                            <input type="text" class="form-control" disabled id="EmailId" name="EmailId" value="<%= EmailId %>"
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-3">
+                            <label>Address Line 1:</label>
+                            <input type="text" class="form-control" disabled id="AddressLine1" name="AddressLine1"
+                                value="<%= AddressLine1 %>" autocomplete="off">
+                        </div>
+                        <div class="col-md-3">
+                            <label>Address Line 2:</label>
+                            <input type="text" class="form-control" disabled id="AddressLine2" name="AddressLine2"
+                                value="<%= AddressLine2 %>" autocomplete="off">
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <label>Pin Code:</label>
+                            <input type="text" class="form-control" disabled id="PinCode" name="PinCode" value="<%= PinCode %>"
+                                autocomplete="off">
+                        </div>
+                        <div class="col-md-3">
+                            <label>Gender:</label>
+                            <input type="text" class="form-control" disabled id="Gender" name="Gender" value="<%= Gender %>" autocomplete="off">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-3">
+                            <label>PAN Number:</label>
+                            <input type="text" class="form-control" disabled id="PANNumber" name="PANNumber"
+                                value="<%= PANNumber %>" autocomplete="off">
+                        </div>
+                       
+                        <div class="col-md-6" id="rejectReasonField" style="display: none;">
+                            <label>Reject Reason:</label>
+                            <input type="text" class="form-control" id="RejectComment" name="RejectComment" value="<%= RejectComment %>" autocomplete="off">
+                        </div>
+                       
+                    </div>
+                <div class="form-group new">
+                    <div class="col-md-6" style="display: inline;">
+                    <a class="btn btn-info" href="/salesmenKyc/"><i class="fas fa-home home-icon"></i> Back</a>
+                    <% if (KycStatus === 'Pending for verification') { %>
+                    <button type="button" class="btn btn-success" onclick="submitForm('approve')">Approve</button>
+                    <button type="button" class="btn btn-danger" id="preReject" onclick="rejectForm('reject')">Reject</button>
+                    <button type="button" class="btn btn-danger" id="rejectbtn" style="display: none;" onclick="rejectForm('reject')">Reject</button>
+</div>
+                    <% } %>
+                </div>
+
+                </form>
+            </div>
+        </div>
+       
+
+        <script>
+            function submitForm(action) {
+                debugger;
+                var form = document.getElementById('formId');
+                var SalesmanKYCId = '<%= SalesmanKYCId %>'; 
+
+                form.action = '/salesmenKyc/UpdateAuditKyc/' + SalesmanKYCId;
+
+                form.submit();
+            }
+       
+       
+function ShowRej(){
+    debugger;
+    var rejectbtn = document.getElementById('rejectbtn');
+    var rejectReasonField = document.getElementById('rejectReasonField');
+    var preReject = document.getElementById('preReject');
+    preReject.style.display = 'none';
+    rejectbtn.style.display = 'block';
+    rejectReasonField.style.display = 'block';
+}
+
+
+
+    function validateFormData() {
+        debugger;
+        var isValid = true;
+
+        var RejectComment = $("#RejectComment").val().trim();
+        
+        var Error = "";
+
+        if (RejectComment === "") {
+            Error = Error + "Please Enter rejection reason" + "\n";
+        }
+
+        if (Error != "") {
+            alert(Error);
+            return false;
+        }
+    }
+
+
+       
+            // function rejectForm(action) {
+            //         debugger;
+
+
+            //     var form = document.getElementById('formId');
+
+            //      var RejectComment = $('#RejectComment').val();
+                
+
+            //     if (validateFormData() != false) {
+
+            //         var SalesmanKYCId = '<%= SalesmanKYCId %>';
+                
+            //         var rejectCommentInput = document.createElement('input');
+            //         rejectCommentInput.type = 'hidden';
+            //         rejectCommentInput.name = 'RejectComment';
+            //         rejectCommentInput.value = RejectComment;
+            //         form.appendChild(rejectCommentInput);
+
+
+            //         form.action = '/salesmenKyc/RejectAuditKyc/' + SalesmanKYCId;
+
+            //         form.submit();
+            //     }
+
+
+                    
+            //     }
+            
+
+    function rejectForm(action) {
+        var form = document.getElementById('formId');
+        var SalesmanKYCId = '<%= SalesmanKYCId %>';
+        var RejectComment = document.getElementById('RejectComment').value;
+
+        // Set the action URL based on the SalesmanKYCId
+        form.action = '/salesmenKyc/RejectAuditKyc/' + SalesmanKYCId;
+
+        // Append the RejectComment value to the form data
+        var rejectCommentInput = document.createElement('input');
+        rejectCommentInput.type = 'hidden';
+        rejectCommentInput.name = 'RejectComment';
+        rejectCommentInput.value = RejectComment;
+        form.appendChild(rejectCommentInput);
+
+        // Submit the form
+        form.submit();
+    }
+
+
+       </script>
+
+    
+    
+</body>
+
+</html>

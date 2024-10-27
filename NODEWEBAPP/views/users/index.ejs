@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Master</title>
+       <link rel="stylesheet" href="/Assests//css/dm.css" >
+       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+
+    <body>
+        <div>
+            <h1>Data Management</h1> 
+            <button class="logout-button" onclick="location.href='/master/login';"><i class="fas fa-sign-out-alt"></i>     Logout</button>
+        </div>
+
+        <div class="new-card">
+            <h2>Master Management</h2>
+            <div id="master-management" class="container">
+                <div class="card-container">
+                    <div class="Mcard" onclick="location.href='/master/country';">
+                        <h2>Country</h2>
+                    </div>
+                    <div class="Mcard" onclick="location.href='/master/state';">
+                        <h2>State</h2>
+                    </div>
+                    <div class="Mcard" onclick="location.href='/master/city';">
+                        <h2>City</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- DSR Section -->
+        <div class="new-card">
+            <h2 id="kyc-management">DSR Management</h2>
+            <div id="kyc-management" class="container">
+                <div class="card-container">
+                    <div class="card" onclick="location.href='/DSR/';">
+                        <h2>Manage DSR</h2>
+                    </div>
+                    <div class="card" onclick="location.href='/DSR/UpdateDSR';">
+                        <h2>Update DSR Details</h2>
+                    </div>
+                    <div class="card" onclick="location.href='/DSR/RemoveDSR';">
+                        <h2>Remove DSR</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- KYC Management Section -->
+        <div class="new-card">
+            <h2 id="kyc-management">KYC Management</h2>
+            <div id="kyc-management" class="container">
+                <div class="card-container">
+                    <div class="card" onclick="location.href='/salesmenKyc/KycRecords';">
+                        <h2>Salesman KYC</h2>
+                    </div>
+                    <div class="card" onclick="location.href='/salesmenKyc/';">
+                        <h2>Audit KYC</h2>
+                    </div>
+                    <div class="card" onclick="location.href='/salesmenKyc/exportKyc';">
+                        <h2>Export KYC</h2>
+                    </div>
+                    <div class="card" onclick="location.href='/salesmenKyc/removeKyc';">
+                        <h2>Remove KYC</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="new-card">
+            <h2 id="kyc-management">Salesman Payment</h2>
+            <div id="kyc-management" class="container">
+                <div class="card-container">
+                    <div class="card" onclick="location.href='/salesmanPayment/incentiveUpload';">
+                        <h2>Incentive Upload</h2>
+                    </div>
+                    <div class="card" onclick="location.href='/salesmanPayment/UTRUpload';">
+                        <h2>UTR Upload</h2>
+                    </div>
+                    <div class="card" onclick="location.href='/salesmanPayment/';">
+                        <h2>Manage Payment</h2>
+                    </div>
+                    <div class="card" onclick="location.href='/salesmanPayment/exportIncentive';">
+                        <h2>Export All</h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>State</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <style>
+            body {
+                background-color: #f8f9fa;
+                margin-top: 50px;
+            }
+
+            .card {
+                border: 1px solid #007bff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-header {
+                background-color: #007bff;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            label {
+                font-weight: bold;
+                display: block;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            input[type="date"],
+            select {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ced4da;
+                border-radius: 4px;
+            }
+
+            .btn-info {
+                background-color: #007bff;
+                color: #fff;
+                transition: background-color 0.3s;
+                width: 100px;
+                /* Adjust width as needed */
+                margin-right: 10px;
+                /* Add spacing between buttons */
+            }
+
+            .btn-info:hover {
+                background-color: #0056b3;
+            }
+
+            /* Add styling for the home link */
+            .home-link {
+                color: #ffffff;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
+
+            /* Style the home icon */
+            .home-icon {
+                margin-right: 5px;
+            }
+
+            /* Align buttons in the same line */
+            .button-group {
+                display: flex;
+            }
+        </style>
+    </head>
+
+    <body class="container">
+        <% if (messages.error) { %>
+        <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+        <% } %>
+        <div class="card">
+            <div class="card-header">
+                Edit State
+            </div>
+            <div class="card-body">
+                <form action="/master/updateState/<%= StateId %>" method="post">
+                    
+                    
+                    
+                    <div class="form-group">
+                        <label>Country Name:</label>
+                        <input type="text" class="form-control" for="CountryName" name="CountryName" value="<%= CountryName %>"
+                            autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label>State Name:</label>
+                        <input type="text" class="form-control" name="StateName" value="<%= StateName %>" autocomplete="off">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="IsEnabled" id="IsEnabled">
+                        <label class="form-check-label" for="IsEnabled">Is Enabled</label>
+                    </div>
+
+                    <!-- Button Group -->
+                    <div class="form-group button-group">
+                        <a class="home-link btn btn-info" href="/master/state">
+                            <i class="fas fa-arrow-left home-icon"></i>Back
+                        </a>
+                        <input type="submit" class="btn btn-info" value="Update" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
+<script>
+    window.onload = function () {
+        try {
+            var isEnabled = '<%= IsEnabled %>';
+            if (isEnabled === 'true') { // Assuming isEnabled is a string representation of boolean
+                document.getElementById("IsEnabled").checked = true;
+            }
+
+        } catch (error) {
+            console.error("An error occurred:", error);
+        }
+    };
+</script>

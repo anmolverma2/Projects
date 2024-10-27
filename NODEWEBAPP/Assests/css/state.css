@@ -1,0 +1,80 @@
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.card.light {
+    background-color: #f8f9fa;
+}
+
+/* Add hover effect to buttons */
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Add hover effect to table rows */
+table tbody tr:hover {
+    color: black;
+    background-color: #dddddd;
+}
+
+.nav-link:hover {
+    opacity: 0.8 !important;
+}
+
+.user-word {
+    color: rgb(233, 133, 19);
+    font-size: 22px;
+    display: block;
+}
+
+/* Centered Heading Styles */
+.centered-heading {
+    text-align: center;
+    margin-top: -60px;
+    /* Adjust margin-top as needed */
+}
+
+/* Styles for Table Header */
+.table thead th {
+    background-color: #083d55e5;
+    /* Adjust the background color as needed */
+    color: #fff;
+    text-align: center;
+}
+
+ .table tbody td {
+text-align: center;
+vertical-align: middle;
+}
+
+/* Adjustments for buttons and search bar */
+.nav-pills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-pills a {
+    margin-right: 15px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-form input {
+    flex: 1;
+}
+
+.search-form button {
+    margin-left: 10px;
+}
+
+/* Add space between buttons */
+.search-form .btn {
+    margin-left: 5px;
+}

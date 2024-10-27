@@ -1,0 +1,114 @@
+.table tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+    body.light {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .card.light {
+        background-color: #f8f9fa;
+    }
+
+    /* Dark Theme Styles */
+    body.dark {
+        background-color: #292525;
+        color: #ffffff;
+        background-image: none;
+        /* Remove background image in dark mode */
+    }
+
+    .card.dark {
+        background-color: #292525;
+    }
+
+    .card.lightdark {
+        background-color: #444040;
+    }
+
+    /* Dark Theme Background Image */
+    body.dark {
+        background-image: url('dark-mode-background.jpg');
+        /* Replace 'dark-mode-background.jpg' with your image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Star Glitter Effect */
+    .star-glitter {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background: transparent;
+        z-index: 9999;
+        opacity: 0;
+    }
+
+    /* Add hover effect to buttons */
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    /* Add hover effect to table rows */
+    table tbody tr:hover {
+        color: black;
+        background-color: #dddddd;
+    }
+
+    .nav-link:hover {
+        opacity: 0.8 !important;
+    }
+
+    .user-word {
+        color: rgb(233, 133, 19);
+        font-size: 22px;
+        display: block;
+    }
+
+    /* Centered Heading Styles */
+    .centered-heading {
+        text-align: center;
+        margin-top: -60px;
+        /* Adjust margin-top as needed */
+    }
+
+    /* Styles for Table Header */
+    .table thead th {
+        background-color: #083d55e5;
+        /* Adjust the background color as needed */
+        color: #fff;
+        text-align: center;
+    }
+
+    /* Adjustments for buttons and search bar */
+    .nav-pills {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-pills a {
+        margin-right: 15px;
+    }
+
+    .search-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .search-form input {
+        flex: 1;
+    }
+
+    .search-form button {
+        margin-left: 10px;
+    }

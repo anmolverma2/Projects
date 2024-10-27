@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Audit KYC</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+        
+<link rel="stylesheet" href="/Assests//css/kyc.css" >
+
+    </head>
+
+    <body class="container">
+
+
+
+        <!-- Rest of your HTML content -->
+        <% if (messages.success) { %>
+        <div class="alert alert-success" role="alert"><%- messages.success %></div>
+        <% } %>
+
+        <% if (messages.error) { %>
+        <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+        <% } %>
+
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-pills w-100">
+                    <li class="nav-pill active">
+                        <a class="nav-link"><b>Salesman KYC Audit Management</b></a>
+                    </li>
+                 
+
+
+                    <li class="nav-pill">
+                        <a class="nav-link active" href="/master">
+                            <i class="fas fa-home"></i> Data Management
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <form action="/salesmenKyc/search" method="get" class="search-form">
+                <input type="text" class="form-control" name="DSRCode" placeholder="DSR Code">
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </form>
+            <div class="card-body">
+                <% if(data.length) { %>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">DSRCode</th>
+                            <th scope="col">DSRName</th>
+                            <th scope="col">MobileNumber</th>
+                            <th scope="col">KycStatus</th>
+                            <th scope="col">Submitted On</th>
+                            <th width="200px">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i = 0; i< data.length; i++) { %>
+                        <tr>
+                            <th scope="row"><%= (i+1) %></th>
+                            <td><%= data[i].DSRCode%></td>
+                            <td><%= data[i].DSRName%></td>
+                            <td><%= data[i].MobileNumber%></td>
+                            <td><%= data[i].KycStatus%></td>
+                            <td><%= data[i].CreateDate%></td>
+                            <td>
+                                 <a class="btn btn-success edit" href="../salesmenKyc/viewKYC/<%=data[i].SalesmanKYCId%>"
+                                    title="View KYC"><i class="fas fa-eye"></i> View</a> 
+                              
+                            </td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <% } %>
+
+                <!-- if result is empty -->
+                <% if(!data.length) { %>
+                <p class="text-center">No users found!</p>
+                <% } %>
+            </div>
+        </div>
+
+
+        <!-- Include jQuery and other necessary scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          
+
+            $(document).ready(function () {
+                $('#searchButton').click(function () {
+                    const searchValue = $('#searchInput').val();
+                    $.ajax({
+                        type: 'GET',
+                        url: '/users/search',
+                        data: { query: searchValue },
+                        success: function (data) {
+                            updateTable(data);
+                        },
+                        error: function (err) {
+                            console.error('Error searching for users:', err);
+                        }
+                    });
+                });
+
+                function updateTable(data) {
+                    const tableBody = $('table tbody');
+                    tableBody.empty();
+
+                    if (data.length) {
+                        for (var i = 0; i < data.length; i++) {
+                            tableBody.append(`
+                            <tr>
+                                <th scope="row">${i + 1}</th>
+                                <td>${data[i].UserName}</td>
+                                <td>${data[i].EmailId}</td>
+                                <td>${data[i].MobileNumber}</td>
+                                <td>${data[i].Gender}</td>
+                                <td>${data[i].Age}</td>
+                                <td>${data[i].PaymentAmount}</td>
+                                <td>${data[i].PaymentDate}</td>
+                                <td>
+                                    <a class="btn btn-success edit" href="../users/edit/${data[i].Id}">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </a>
+                                    <a class="btn btn-danger delete"
+                                        onclick="return confirmDelete()"
+                                        href="../users/delete/${data[i].Id}">
+                                        <i class="fas fa-trash"></i> Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        `);
+                        }
+                    } else {
+                        tableBody.append('<tr><td colspan="9" class="text-center">No users found!</td></tr>');
+                    }
+                }
+            });
+        </script>
+    </body>
+
+</html>
