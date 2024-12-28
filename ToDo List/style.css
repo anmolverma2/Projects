@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hue: 20;
+    --primary-color: hsl(var(--hue), 70%, 50%);
+    --secondary-color: hsl(var(--hue), 60%, 40%);
+    --light-color: hsl(var(--hue), 80%, 70%);
+    --accent-color: hsl(var(--hue), 90%, 60%);
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.input-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-bar button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-bar button:hover {
+    background-color: var(--accent-color);
+}
+
+.content {
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--text-dark);
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--text-light);
+}
+
+.task-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.task-controls button {
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-controls button:hover {
+    background-color: var(--accent-color);
+}
+
+.task-controls label {
+    font-size: 0.9rem;
+}
+
+.task-controls input[type="checkbox"] {
+    transform: scale(1.2);
+    accent-color: var(--light-color);
+
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.completed{
+    text-decoration: line-through;
+}
