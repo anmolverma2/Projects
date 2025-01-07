@@ -23,7 +23,7 @@ namespace Hospital_Management_System.Controllers
         {
             return View();
         }
-        string SQLConnectionString = "Data Source=LAPTOP-RTOM7UBM;Initial Catalog=master;Integrated Security=True;Trust Server Certificate=True;";
+        string SQLConnectionString = "Data Source=********;Initial Catalog=master;Integrated Security=True;Trust Server Certificate=True;";
         [HttpGet]
         public IActionResult CreateUpdatePatient()
         {
