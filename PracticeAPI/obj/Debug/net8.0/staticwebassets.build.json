@@ -1,0 +1,434 @@
+{
+  "Version": 1,
+  "Hash": "F/XYOwIcgvXvB+3qg5Fd0hkCR/v84TO9tPvatHUlOo0=",
+  "Source": "PracticeAPI",
+  "BasePath": "_content/PracticeAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PracticeAPI\\wwwroot",
+      "Source": "PracticeAPI",
+      "ContentRoot": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\",
+      "BasePath": "_content/PracticeAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1449.png",
+      "SourceId": "PracticeAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\",
+      "BasePath": "_content/PracticeAPI",
+      "RelativePath": "Uploads/Multi/Anmol/Anmol_IMG_1449#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6tx7om819d",
+      "Integrity": "6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1449.png"
+    },
+    {
+      "Identity": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1451.JPG",
+      "SourceId": "PracticeAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\",
+      "BasePath": "_content/PracticeAPI",
+      "RelativePath": "Uploads/Multi/Anmol/Anmol_IMG_1451#[.{fingerprint}]?.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fx332dmpsv",
+      "Integrity": "o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1451.JPG"
+    },
+    {
+      "Identity": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Users\\Abhi\\Abhi_IMG_1449.png",
+      "SourceId": "PracticeAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\",
+      "BasePath": "_content/PracticeAPI",
+      "RelativePath": "Uploads/Users/Abhi/Abhi_IMG_1449#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6tx7om819d",
+      "Integrity": "6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Users\\Abhi\\Abhi_IMG_1449.png"
+    },
+    {
+      "Identity": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Users\\Anmol\\Anmol_IMG_1451.JPG",
+      "SourceId": "PracticeAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\",
+      "BasePath": "_content/PracticeAPI",
+      "RelativePath": "Uploads/Users/Anmol/Anmol_IMG_1451#[.{fingerprint}]?.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fx332dmpsv",
+      "Integrity": "o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Users\\Anmol\\Anmol_IMG_1451.JPG"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Uploads/Multi/Anmol/Anmol_IMG_1449.6tx7om819d.png",
+      "AssetFile": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1449.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "196769"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 06:30:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6tx7om819d"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Multi/Anmol/Anmol_IMG_1449.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Multi/Anmol/Anmol_IMG_1449.png",
+      "AssetFile": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1449.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "196769"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 06:30:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Multi/Anmol/Anmol_IMG_1451.fx332dmpsv.JPG",
+      "AssetFile": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1451.JPG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 06:30:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fx332dmpsv"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Multi/Anmol/Anmol_IMG_1451.JPG"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Multi/Anmol/Anmol_IMG_1451.JPG",
+      "AssetFile": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1451.JPG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 06:30:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Users/Abhi/Abhi_IMG_1449.6tx7om819d.png",
+      "AssetFile": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Users\\Abhi\\Abhi_IMG_1449.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "196769"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 07:22:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6tx7om819d"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Users/Abhi/Abhi_IMG_1449.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Users/Abhi/Abhi_IMG_1449.png",
+      "AssetFile": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Users\\Abhi\\Abhi_IMG_1449.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "196769"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 07:22:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6paasWo0fK1LHB0x5WTj5bs+BjyLtRbZzeB2qKkKs84="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Users/Anmol/Anmol_IMG_1451.fx332dmpsv.JPG",
+      "AssetFile": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Users\\Anmol\\Anmol_IMG_1451.JPG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 Jan 2025 18:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fx332dmpsv"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/Users/Anmol/Anmol_IMG_1451.JPG"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/Users/Anmol/Anmol_IMG_1451.JPG",
+      "AssetFile": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Users\\Anmol\\Anmol_IMG_1451.JPG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 Jan 2025 18:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo="
+        }
+      ]
+    }
+  ]
+}

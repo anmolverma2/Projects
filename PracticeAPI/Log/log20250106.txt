@@ -1,0 +1,901 @@
+2025-01-06 00:08:03.560 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 00:08:04.101 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 00:08:04.106 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 00:08:04.279 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 00:08:04.285 +05:30 [INF] Hosting environment: Development
+2025-01-06 00:08:04.290 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 00:08:06.529 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 00:08:06.952 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 435.1294ms
+2025-01-06 00:08:06.985 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 00:08:07.023 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 37.6397ms
+2025-01-06 00:08:07.224 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 00:08:07.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.2693ms
+2025-01-06 00:08:08.097 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 00:08:08.130 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.6731ms
+2025-01-06 00:08:45.492 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundary271xtif2JEmrmeHj 43816
+2025-01-06 00:08:46.831 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:08:46.878 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 00:09:35.876 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-06 00:09:35.881 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI) in 48998.7354ms
+2025-01-06 00:09:35.881 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:09:35.882 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - 400 null text/plain; charset=utf-8 50389.9599ms
+2025-01-06 00:10:12.740 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 00:10:13.037 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 00:10:13.041 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 00:10:13.168 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 00:10:13.172 +05:30 [INF] Hosting environment: Development
+2025-01-06 00:10:13.175 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 00:10:13.588 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 00:10:13.783 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 215.525ms
+2025-01-06 00:10:13.817 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 00:10:13.827 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 10.1883ms
+2025-01-06 00:10:14.054 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 00:10:14.113 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.6542ms
+2025-01-06 00:10:14.809 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 00:10:14.872 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.9648ms
+2025-01-06 00:10:57.437 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundaryO4N20rBN4ZUzWFCx 91591
+2025-01-06 00:10:57.529 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:10:57.563 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 00:12:08.135 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 00:12:09.046 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 00:12:09.052 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 00:12:09.293 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 00:12:09.304 +05:30 [INF] Hosting environment: Development
+2025-01-06 00:12:09.311 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 00:12:09.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 00:12:10.090 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 460.123ms
+2025-01-06 00:12:10.140 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 00:12:10.152 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 12.3471ms
+2025-01-06 00:12:10.578 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 00:12:10.661 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.3839ms
+2025-01-06 00:12:12.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 00:12:12.151 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.326ms
+2025-01-06 00:13:51.601 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 00:13:51.874 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 00:13:51.877 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 00:13:51.957 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 00:13:51.961 +05:30 [INF] Hosting environment: Development
+2025-01-06 00:13:51.963 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 00:13:52.613 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 00:13:52.818 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 229.3218ms
+2025-01-06 00:13:52.856 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 00:13:52.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 10.9525ms
+2025-01-06 00:13:53.053 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 00:13:53.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.1835ms
+2025-01-06 00:13:53.707 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 00:13:53.736 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.5754ms
+2025-01-06 00:14:39.662 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundarytJiubfw1lAaTfKuG 91591
+2025-01-06 00:14:39.870 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:14:39.908 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 00:17:18.771 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 00:17:18.810 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI) in 158895.7385ms
+2025-01-06 00:17:18.811 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:17:18.815 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - 200 null application/json; charset=utf-8 159152.9102ms
+2025-01-06 00:17:19.687 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 00:17:19.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 34.1175ms
+2025-01-06 00:17:19.798 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 00:17:19.802 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 00:17:19.806 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 5.5993ms
+2025-01-06 00:17:19.852 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.2918ms
+2025-01-06 00:17:21.184 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 00:17:21.237 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 52.786ms
+2025-01-06 00:17:21.900 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/favicon-32x32.png - null null
+2025-01-06 00:17:21.936 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-01-06 00:17:21.937 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/favicon-32x32.png - 200 628 image/png 37.4141ms
+2025-01-06 00:18:14.531 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundarygAx9tvkvTnJh4B3g 91591
+2025-01-06 00:18:14.542 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:18:14.545 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 00:18:58.580 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 00:18:58.583 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI) in 44037.8563ms
+2025-01-06 00:18:58.583 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:18:58.584 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - 200 null application/json; charset=utf-8 44054.1584ms
+2025-01-06 00:19:12.972 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - null null
+2025-01-06 00:19:12.991 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-01-06 00:19:12.992 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-01-06 00:19:12.992 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - 405 0 null 20.5291ms
+2025-01-06 00:24:44.945 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 00:24:45.296 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 00:24:45.299 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 00:24:45.427 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 00:24:45.432 +05:30 [INF] Hosting environment: Development
+2025-01-06 00:24:45.438 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 00:24:45.910 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 00:24:46.188 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 285.2091ms
+2025-01-06 00:24:46.224 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 00:24:46.233 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 9.5374ms
+2025-01-06 00:24:46.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 00:24:46.455 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.9458ms
+2025-01-06 00:24:47.147 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 00:24:47.195 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.9241ms
+2025-01-06 00:25:08.028 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundarydO7DGNyyg6CL5VN2 91591
+2025-01-06 00:25:08.262 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:25:08.294 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 00:26:54.290 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 00:26:54.621 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 00:26:54.624 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 00:26:54.709 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 00:26:54.713 +05:30 [INF] Hosting environment: Development
+2025-01-06 00:26:54.716 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 00:26:55.362 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 00:26:55.576 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 235.9041ms
+2025-01-06 00:26:55.624 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 00:26:55.638 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 8.5619ms
+2025-01-06 00:26:55.878 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 00:26:55.976 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.6266ms
+2025-01-06 00:26:56.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 00:26:56.663 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.1731ms
+2025-01-06 00:27:28.430 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundaryVNX6AkaL0ENiB5Fx 91591
+2025-01-06 00:27:28.688 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:27:28.724 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 00:27:55.089 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 00:27:55.109 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI) in 26381.5686ms
+2025-01-06 00:27:55.110 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:27:55.112 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - 200 null application/json; charset=utf-8 26692.2851ms
+2025-01-06 00:28:57.836 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 00:28:58.116 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 00:28:58.121 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 00:28:58.247 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 00:28:58.253 +05:30 [INF] Hosting environment: Development
+2025-01-06 00:28:58.256 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 00:28:58.597 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 00:28:58.822 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 241.4405ms
+2025-01-06 00:28:59.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 00:28:59.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 00:28:59.085 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 5.173ms
+2025-01-06 00:28:59.120 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.417ms
+2025-01-06 00:28:59.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 00:28:59.765 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.4485ms
+2025-01-06 00:29:19.582 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundary0nlmyRtJQoAjINWN 91591
+2025-01-06 00:29:19.728 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:29:19.762 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 00:29:22.219 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 00:29:22.236 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI) in 2469.6734ms
+2025-01-06 00:29:22.236 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 00:29:22.238 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Anmol - 200 null application/json; charset=utf-8 2655.6209ms
+2025-01-06 11:20:30.675 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:20:31.707 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:20:31.715 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:20:31.982 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:20:31.990 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:20:31.996 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:20:35.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:20:36.531 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 789.6048ms
+2025-01-06 11:20:36.603 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:20:36.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 15.2641ms
+2025-01-06 11:20:36.965 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:20:37.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 285.2349ms
+2025-01-06 11:20:38.860 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:20:38.954 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 95.2137ms
+2025-01-06 11:21:35.976 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundaryWIxRODhcUopf7ucQ 288509
+2025-01-06 11:21:41.153 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:21:41.246 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 11:23:06.717 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:23:07.306 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:23:07.311 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:23:07.481 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:23:07.486 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:23:07.491 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:23:08.671 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:23:09.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 664.1352ms
+2025-01-06 11:23:09.371 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:23:09.401 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 37.4708ms
+2025-01-06 11:23:09.691 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:23:09.773 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.7872ms
+2025-01-06 11:23:11.517 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:23:11.600 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.6515ms
+2025-01-06 11:23:55.926 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundaryYoqHr1AX0fZ5odAs 288509
+2025-01-06 11:23:56.437 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:23:56.593 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 11:24:17.619 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 11:24:17.652 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI) in 21050.6295ms
+2025-01-06 11:24:17.653 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:24:17.657 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - 200 null application/json; charset=utf-8 21731.8024ms
+2025-01-06 11:29:40.581 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:29:41.390 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:29:41.402 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:29:41.767 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:29:41.781 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:29:41.787 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:29:42.368 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:29:42.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 578.0508ms
+2025-01-06 11:29:43.397 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:29:43.397 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:29:43.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 9.6421ms
+2025-01-06 11:29:43.493 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.9998ms
+2025-01-06 11:29:44.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:29:44.574 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.0394ms
+2025-01-06 11:30:13.174 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundarytb3VAdVSSzgziCRq 288509
+2025-01-06 11:30:13.623 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:30:13.782 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 11:33:44.430 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:33:45.247 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:33:45.253 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:33:45.412 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:33:45.419 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:33:45.425 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:33:45.887 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:33:46.502 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 637.0861ms
+2025-01-06 11:33:46.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:33:46.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:33:46.958 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 14.8928ms
+2025-01-06 11:33:47.028 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.2202ms
+2025-01-06 11:33:48.144 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:33:48.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 110.7671ms
+2025-01-06 11:34:17.976 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundaryFenC2ViNSXgIOcHu 288509
+2025-01-06 11:34:18.523 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:34:18.697 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 11:35:08.597 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:35:09.561 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:35:09.568 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:35:09.755 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:35:09.770 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:35:09.774 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:35:10.251 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:35:10.975 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 744.563ms
+2025-01-06 11:35:11.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:35:11.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:35:11.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 12.6847ms
+2025-01-06 11:35:11.583 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.3264ms
+2025-01-06 11:35:13.196 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:35:13.258 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.5155ms
+2025-01-06 11:35:44.989 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundaryFJgJEGFZxPxV1aAD 288509
+2025-01-06 11:35:45.267 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:35:45.467 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 11:36:04.819 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 11:36:16.085 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI) in 30606.8636ms
+2025-01-06 11:36:16.087 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:36:16.093 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - 200 null application/json; charset=utf-8 31104.4561ms
+2025-01-06 11:48:20.035 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:48:21.343 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:48:21.353 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:48:21.656 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:48:21.677 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:48:21.683 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:48:22.200 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:48:22.822 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 645.9246ms
+2025-01-06 11:48:23.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:48:23.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:48:23.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 15.1347ms
+2025-01-06 11:48:23.446 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 149.0717ms
+2025-01-06 11:48:24.948 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:48:25.011 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.1765ms
+2025-01-06 11:49:06.977 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundaryyG4WySyuaQg6EEct 288509
+2025-01-06 11:49:07.399 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:49:07.435 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 11:50:52.702 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:50:53.205 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:50:53.211 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:50:53.341 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:50:53.347 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:50:53.351 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:50:54.314 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:50:54.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 328.5842ms
+2025-01-06 11:50:54.681 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:50:54.697 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 15.2317ms
+2025-01-06 11:50:54.985 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:50:55.065 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.8304ms
+2025-01-06 11:50:56.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:50:56.270 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.4104ms
+2025-01-06 11:51:18.559 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundarycHnMWJj1vAcY9Z9x 288509
+2025-01-06 11:51:18.851 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:51:18.913 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 11:53:02.872 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 11:53:02.907 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI) in 103987.0127ms
+2025-01-06 11:53:02.908 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:53:02.911 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - 200 null application/json; charset=utf-8 104354.6713ms
+2025-01-06 11:53:18.988 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Multi/Anmol/_IMG_1449.png - null null
+2025-01-06 11:53:19.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Multi/Anmol/_IMG_1449.png - 404 0 null 69.1647ms
+2025-01-06 11:53:19.044 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7201/Multi/Anmol/_IMG_1449.png, Response status code: 404
+2025-01-06 11:53:56.796 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:53:57.104 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:53:57.109 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:53:57.189 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:53:57.193 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:53:57.196 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:53:57.695 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:53:58.011 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 334.918ms
+2025-01-06 11:53:58.031 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:53:58.041 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 10.0979ms
+2025-01-06 11:53:58.277 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:53:58.332 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.9313ms
+2025-01-06 11:53:59.044 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:53:59.084 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 41.2683ms
+2025-01-06 11:54:20.950 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundaryXp67xmOYSANKQvhv 288509
+2025-01-06 11:54:21.253 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:54:21.291 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 11:54:24.691 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 11:54:24.708 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI) in 3413.4872ms
+2025-01-06 11:54:24.708 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:54:24.711 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - 200 null application/json; charset=utf-8 3760.1171ms
+2025-01-06 11:54:35.473 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Multi/Anmol/_IMG_1449.png - null null
+2025-01-06 11:54:35.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Multi/Anmol/_IMG_1449.png - 404 0 null 29.2207ms
+2025-01-06 11:54:35.502 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7201/Multi/Anmol/_IMG_1449.png, Response status code: 404
+2025-01-06 11:54:54.721 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/wwwroot/Multi/Anmol/_IMG_1449.png - null null
+2025-01-06 11:54:54.730 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/wwwroot/Multi/Anmol/_IMG_1449.png - 404 0 null 9.68ms
+2025-01-06 11:54:54.730 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7201/wwwroot/Multi/Anmol/_IMG_1449.png, Response status code: 404
+2025-01-06 11:56:41.297 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:56:41.631 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:56:41.634 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:56:41.718 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:56:41.721 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:56:41.723 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:56:42.497 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:56:43.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 880.4692ms
+2025-01-06 11:56:43.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:56:43.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 10.4973ms
+2025-01-06 11:56:43.653 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:56:43.718 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.1298ms
+2025-01-06 11:56:44.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:56:44.589 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.8009ms
+2025-01-06 11:57:03.990 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundarygrdJPA8DRQ8u9c4j 288509
+2025-01-06 11:57:04.310 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:57:04.345 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 11:57:06.185 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 11:57:06.201 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI) in 1852.0559ms
+2025-01-06 11:57:06.202 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 11:57:06.204 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - 200 null application/json; charset=utf-8 2214.65ms
+2025-01-06 11:57:16.916 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/_IMG_1449.png - null null
+2025-01-06 11:57:16.978 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/_IMG_1449.png - 404 0 null 62.7989ms
+2025-01-06 11:57:16.979 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7201/Uploads/Multi/Anmol/_IMG_1449.png, Response status code: 404
+2025-01-06 11:57:41.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1449.png - null null
+2025-01-06 11:57:41.354 +05:30 [INF] Sending file. Request path: '/Uploads/Multi/Anmol/Anmol_IMG_1449.png'. Physical path: 'D:\Projects\DSAPrac\NewAPI\PracticeAPI\wwwroot\Uploads\Multi\Anmol\Anmol_IMG_1449.png'
+2025-01-06 11:57:41.354 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1449.png - 200 196769 image/png 48.0015ms
+2025-01-06 11:57:42.057 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/favicon.ico - null null
+2025-01-06 11:57:42.063 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/favicon.ico - 404 0 null 6.5079ms
+2025-01-06 11:57:42.064 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7201/favicon.ico, Response status code: 404
+2025-01-06 11:59:39.006 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 11:59:39.298 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 11:59:39.301 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 11:59:39.384 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 11:59:39.389 +05:30 [INF] Hosting environment: Development
+2025-01-06 11:59:39.392 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 11:59:40.147 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 11:59:40.359 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 227.9582ms
+2025-01-06 11:59:40.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 11:59:40.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 11.2478ms
+2025-01-06 11:59:40.547 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 11:59:40.614 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.9396ms
+2025-01-06 11:59:41.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 11:59:41.765 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.4363ms
+2025-01-06 12:00:00.366 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - multipart/form-data; boundary=----WebKitFormBoundaryQsZy1EY2aGtiuVzh 288509
+2025-01-06 12:00:00.685 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 12:00:00.722 +05:30 [INF] Route matched with {action = "UploadMultiple", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadMultiple(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:00:03.137 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 12:00:03.154 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI) in 2428.6339ms
+2025-01-06 12:00:03.154 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadMultiple (PracticeAPI)'
+2025-01-06 12:00:03.156 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadMultipleImage?username=Anmol - 200 null application/json; charset=utf-8 2790.0742ms
+2025-01-06 12:00:14.378 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1451.JPG - null null
+2025-01-06 12:00:14.433 +05:30 [INF] Sending file. Request path: '/Uploads/Multi/Anmol/Anmol_IMG_1451.JPG'. Physical path: 'D:\Projects\DSAPrac\NewAPI\PracticeAPI\wwwroot\Uploads\Multi\Anmol\Anmol_IMG_1451.JPG'
+2025-01-06 12:00:14.434 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1451.JPG - 200 91401 image/jpeg 56.3553ms
+2025-01-06 12:00:26.258 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1449.png - null null
+2025-01-06 12:00:26.306 +05:30 [INF] Sending file. Request path: '/Uploads/Multi/Anmol/Anmol_IMG_1449.png'. Physical path: 'D:\Projects\DSAPrac\NewAPI\PracticeAPI\wwwroot\Uploads\Multi\Anmol\Anmol_IMG_1449.png'
+2025-01-06 12:00:26.306 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1449.png - 200 196769 image/png 47.7436ms
+2025-01-06 12:11:19.433 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 12:11:19.922 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 12:11:19.926 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 12:11:20.020 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 12:11:20.025 +05:30 [INF] Hosting environment: Development
+2025-01-06 12:11:20.028 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 12:11:20.916 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 12:11:21.194 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 294.7722ms
+2025-01-06 12:11:21.244 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 12:11:21.257 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 12.9785ms
+2025-01-06 12:11:21.543 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 12:11:21.628 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.9511ms
+2025-01-06 12:11:22.633 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 12:11:22.683 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.6056ms
+2025-01-06 12:12:11.480 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=Anmol_IMG_1449.png - null null
+2025-01-06 12:12:11.730 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:12:11.763 +05:30 [INF] Route matched with {action = "DownloadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DownloadImage(System.String, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:12:43.874 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-01-06 12:12:43.906 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI) in 32128.6531ms
+2025-01-06 12:12:43.906 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:12:43.906 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=Anmol_IMG_1449.png - 404 null application/problem+json; charset=utf-8 32426.6556ms
+2025-01-06 12:12:48.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_Anmol_IMG_1449.png - null null
+2025-01-06 12:12:48.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_Anmol_IMG_1449.png - 404 0 null 36.589ms
+2025-01-06 12:12:49.011 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_Anmol_IMG_1449.png, Response status code: 404
+2025-01-06 12:13:42.235 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1449.png - null null
+2025-01-06 12:13:42.267 +05:30 [INF] The file /Uploads/Multi/Anmol/Anmol_IMG_1449.png was not modified
+2025-01-06 12:13:42.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1449.png - 304 null image/png 34.2066ms
+2025-01-06 12:14:32.819 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 12:14:33.252 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 12:14:33.257 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 12:14:33.391 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 12:14:33.396 +05:30 [INF] Hosting environment: Development
+2025-01-06 12:14:33.399 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 12:14:34.140 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 12:14:34.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 320.9812ms
+2025-01-06 12:14:34.937 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 12:14:34.937 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 12:14:34.954 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 17.2947ms
+2025-01-06 12:14:35.071 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 134.0874ms
+2025-01-06 12:14:35.977 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 12:14:36.040 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.7236ms
+2025-01-06 12:14:56.492 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1499.png - null null
+2025-01-06 12:14:56.695 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:14:56.735 +05:30 [INF] Route matched with {action = "DownloadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DownloadImage(System.String, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:15:25.875 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-01-06 12:15:25.901 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI) in 29154.6087ms
+2025-01-06 12:15:25.901 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:15:25.901 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1499.png - 404 null application/problem+json; charset=utf-8 29409.8537ms
+2025-01-06 12:15:29.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1499.png - null null
+2025-01-06 12:15:29.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1499.png - 404 0 null 19.952ms
+2025-01-06 12:15:29.409 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1499.png, Response status code: 404
+2025-01-06 12:16:05.993 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - null null
+2025-01-06 12:16:05.999 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:16:06.000 +05:30 [INF] Route matched with {action = "DownloadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DownloadImage(System.String, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:16:12.836 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-01-06 12:16:12.837 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI) in 6836.9545ms
+2025-01-06 12:16:12.837 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:16:12.837 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - 404 null application/problem+json; charset=utf-8 6844.7623ms
+2025-01-06 12:16:35.761 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - null null
+2025-01-06 12:16:35.762 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:16:35.762 +05:30 [INF] Route matched with {action = "DownloadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DownloadImage(System.String, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:16:53.128 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-01-06 12:16:53.133 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI) in 17370.0138ms
+2025-01-06 12:16:53.136 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:16:53.137 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - 404 null application/problem+json; charset=utf-8 17376.1596ms
+2025-01-06 12:16:58.162 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1449.png - null null
+2025-01-06 12:16:58.180 +05:30 [INF] The file /Uploads/Multi/Anmol/Anmol_IMG_1449.png was not modified
+2025-01-06 12:16:58.182 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/Uploads/Multi/Anmol/Anmol_IMG_1449.png - 304 null image/png 20.7452ms
+2025-01-06 12:21:14.043 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 12:21:14.330 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 12:21:14.335 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 12:21:14.418 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 12:21:14.423 +05:30 [INF] Hosting environment: Development
+2025-01-06 12:21:14.426 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 12:21:15.186 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 12:21:15.413 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 235.6765ms
+2025-01-06 12:21:15.435 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 12:21:15.444 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 9.9261ms
+2025-01-06 12:21:15.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 12:21:15.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.0059ms
+2025-01-06 12:21:16.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 12:21:16.553 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.1087ms
+2025-01-06 12:21:58.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - null null
+2025-01-06 12:21:58.638 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:21:58.664 +05:30 [INF] Route matched with {action = "DownloadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DownloadImage(System.String, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:24:47.673 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-06 12:24:47.679 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI) in 169009.7081ms
+2025-01-06 12:24:47.679 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:24:47.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - 400 null text/plain; charset=utf-8 169368.6914ms
+2025-01-06 12:24:50.413 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - null null
+2025-01-06 12:24:50.417 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:24:50.425 +05:30 [INF] Route matched with {action = "DownloadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DownloadImage(System.String, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:25:48.866 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-06 12:25:48.867 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI) in 58441.1801ms
+2025-01-06 12:25:48.867 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:25:48.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - 400 null text/plain; charset=utf-8 58456.3331ms
+2025-01-06 12:25:50.955 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - null null
+2025-01-06 12:25:50.959 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:25:50.964 +05:30 [INF] Route matched with {action = "DownloadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DownloadImage(System.String, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:26:01.450 +05:30 [INF] Executing FileStreamResult, sending file with download name 'IMG_1449.png' ...
+2025-01-06 12:26:01.471 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI) in 10506.3398ms
+2025-01-06 12:26:01.471 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.DownloadImage (PracticeAPI)'
+2025-01-06 12:26:01.471 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/DownloadImage?username=Anmol&filename=IMG_1449.png - 200 196769 application/octet-stream 10517.1676ms
+2025-01-06 12:37:34.879 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-06 12:37:34.921 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-06 12:37:35.181 +05:30 [INF] Executed DbCommand (251ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-06 12:37:35.312 +05:30 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-06 12:37:35.323 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-06 12:37:35.324 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-06 12:37:35.801 +05:30 [INF] Executed DbCommand (475ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-06 12:37:35.815 +05:30 [INF] Applying migration '20250106070712_Images'.
+2025-01-06 12:37:35.968 +05:30 [INF] Executed DbCommand (135ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserImages] (
+    [Id] int NOT NULL IDENTITY,
+    [UserName] nvarchar(max) NOT NULL,
+    [ImagePath] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_UserImages] PRIMARY KEY ([Id])
+);
+2025-01-06 12:37:36.018 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250106070712_Images', N'9.0.0');
+2025-01-06 12:37:36.040 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-01-06 12:42:36.965 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 12:42:37.308 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 12:42:37.312 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 12:42:37.395 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 12:42:37.400 +05:30 [INF] Hosting environment: Development
+2025-01-06 12:42:37.402 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 12:42:38.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 12:42:38.774 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 431.3532ms
+2025-01-06 12:42:38.806 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 12:42:38.816 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 9.9075ms
+2025-01-06 12:42:39.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 12:42:39.229 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.8041ms
+2025-01-06 12:42:40.172 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 12:42:40.221 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.108ms
+2025-01-06 12:42:55.064 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Abhi - multipart/form-data; boundary=----WebKitFormBoundary6TYwYnw5lm0L970s 196958
+2025-01-06 12:42:55.382 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 12:42:55.423 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:43:07.816 +05:30 [INF] Executed DbCommand (1,312ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserImages] ([ImagePath], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-01-06 12:43:47.350 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 12:43:47.367 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI) in 51940.793ms
+2025-01-06 12:43:47.368 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 12:43:47.376 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Abhi - 200 null application/json; charset=utf-8 52311.9503ms
+2025-01-06 12:50:44.991 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 12:50:45.463 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 12:50:45.467 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 12:50:45.548 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 12:50:45.554 +05:30 [INF] Hosting environment: Development
+2025-01-06 12:50:45.557 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 12:50:46.550 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 12:50:46.891 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 363.8429ms
+2025-01-06 12:50:47.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 12:50:47.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 12:50:47.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 8.5365ms
+2025-01-06 12:50:47.373 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.0759ms
+2025-01-06 12:50:48.364 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 12:50:48.453 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.3808ms
+2025-01-06 12:51:01.893 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Abhi - multipart/form-data; boundary=----WebKitFormBoundaryB0E9d7CiMf8LHH1C 196958
+2025-01-06 12:51:02.230 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 12:51:02.302 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:52:06.172 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 12:52:06.455 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 12:52:06.459 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 12:52:06.536 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 12:52:06.541 +05:30 [INF] Hosting environment: Development
+2025-01-06 12:52:06.544 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 12:52:07.130 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 12:52:07.362 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 247.7035ms
+2025-01-06 12:52:07.390 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 12:52:07.409 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 19.3144ms
+2025-01-06 12:52:07.616 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 12:52:08.357 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 741.7784ms
+2025-01-06 12:52:08.570 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 12:52:08.593 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.9294ms
+2025-01-06 12:52:23.780 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Abhi - multipart/form-data; boundary=----WebKitFormBoundaryEJILhofBmgNYUrNC 196958
+2025-01-06 12:52:24.263 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 12:52:24.311 +05:30 [INF] Route matched with {action = "UploadImage", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 12:52:37.396 +05:30 [INF] Executed DbCommand (1,696ms) [Parameters=[@p0='?' (Size = -1), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserImages] ([ImagePath], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-01-06 12:52:42.541 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.APIResponse'.
+2025-01-06 12:52:42.561 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI) in 18244.4222ms
+2025-01-06 12:52:42.561 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.UploadImage (PracticeAPI)'
+2025-01-06 12:52:42.569 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/FileHandling/UploadImage?username=Abhi - 200 null application/json; charset=utf-8 18789.5225ms
+2025-01-06 12:57:56.472 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 12:57:56.829 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 12:57:56.834 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 12:57:56.953 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 12:57:56.957 +05:30 [INF] Hosting environment: Development
+2025-01-06 12:57:56.961 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 12:57:57.435 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 12:57:57.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 231.9285ms
+2025-01-06 12:57:57.679 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 12:57:57.688 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 9.712ms
+2025-01-06 12:57:57.864 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 12:57:57.924 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.6279ms
+2025-01-06 12:57:58.552 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 12:57:58.603 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.558ms
+2025-01-06 12:59:42.706 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 12:59:43.012 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 12:59:43.016 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 12:59:43.107 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 12:59:43.113 +05:30 [INF] Hosting environment: Development
+2025-01-06 12:59:43.117 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 12:59:43.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 12:59:43.830 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 224.7437ms
+2025-01-06 12:59:43.871 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 12:59:43.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 9.5813ms
+2025-01-06 12:59:44.059 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 12:59:44.108 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.1561ms
+2025-01-06 12:59:44.719 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 12:59:44.768 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.8916ms
+2025-01-06 13:01:12.010 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 13:01:12.309 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 13:01:12.311 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 13:01:12.398 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 13:01:12.402 +05:30 [INF] Hosting environment: Development
+2025-01-06 13:01:12.404 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 13:01:13.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 13:01:13.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 253.9908ms
+2025-01-06 13:01:13.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 13:01:13.321 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 10.5055ms
+2025-01-06 13:01:13.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 13:01:13.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.2827ms
+2025-01-06 13:01:14.168 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 13:01:14.202 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.7118ms
+2025-01-06 13:01:20.950 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/ImageFromBase64?base64url=%09%20Failed%20to%20fetch.%20Possible%20Reasons%3A%20%20CORS%20Network%20Failure%20URL%20scheme%20must%20be%20%22http%22%20or%20%22https%22%20for%20CORS%20request. - null null
+2025-01-06 13:01:21.125 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.GetImage (PracticeAPI)'
+2025-01-06 13:01:21.158 +05:30 [INF] Route matched with {action = "GetImage", controller = "FileHandling"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetImage(System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 13:01:25.100 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.GetImage (PracticeAPI) in 3937.8071ms
+2025-01-06 13:01:25.106 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.GetImage (PracticeAPI)'
+2025-01-06 13:01:25.177 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at PracticeAPI.Controllers.FileHandlingController.GetImage(String base64url) in D:\Projects\DSAPrac\NewAPI\PracticeAPI\Controllers\FileHandlingController.cs:line 174
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-06 13:01:25.188 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/ImageFromBase64?base64url=%09%20Failed%20to%20fetch.%20Possible%20Reasons%3A%20%20CORS%20Network%20Failure%20URL%20scheme%20must%20be%20%22http%22%20or%20%22https%22%20for%20CORS%20request. - 500 null text/plain; charset=utf-8 4238.4366ms
+2025-01-06 13:01:50.587 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/ImageFromBase64?base64url=%09%20Failed%20to%20fetch.%20Possible%20Reasons%3A%20%20CORS%20Network%20Failure%20URL%20scheme%20must%20be%20%22http%22%20or%20%22https%22%20for%20CORS%20request. - null null
+2025-01-06 13:01:50.599 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.GetImage (PracticeAPI)'
+2025-01-06 13:01:50.600 +05:30 [INF] Route matched with {action = "GetImage", controller = "FileHandling"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetImage(System.String) on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 13:02:28.481 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 13:02:28.822 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 13:02:28.826 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 13:02:28.950 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 13:02:28.954 +05:30 [INF] Hosting environment: Development
+2025-01-06 13:02:28.957 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 13:02:29.390 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 13:02:29.604 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 231.0491ms
+2025-01-06 13:02:29.649 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 13:02:29.664 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 14.8518ms
+2025-01-06 13:02:29.836 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 13:02:29.889 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.5871ms
+2025-01-06 13:02:30.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 13:02:30.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.7242ms
+2025-01-06 13:03:13.573 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 13:03:13.836 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 13:03:13.840 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 13:03:13.939 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 13:03:13.943 +05:30 [INF] Hosting environment: Development
+2025-01-06 13:03:13.946 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 13:03:14.559 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 13:03:14.757 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 211.4513ms
+2025-01-06 13:03:15.000 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 13:03:15.000 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 13:03:15.011 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 11.1508ms
+2025-01-06 13:03:15.061 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.8486ms
+2025-01-06 13:03:15.599 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 13:03:15.644 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.5487ms
+2025-01-06 13:05:03.319 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 13:05:03.579 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 13:05:03.581 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 13:05:03.681 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 13:05:03.687 +05:30 [INF] Hosting environment: Development
+2025-01-06 13:05:03.691 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 13:05:04.097 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 13:05:04.345 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 261.8636ms
+2025-01-06 13:05:04.591 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 13:05:04.591 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 13:05:04.615 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 23.246ms
+2025-01-06 13:05:04.650 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.0988ms
+2025-01-06 13:05:05.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 13:05:05.381 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - PracticeAPI.Controllers.FileHandlingController.GetbasePath (PracticeAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-06 13:05:05.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 93.0674ms
+2025-01-06 13:05:40.721 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 13:05:41.046 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 13:05:41.051 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 13:05:41.134 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 13:05:41.138 +05:30 [INF] Hosting environment: Development
+2025-01-06 13:05:41.142 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 13:05:42.105 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 13:05:42.329 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 233.0371ms
+2025-01-06 13:05:42.368 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 13:05:42.380 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 11.4082ms
+2025-01-06 13:05:42.557 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 13:05:42.627 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.8108ms
+2025-01-06 13:05:43.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 13:05:43.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.3184ms
+2025-01-06 22:20:02.149 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 22:20:02.781 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 22:20:02.787 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 22:20:02.949 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 22:20:02.953 +05:30 [INF] Hosting environment: Development
+2025-01-06 22:20:02.957 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 22:20:07.625 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 22:20:08.453 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 845.1687ms
+2025-01-06 22:20:08.909 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 22:20:08.911 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 22:20:08.956 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 46.0272ms
+2025-01-06 22:20:09.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 392.8703ms
+2025-01-06 22:20:13.355 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 22:20:13.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.1533ms
+2025-01-06 22:20:49.256 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/GetExcelData - null null
+2025-01-06 22:20:50.641 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.GetExcel (PracticeAPI)'
+2025-01-06 22:20:50.675 +05:30 [INF] Route matched with {action = "GetExcel", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetExcel() on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 22:21:05.978 +05:30 [INF] Executed DbCommand (1,041ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[DepartmentId], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-06 22:22:50.706 +05:30 [INF] Executed DbCommand (147ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[DepartmentId], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-06 22:23:26.224 +05:30 [INF] Executing FileContentResult, sending file with download name 'StudentSheet_1/6/2025_10:22:52_PM.xlsx' ...
+2025-01-06 22:23:26.317 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.GetExcel (PracticeAPI) in 155602.086ms
+2025-01-06 22:23:26.317 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.GetExcel (PracticeAPI)'
+2025-01-06 22:23:26.324 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/GetExcelData - 200 8031 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 157068.7504ms
+2025-01-06 22:28:50.514 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 22:28:51.017 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 22:28:51.021 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 22:28:51.204 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 22:28:51.211 +05:30 [INF] Hosting environment: Development
+2025-01-06 22:28:51.216 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 22:28:52.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 22:28:52.766 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 302.8405ms
+2025-01-06 22:28:52.772 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 22:28:52.785 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 13.0936ms
+2025-01-06 22:28:52.970 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 22:28:53.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.7972ms
+2025-01-06 22:28:53.929 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 22:28:54.027 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 98.3147ms
+2025-01-06 22:29:04.629 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/GetExcelData - null null
+2025-01-06 22:29:04.847 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.GetExcel (PracticeAPI)'
+2025-01-06 22:29:04.882 +05:30 [INF] Route matched with {action = "GetExcel", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetExcel() on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 22:29:12.708 +05:30 [INF] Executed DbCommand (660ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[DepartmentId], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-06 22:29:14.242 +05:30 [INF] Executing FileContentResult, sending file with download name 'StudentSheet_1/6/2025_10:29:12_PM.xlsx' ...
+2025-01-06 22:29:14.257 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.GetExcel (PracticeAPI) in 9371.6568ms
+2025-01-06 22:29:14.258 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.GetExcel (PracticeAPI)'
+2025-01-06 22:29:14.266 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/GetExcelData - 200 8103 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 9638.1257ms
+2025-01-06 22:33:30.559 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 22:33:31.720 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 22:33:31.725 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 22:33:31.899 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 22:33:31.904 +05:30 [INF] Hosting environment: Development
+2025-01-06 22:33:31.907 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 22:33:32.732 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 22:33:33.111 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 392.4096ms
+2025-01-06 22:33:33.451 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 22:33:33.451 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 22:33:33.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 12.683ms
+2025-01-06 22:33:33.511 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.9073ms
+2025-01-06 22:33:34.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 22:33:34.337 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.6227ms
+2025-01-06 22:33:46.576 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/FileHandling/GetExcelData - null null
+2025-01-06 22:33:46.874 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.GetExcel (PracticeAPI)'
+2025-01-06 22:33:46.905 +05:30 [INF] Route matched with {action = "GetExcel", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetExcel() on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 22:33:53.492 +05:30 [INF] Executed DbCommand (285ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[DepartmentId], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-06 22:33:57.309 +05:30 [INF] Executing FileContentResult, sending file with download name 'StudentSheet_1/6/2025_10:33:53_PM.xlsx' ...
+2025-01-06 22:33:57.326 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.GetExcel (PracticeAPI) in 10417.3451ms
+2025-01-06 22:33:57.327 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.GetExcel (PracticeAPI)'
+2025-01-06 22:33:57.337 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/FileHandling/GetExcelData - 200 8263 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 10760.9804ms
+2025-01-06 23:20:42.279 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 23:20:43.297 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 23:20:43.305 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 23:20:43.637 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 23:20:43.648 +05:30 [INF] Hosting environment: Development
+2025-01-06 23:20:43.655 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 23:20:45.090 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 23:20:45.722 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 677.4315ms
+2025-01-06 23:20:45.777 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 23:20:45.789 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 12.0876ms
+2025-01-06 23:20:46.078 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 23:20:46.158 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.6152ms
+2025-01-06 23:20:47.528 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 23:20:47.611 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.5009ms
+2025-01-06 23:20:58.495 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/FileHandling/SendEmail - null 0
+2025-01-06 23:20:58.538 +05:30 [INF] CORS policy execution successful.
+2025-01-06 23:20:58.974 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI)'
+2025-01-06 23:20:59.040 +05:30 [INF] Route matched with {action = "SendEmail", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SendEmail() on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 23:22:33.850 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 23:22:34.644 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 23:22:34.650 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 23:22:34.959 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 23:22:34.964 +05:30 [INF] Hosting environment: Development
+2025-01-06 23:22:34.969 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 23:22:36.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 23:22:36.747 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 665.8549ms
+2025-01-06 23:22:36.797 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 23:22:36.813 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 16.2606ms
+2025-01-06 23:22:37.286 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 23:22:37.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.7543ms
+2025-01-06 23:22:40.946 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 23:22:41.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.163ms
+2025-01-06 23:22:48.543 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/FileHandling/SendEmail - null 0
+2025-01-06 23:22:48.561 +05:30 [INF] CORS policy execution successful.
+2025-01-06 23:22:49.009 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI)'
+2025-01-06 23:22:49.130 +05:30 [INF] Route matched with {action = "SendEmail", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SendEmail() on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 23:24:46.414 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 23:24:47.067 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 23:24:47.076 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 23:24:47.397 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 23:24:47.406 +05:30 [INF] Hosting environment: Development
+2025-01-06 23:24:47.413 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 23:24:48.550 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 23:24:48.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 451.6769ms
+2025-01-06 23:24:49.071 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 23:24:49.087 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 15.2251ms
+2025-01-06 23:24:49.319 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 23:24:49.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.5258ms
+2025-01-06 23:24:50.493 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 23:24:50.562 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.9459ms
+2025-01-06 23:24:58.706 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/FileHandling/SendEmail - null 0
+2025-01-06 23:24:58.739 +05:30 [INF] CORS policy execution successful.
+2025-01-06 23:24:59.044 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI)'
+2025-01-06 23:24:59.140 +05:30 [INF] Route matched with {action = "SendEmail", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SendEmail() on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 23:25:28.244 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.MailRequest'.
+2025-01-06 23:25:31.277 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI) in 32128.7254ms
+2025-01-06 23:25:31.278 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI)'
+2025-01-06 23:25:31.315 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/FileHandling/SendEmail - 200 null application/json; charset=utf-8 32610.3746ms
+2025-01-06 23:42:27.359 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 23:42:28.708 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 23:42:28.720 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 23:42:29.209 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 23:42:29.224 +05:30 [INF] Hosting environment: Development
+2025-01-06 23:42:29.252 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 23:42:30.068 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 23:42:30.730 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 686.932ms
+2025-01-06 23:42:30.791 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 23:42:30.843 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 52.1731ms
+2025-01-06 23:42:31.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 23:42:31.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 135.2965ms
+2025-01-06 23:42:33.927 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 23:42:34.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 296.0266ms
+2025-01-06 23:42:42.851 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/FileHandling/SendEmail - null 0
+2025-01-06 23:42:42.868 +05:30 [INF] CORS policy execution successful.
+2025-01-06 23:42:43.322 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI)'
+2025-01-06 23:42:43.481 +05:30 [INF] Route matched with {action = "SendEmail", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SendEmail() on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 23:43:16.593 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-06 23:43:16.608 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI) in 33113.7226ms
+2025-01-06 23:43:16.608 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI)'
+2025-01-06 23:43:16.631 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/FileHandling/SendEmail - 400 null text/plain; charset=utf-8 33781.477ms
+2025-01-06 23:44:10.841 +05:30 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 23:44:11.444 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-06 23:44:11.454 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-06 23:44:11.727 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 23:44:11.732 +05:30 [INF] Hosting environment: Development
+2025-01-06 23:44:11.735 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-06 23:44:12.374 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-06 23:44:12.811 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 484.5321ms
+2025-01-06 23:44:12.842 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 23:44:12.883 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 41.3264ms
+2025-01-06 23:44:13.262 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-06 23:44:13.365 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.0339ms
+2025-01-06 23:44:16.207 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-06 23:44:16.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.9783ms
+2025-01-06 23:44:24.253 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/FileHandling/SendEmail - null 0
+2025-01-06 23:44:24.265 +05:30 [INF] CORS policy execution successful.
+2025-01-06 23:44:24.585 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI)'
+2025-01-06 23:44:24.666 +05:30 [INF] Route matched with {action = "SendEmail", controller = "FileHandling"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SendEmail() on controller PracticeAPI.Controllers.FileHandlingController (PracticeAPI).
+2025-01-06 23:44:58.437 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.MailRequest'.
+2025-01-06 23:44:58.469 +05:30 [INF] Executed action PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI) in 33795.2487ms
+2025-01-06 23:44:58.471 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.FileHandlingController.SendEmail (PracticeAPI)'
+2025-01-06 23:44:58.487 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/FileHandling/SendEmail - 200 null application/json; charset=utf-8 34234.2755ms

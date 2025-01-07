@@ -1,0 +1,52 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/PracticeAPI/Uploads/Multi/Anmol/Anmol_IMG_1449.6tx7om819d.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Multi\Anmol\Anmol_IMG_1449.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6tx7om819d"},{"Name":"integrity","Value":"sha256-6paasWo0fK1LHB0x5WTj5bs\u002BBjyLtRbZzeB2qKkKs84="},{"Name":"label","Value":"_content/PracticeAPI/Uploads/Multi/Anmol/Anmol_IMG_1449.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"196769"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00226paasWo0fK1LHB0x5WTj5bs\u002BBjyLtRbZzeB2qKkKs84=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 06:30:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PracticeAPI/Uploads/Multi/Anmol/Anmol_IMG_1449.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Multi\Anmol\Anmol_IMG_1449.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6paasWo0fK1LHB0x5WTj5bs\u002BBjyLtRbZzeB2qKkKs84="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"196769"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00226paasWo0fK1LHB0x5WTj5bs\u002BBjyLtRbZzeB2qKkKs84=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 06:30:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PracticeAPI/Uploads/Multi/Anmol/Anmol_IMG_1451.fx332dmpsv.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Multi\Anmol\Anmol_IMG_1451.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fx332dmpsv"},{"Name":"integrity","Value":"sha256-o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo="},{"Name":"label","Value":"_content/PracticeAPI/Uploads/Multi/Anmol/Anmol_IMG_1451.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"91401"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 06:30:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PracticeAPI/Uploads/Multi/Anmol/Anmol_IMG_1451.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Multi\Anmol\Anmol_IMG_1451.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"91401"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 06:30:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PracticeAPI/Uploads/Users/Abhi/Abhi_IMG_1449.6tx7om819d.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Users\Abhi\Abhi_IMG_1449.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6tx7om819d"},{"Name":"integrity","Value":"sha256-6paasWo0fK1LHB0x5WTj5bs\u002BBjyLtRbZzeB2qKkKs84="},{"Name":"label","Value":"_content/PracticeAPI/Uploads/Users/Abhi/Abhi_IMG_1449.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"196769"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00226paasWo0fK1LHB0x5WTj5bs\u002BBjyLtRbZzeB2qKkKs84=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 07:22:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PracticeAPI/Uploads/Users/Abhi/Abhi_IMG_1449.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Users\Abhi\Abhi_IMG_1449.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6paasWo0fK1LHB0x5WTj5bs\u002BBjyLtRbZzeB2qKkKs84="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"196769"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00226paasWo0fK1LHB0x5WTj5bs\u002BBjyLtRbZzeB2qKkKs84=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 07:22:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PracticeAPI/Uploads/Users/Anmol/Anmol_IMG_1451.fx332dmpsv.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Users\Anmol\Anmol_IMG_1451.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fx332dmpsv"},{"Name":"integrity","Value":"sha256-o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo="},{"Name":"label","Value":"_content/PracticeAPI/Uploads/Users/Anmol/Anmol_IMG_1451.JPG"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"91401"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 05 Jan 2025 18:59:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PracticeAPI/Uploads/Users/Anmol/Anmol_IMG_1451.JPG">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Users\Anmol\Anmol_IMG_1451.JPG'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"91401"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022o2wHdx/ElMUPreHwRVJ3EuhnvFeDxO1EXXvjCnUmruo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 05 Jan 2025 18:59:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

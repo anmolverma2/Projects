@@ -1,0 +1,255 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\controllers\\filehandlingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:controllers\\filehandlingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\model\\mailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:model\\mailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\model\\emailsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:model\\emailsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\controllers\\roleprivilagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:controllers\\roleprivilagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\configrations\\userimageconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:configrations\\userimageconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\common\\commonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:common\\commonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|d:\\projects\\dsaprac\\newapi\\practiceapi\\common\\icommonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC895BE-66B6-4934-B27D-A8CF6A69BF8E}|PracticeAPI.csproj|solutionrelative:common\\icommonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileHandlingController.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Controllers\\FileHandlingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FileHandlingController.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Controllers\\FileHandlingController.cs",
+              "RelativeToolTip": "Controllers\\FileHandlingController.cs",
+              "ViewState": "AgIAANoAAAAAAAAAAAAAAO4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T18:14:31.129Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MailRequest.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Model\\MailRequest.cs",
+              "RelativeDocumentMoniker": "Model\\MailRequest.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Model\\MailRequest.cs",
+              "RelativeToolTip": "Model\\MailRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:09:53.785Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-06T17:14:14.893Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Services\\EmailService.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Services\\EmailService.cs",
+              "RelativeToolTip": "Services\\EmailService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvyoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:23:47.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "Services\\IEmailService.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Services\\IEmailService.cs",
+              "RelativeToolTip": "Services\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:23:35.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAAKAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T12:29:47.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmailSetting.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Model\\EmailSetting.cs",
+              "RelativeDocumentMoniker": "Model\\EmailSetting.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Model\\EmailSetting.cs",
+              "RelativeToolTip": "Model\\EmailSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:10:08.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserImageConfig.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Configrations\\UserImageConfig.cs",
+              "RelativeDocumentMoniker": "Configrations\\UserImageConfig.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Configrations\\UserImageConfig.cs",
+              "RelativeToolTip": "Configrations\\UserImageConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T07:05:12.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Context\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "Context\\ApplicationDBContext.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Context\\ApplicationDBContext.cs",
+              "RelativeToolTip": "Context\\ApplicationDBContext.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwA4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T07:04:19.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RolePrivilageController.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Controllers\\RolePrivilageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolePrivilageController.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Controllers\\RolePrivilageController.cs",
+              "RelativeToolTip": "Controllers\\RolePrivilageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T12:30:01.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CommonRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Common\\CommonRepository.cs",
+              "RelativeDocumentMoniker": "Common\\CommonRepository.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Common\\CommonRepository.cs",
+              "RelativeToolTip": "Common\\CommonRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAjwDMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T12:04:04.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoleController.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "Controllers\\RoleController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAnwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T12:30:01.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAArwDMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T12:30:01.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ICommonRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Common\\ICommonRepository.cs",
+              "RelativeDocumentMoniker": "Common\\ICommonRepository.cs",
+              "ToolTip": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\Common\\ICommonRepository.cs",
+              "RelativeToolTip": "Common\\ICommonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T12:03:22.632Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

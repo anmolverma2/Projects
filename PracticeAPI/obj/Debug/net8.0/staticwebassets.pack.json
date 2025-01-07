@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1449.png",
+      "PackagePath": "staticwebassets\\Uploads\\Multi\\Anmol\\Anmol_IMG_1449.png"
+    },
+    {
+      "Id": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Multi\\Anmol\\Anmol_IMG_1451.JPG",
+      "PackagePath": "staticwebassets\\Uploads\\Multi\\Anmol\\Anmol_IMG_1451.JPG"
+    },
+    {
+      "Id": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Users\\Abhi\\Abhi_IMG_1449.png",
+      "PackagePath": "staticwebassets\\Uploads\\Users\\Abhi\\Abhi_IMG_1449.png"
+    },
+    {
+      "Id": "D:\\Projects\\DSAPrac\\NewAPI\\PracticeAPI\\wwwroot\\Uploads\\Users\\Anmol\\Anmol_IMG_1451.JPG",
+      "PackagePath": "staticwebassets\\Uploads\\Users\\Anmol\\Anmol_IMG_1451.JPG"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PracticeAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PracticeAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PracticeAPI.props",
+      "PackagePath": "build\\PracticeAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PracticeAPI.props",
+      "PackagePath": "buildMultiTargeting\\PracticeAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PracticeAPI.props",
+      "PackagePath": "buildTransitive\\PracticeAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

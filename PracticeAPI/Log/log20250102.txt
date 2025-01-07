@@ -1,0 +1,1423 @@
+2025-01-02 14:58:19.008 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 14:58:19.070 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 14:58:19.460 +05:30 [INF] Executed DbCommand (373ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 14:58:19.705 +05:30 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 14:58:19.717 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 14:58:19.718 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 14:58:19.766 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 14:58:19.796 +05:30 [INF] Applying migration '20250102092549_AddDataToStudent'.
+2025-01-02 14:58:20.242 +05:30 [ERR] Failed executing DbCommand (425ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [students] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [Mobile] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [DOB] datetime2 NOT NULL,
+    CONSTRAINT [PK_students] PRIMARY KEY ([Id])
+);
+2025-01-02 15:00:10.106 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:00:10.159 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 15:00:10.454 +05:30 [INF] Executed DbCommand (290ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 15:00:10.629 +05:30 [INF] Executed DbCommand (90ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 15:00:10.645 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:00:10.646 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 15:00:10.678 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 15:00:10.703 +05:30 [INF] Applying migration '20250102092549_AddDataToStudent'.
+2025-01-02 15:00:10.790 +05:30 [ERR] Failed executing DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [students] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [Mobile] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [DOB] datetime2 NOT NULL,
+    CONSTRAINT [PK_students] PRIMARY KEY ([Id])
+);
+2025-01-02 15:01:41.994 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:01:42.026 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 15:01:42.122 +05:30 [INF] Executed DbCommand (94ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 15:01:42.333 +05:30 [INF] Executed DbCommand (160ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 15:01:42.342 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:01:42.343 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 15:01:42.357 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 15:01:42.370 +05:30 [INF] Applying migration '20250102092549_AddDataToStudent'.
+2025-01-02 15:01:42.396 +05:30 [ERR] Failed executing DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [students] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [Mobile] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [DOB] datetime2 NOT NULL,
+    CONSTRAINT [PK_students] PRIMARY KEY ([Id])
+);
+2025-01-02 15:03:26.656 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:03:26.714 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 15:03:26.745 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 15:03:26.853 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 15:03:26.867 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:03:26.869 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 15:03:26.874 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 15:03:26.897 +05:30 [INF] Applying migration '20250102093319_AddDataToStudentv1'.
+2025-01-02 15:03:27.004 +05:30 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250102093319_AddDataToStudentv1', N'9.0.0');
+2025-01-02 15:03:27.017 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-01-02 15:04:25.755 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:04:25.814 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 15:04:25.839 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 15:04:25.925 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 15:04:25.937 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:04:25.939 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 15:04:25.943 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 15:04:25.957 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-01-02 15:04:25.964 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-01-02 15:09:02.471 +05:30 [INF] Executed DbCommand (363ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:09:02.523 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 15:09:03.323 +05:30 [INF] Executed DbCommand (797ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 15:09:03.484 +05:30 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 15:09:03.495 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:09:03.503 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 15:09:03.757 +05:30 [INF] Executed DbCommand (252ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 15:09:03.770 +05:30 [INF] Applying migration '20250102093711_AddDataToStudentv2'.
+2025-01-02 15:09:04.256 +05:30 [ERR] Failed executing DbCommand (458ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'Age', N'DOB', N'Email', N'Mobile', N'Name') AND [object_id] = OBJECT_ID(N'[collegeStudents]'))
+    SET IDENTITY_INSERT [collegeStudents] ON;
+INSERT INTO [collegeStudents] ([Id], [Address], [Age], [DOB], [Email], [Mobile], [Name])
+VALUES (1, NULL, 22, NULL, NULL, N'7289874520', N'Anmol'),
+(2, NULL, 21, NULL, NULL, N'9989874520', N'Abhi'),
+(3, NULL, 28, NULL, NULL, N'8989874520', N'Neeru'),
+(4, NULL, 30, NULL, NULL, N'8889874520', N'Akriti'),
+(5, NULL, 6, NULL, NULL, N'6889874520', N'Pari');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'Age', N'DOB', N'Email', N'Mobile', N'Name') AND [object_id] = OBJECT_ID(N'[collegeStudents]'))
+    SET IDENTITY_INSERT [collegeStudents] OFF;
+2025-01-02 15:10:44.241 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:10:44.293 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 15:10:44.432 +05:30 [INF] Executed DbCommand (135ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 15:10:44.516 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 15:10:44.528 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:10:44.530 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 15:10:44.566 +05:30 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 15:10:44.588 +05:30 [INF] Applying migration '20250102093711_AddDataToStudentv2'.
+2025-01-02 15:10:44.819 +05:30 [ERR] Failed executing DbCommand (187ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'Age', N'DOB', N'Email', N'Mobile', N'Name') AND [object_id] = OBJECT_ID(N'[collegeStudents]'))
+    SET IDENTITY_INSERT [collegeStudents] ON;
+INSERT INTO [collegeStudents] ([Id], [Address], [Age], [DOB], [Email], [Mobile], [Name])
+VALUES (1, NULL, 22, NULL, NULL, N'7289874520', N'Anmol'),
+(2, NULL, 21, NULL, NULL, N'9989874520', N'Abhi'),
+(3, NULL, 28, NULL, NULL, N'8989874520', N'Neeru'),
+(4, NULL, 30, NULL, NULL, N'8889874520', N'Akriti'),
+(5, NULL, 6, NULL, NULL, N'6889874520', N'Pari');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'Age', N'DOB', N'Email', N'Mobile', N'Name') AND [object_id] = OBJECT_ID(N'[collegeStudents]'))
+    SET IDENTITY_INSERT [collegeStudents] OFF;
+2025-01-02 15:12:41.706 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:12:41.742 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 15:12:41.983 +05:30 [INF] Executed DbCommand (238ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 15:12:42.113 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 15:12:42.122 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:12:42.123 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 15:12:42.129 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 15:12:42.143 +05:30 [INF] Applying migration '20250102094218_AddDataToStudent'.
+2025-01-02 15:12:42.619 +05:30 [INF] Executed DbCommand (469ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [collegeStudents] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [Age] int NOT NULL,
+    [Mobile] nvarchar(max) NULL,
+    [Email] nvarchar(max) NULL,
+    [Address] nvarchar(max) NULL,
+    [DOB] datetime2 NULL,
+    CONSTRAINT [PK_collegeStudents] PRIMARY KEY ([Id])
+);
+2025-01-02 15:12:42.720 +05:30 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250102094218_AddDataToStudent', N'9.0.0');
+2025-01-02 15:12:42.791 +05:30 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-01-02 15:14:37.962 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:14:38.024 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 15:14:38.302 +05:30 [INF] Executed DbCommand (273ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 15:14:38.596 +05:30 [INF] Executed DbCommand (192ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 15:14:38.612 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 15:14:38.613 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 15:14:38.629 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 15:14:38.653 +05:30 [INF] Applying migration '20250102094359_AddDataToStudentV1'.
+2025-01-02 15:14:39.018 +05:30 [INF] Executed DbCommand (328ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'Age', N'DOB', N'Email', N'Mobile', N'Name') AND [object_id] = OBJECT_ID(N'[collegeStudents]'))
+    SET IDENTITY_INSERT [collegeStudents] ON;
+INSERT INTO [collegeStudents] ([Id], [Address], [Age], [DOB], [Email], [Mobile], [Name])
+VALUES (1, NULL, 22, NULL, NULL, N'7289874520', N'Anmol'),
+(2, NULL, 21, NULL, NULL, N'9989874520', N'Abhi'),
+(3, NULL, 28, NULL, NULL, N'8989874520', N'Neeru'),
+(4, NULL, 30, NULL, NULL, N'8889874520', N'Akriti'),
+(5, NULL, 6, NULL, NULL, N'6889874520', N'Pari');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'Age', N'DOB', N'Email', N'Mobile', N'Name') AND [object_id] = OBJECT_ID(N'[collegeStudents]'))
+    SET IDENTITY_INSERT [collegeStudents] OFF;
+2025-01-02 15:14:39.020 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250102094359_AddDataToStudentV1', N'9.0.0');
+2025-01-02 15:14:39.076 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-01-02 15:44:57.440 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 15:44:57.876 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 15:44:59.322 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 15:44:59.330 +05:30 [INF] Hosting environment: Development
+2025-01-02 15:44:59.337 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 15:45:03.390 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 15:45:03.935 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 562.9488ms
+2025-01-02 15:45:04.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 15:45:04.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 15:45:04.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 9.9949ms
+2025-01-02 15:45:04.436 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 143.8308ms
+2025-01-02 15:45:05.245 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 15:45:05.325 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.3619ms
+2025-01-02 15:45:49.678 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 15:45:49.705 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 15:45:49.968 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 15:45:49.998 +05:30 [INF] Hosting environment: Development
+2025-01-02 15:45:50.001 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 15:45:50.666 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 15:45:51.797 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 1161.219ms
+2025-01-02 15:45:51.817 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 15:45:51.829 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 12.5001ms
+2025-01-02 15:45:52.029 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 15:45:52.108 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.2906ms
+2025-01-02 15:45:52.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 15:45:52.804 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.4156ms
+2025-01-02 15:46:06.250 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 15:46:06.262 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:46:06.298 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:46:09.350 +05:30 [INF] Executed DbCommand (938ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 15:46:09.460 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2025-01-02 15:46:09.467 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 3163.4005ms
+2025-01-02 15:46:09.467 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:46:09.475 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 406 0 null 3225.4932ms
+2025-01-02 15:46:17.826 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 15:46:17.862 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:46:17.863 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:46:18.078 +05:30 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 15:46:18.097 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2025-01-02 15:46:18.099 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 235.5696ms
+2025-01-02 15:46:18.099 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:46:18.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 406 0 null 274.8679ms
+2025-01-02 15:50:05.408 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 15:50:05.463 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 15:50:05.893 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 15:50:05.908 +05:30 [INF] Hosting environment: Development
+2025-01-02 15:50:05.917 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 15:50:06.321 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 15:50:06.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 585.602ms
+2025-01-02 15:50:07.324 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 15:50:07.324 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 15:50:07.333 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 8.813ms
+2025-01-02 15:50:07.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 88.2226ms
+2025-01-02 15:50:11.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 15:50:11.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.9067ms
+2025-01-02 15:50:18.222 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 15:50:18.235 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:50:18.270 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:50:26.713 +05:30 [INF] Executed DbCommand (824ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 15:50:38.416 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2025-01-02 15:50:38.420 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 20146.4692ms
+2025-01-02 15:50:38.420 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:50:38.428 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 406 0 null 20206.8458ms
+2025-01-02 15:52:28.075 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 15:52:28.121 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 15:52:28.435 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 15:52:28.441 +05:30 [INF] Hosting environment: Development
+2025-01-02 15:52:28.444 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 15:52:29.331 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 15:52:29.584 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 281.4842ms
+2025-01-02 15:52:29.611 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 15:52:29.639 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 28.6405ms
+2025-01-02 15:52:29.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 15:52:29.888 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.7114ms
+2025-01-02 15:52:30.569 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 15:52:30.607 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.9779ms
+2025-01-02 15:52:36.538 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 15:52:36.549 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:52:36.584 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:52:40.638 +05:30 [INF] Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 15:52:54.310 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2025-01-02 15:52:54.316 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 17726.0262ms
+2025-01-02 15:52:54.317 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:52:54.326 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 406 0 null 17788.2573ms
+2025-01-02 15:54:21.404 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 15:54:21.433 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 15:54:21.533 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 15:54:21.538 +05:30 [INF] Hosting environment: Development
+2025-01-02 15:54:21.542 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 15:54:22.239 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 15:54:22.444 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 216.68ms
+2025-01-02 15:54:22.712 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 15:54:22.712 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 15:54:22.728 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 15.5427ms
+2025-01-02 15:54:22.776 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.5793ms
+2025-01-02 15:54:23.553 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 15:54:23.588 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.0197ms
+2025-01-02 15:54:28.866 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 15:54:28.879 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:54:28.901 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:54:34.644 +05:30 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 15:54:34.722 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PracticeAPI.Model.CollegeStudent, PracticeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-02 15:54:34.752 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 5844.9418ms
+2025-01-02 15:54:34.753 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:54:34.762 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 200 null application/json; charset=utf-8 5897.4125ms
+2025-01-02 15:56:09.258 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 15:56:09.292 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 15:56:09.574 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 15:56:09.578 +05:30 [INF] Hosting environment: Development
+2025-01-02 15:56:09.581 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 15:56:10.198 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 15:56:10.446 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 279.1741ms
+2025-01-02 15:56:10.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 15:56:10.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 15:56:10.717 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 13.9104ms
+2025-01-02 15:56:10.765 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.1635ms
+2025-01-02 15:56:11.514 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 15:56:11.560 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.7668ms
+2025-01-02 15:56:16.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 15:56:16.715 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:56:16.753 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:56:21.306 +05:30 [INF] Executed DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 15:56:26.148 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-02 15:56:26.153 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 9395.3121ms
+2025-01-02 15:56:26.154 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:56:26.161 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 200 null text/plain; charset=utf-8 9458.9497ms
+2025-01-02 15:57:20.548 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 15:57:20.565 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 17.8123ms
+2025-01-02 15:57:20.612 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 15:57:20.617 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 15:57:20.620 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 2.9848ms
+2025-01-02 15:57:20.656 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.7089ms
+2025-01-02 15:57:21.214 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 15:57:21.252 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.8465ms
+2025-01-02 15:57:24.119 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 15:57:24.130 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 10.4063ms
+2025-01-02 15:57:24.165 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 15:57:24.166 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 15:57:24.170 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 4.404ms
+2025-01-02 15:57:24.195 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.2548ms
+2025-01-02 15:57:24.476 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 15:57:24.527 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.0888ms
+2025-01-02 15:57:27.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 15:57:27.765 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:57:27.774 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:57:32.254 +05:30 [INF] Executed DbCommand (96ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 15:57:32.791 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PracticeAPI.Model.CollegeStudent, PracticeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-02 15:57:34.861 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 7086.7368ms
+2025-01-02 15:57:34.862 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 15:57:34.862 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 200 null application/json; charset=utf-8 7098.7028ms
+2025-01-02 15:57:51.930 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/5 - null null
+2025-01-02 15:57:51.932 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentById (PracticeAPI)'
+2025-01-02 15:57:51.943 +05:30 [INF] Route matched with {action = "GetStudentById", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.CollegeStudent]] GetStudentById(Int32) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:57:52.839 +05:30 [INF] Executed DbCommand (672ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 15:57:52.843 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.CollegeStudent'.
+2025-01-02 15:57:52.843 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudentById (PracticeAPI) in 900.3708ms
+2025-01-02 15:57:52.844 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentById (PracticeAPI)'
+2025-01-02 15:57:52.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/5 - 200 null application/json; charset=utf-8 913.7884ms
+2025-01-02 15:57:58.541 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/56 - null null
+2025-01-02 15:57:58.542 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentById (PracticeAPI)'
+2025-01-02 15:57:58.542 +05:30 [INF] Route matched with {action = "GetStudentById", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.CollegeStudent]] GetStudentById(Int32) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:57:58.574 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 15:57:58.575 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-01-02 15:57:58.575 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudentById (PracticeAPI) in 33.4022ms
+2025-01-02 15:57:58.575 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentById (PracticeAPI)'
+2025-01-02 15:57:58.576 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/56 - 404 null text/plain; charset=utf-8 35.137ms
+2025-01-02 15:58:19.276 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7201/api/Students/5 - null null
+2025-01-02 15:58:19.277 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.DeleteStudentById (PracticeAPI)'
+2025-01-02 15:58:19.280 +05:30 [INF] Route matched with {action = "DeleteStudentById", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] DeleteStudentById(Int32) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:58:19.291 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 15:58:19.500 +05:30 [INF] Executed DbCommand (99ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [collegeStudents]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-01-02 15:58:19.513 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-02 15:58:19.513 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.DeleteStudentById (PracticeAPI) in 233.362ms
+2025-01-02 15:58:19.513 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.DeleteStudentById (PracticeAPI)'
+2025-01-02 15:58:19.513 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7201/api/Students/5 - 200 null text/plain; charset=utf-8 237.0581ms
+2025-01-02 15:58:27.691 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7201/api/Students/5 - null null
+2025-01-02 15:58:27.691 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.DeleteStudentById (PracticeAPI)'
+2025-01-02 15:58:27.691 +05:30 [INF] Route matched with {action = "DeleteStudentById", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] DeleteStudentById(Int32) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:58:27.701 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 15:58:27.705 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-01-02 15:58:27.732 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.DeleteStudentById (PracticeAPI) in 40.5991ms
+2025-01-02 15:58:27.732 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.DeleteStudentById (PracticeAPI)'
+2025-01-02 15:58:27.733 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7201/api/Students/5 - 404 null application/problem+json; charset=utf-8 41.7831ms
+2025-01-02 15:58:45.974 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/Anmol - null null
+2025-01-02 15:58:45.975 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentByName (PracticeAPI)'
+2025-01-02 15:58:45.994 +05:30 [INF] Route matched with {action = "GetStudentByName", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.CollegeStudent]] GetStudentByName(System.String) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:58:46.543 +05:30 [INF] Executed DbCommand (510ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Name] = @__name_0
+2025-01-02 15:58:46.544 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.CollegeStudent'.
+2025-01-02 15:58:46.544 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudentByName (PracticeAPI) in 550.5267ms
+2025-01-02 15:58:46.545 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentByName (PracticeAPI)'
+2025-01-02 15:58:46.545 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/Anmol - 200 null application/json; charset=utf-8 571.5399ms
+2025-01-02 15:59:45.394 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 157
+2025-01-02 15:59:45.401 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 15:59:45.424 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 15:59:45.777 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 353.1105ms
+2025-01-02 15:59:45.779 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 15:59:45.888 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Queries performing 'LastOrDefault' operation must have a deterministic sort order. Rewrite the query to apply an 'OrderBy' operation on the sequence before calling 'LastOrDefault'.
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.TranslateLastOrDefault(ShapedQueryExpression source, LambdaExpression predicate, Type returnType, Boolean returnDefault)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LastOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PracticeAPI.Controllers.StudentsController.CreateStudent(StudentDTO student)
+   at lambda_method134(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-02 15:59:45.920 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 500 null text/plain; charset=utf-8 526.446ms
+2025-01-02 16:01:08.521 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 16:01:08.557 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 16:01:08.743 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 16:01:08.749 +05:30 [INF] Hosting environment: Development
+2025-01-02 16:01:08.778 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 16:01:09.611 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 16:01:09.956 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 353.2525ms
+2025-01-02 16:01:10.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 16:01:10.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 16:01:10.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 5.2837ms
+2025-01-02 16:01:10.360 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.797ms
+2025-01-02 16:01:11.115 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 16:01:11.146 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.3174ms
+2025-01-02 16:01:56.392 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 157
+2025-01-02 16:01:56.402 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:01:56.435 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 16:01:57.930 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 1492.0695ms
+2025-01-02 16:01:57.931 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:01:58.011 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Queries performing 'LastOrDefault' operation must have a deterministic sort order. Rewrite the query to apply an 'OrderBy' operation on the sequence before calling 'LastOrDefault'.
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.TranslateLastOrDefault(ShapedQueryExpression source, LambdaExpression predicate, Type returnType, Boolean returnDefault)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LastOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PracticeAPI.Controllers.StudentsController.CreateStudent(StudentDTO student) in D:\Projects\DSAPrac\NewAPI\PracticeAPI\Controllers\StudentsController.cs:line 99
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-02 16:01:58.039 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 500 null text/plain; charset=utf-8 1647.2976ms
+2025-01-02 16:02:21.813 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 157
+2025-01-02 16:02:21.824 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:02:21.831 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 16:02:23.696 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 1861.5337ms
+2025-01-02 16:02:23.700 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:02:23.720 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Queries performing 'LastOrDefault' operation must have a deterministic sort order. Rewrite the query to apply an 'OrderBy' operation on the sequence before calling 'LastOrDefault'.
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.TranslateLastOrDefault(ShapedQueryExpression source, LambdaExpression predicate, Type returnType, Boolean returnDefault)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LastOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PracticeAPI.Controllers.StudentsController.CreateStudent(StudentDTO student) in D:\Projects\DSAPrac\NewAPI\PracticeAPI\Controllers\StudentsController.cs:line 99
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-02 16:02:23.728 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 500 null text/plain; charset=utf-8 1916.3033ms
+2025-01-02 16:03:48.617 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 16:03:48.667 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 16:03:48.795 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 16:03:48.799 +05:30 [INF] Hosting environment: Development
+2025-01-02 16:03:48.804 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 16:03:49.325 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 16:03:49.977 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 16:03:49.995 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 702.4126ms
+2025-01-02 16:03:49.995 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 15.8552ms
+2025-01-02 16:03:50.192 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 16:03:50.240 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.6106ms
+2025-01-02 16:03:51.087 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 16:03:51.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.1416ms
+2025-01-02 16:04:25.291 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 157
+2025-01-02 16:04:25.304 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:04:25.343 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 16:04:26.951 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 1604.3885ms
+2025-01-02 16:04:26.952 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:04:27.021 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Queries performing 'LastOrDefault' operation must have a deterministic sort order. Rewrite the query to apply an 'OrderBy' operation on the sequence before calling 'LastOrDefault'.
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.TranslateLastOrDefault(ShapedQueryExpression source, LambdaExpression predicate, Type returnType, Boolean returnDefault)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LastOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PracticeAPI.Controllers.StudentsController.CreateStudent(StudentDTO student) in D:\Projects\DSAPrac\NewAPI\PracticeAPI\Controllers\StudentsController.cs:line 99
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-02 16:04:27.045 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 500 null text/plain; charset=utf-8 1754.9257ms
+2025-01-02 16:07:26.313 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 16:07:26.350 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 16:07:26.538 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 16:07:26.543 +05:30 [INF] Hosting environment: Development
+2025-01-02 16:07:26.546 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 16:07:27.070 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 16:07:27.366 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 313.8215ms
+2025-01-02 16:07:27.643 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 16:07:27.643 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 16:07:27.674 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 30.3123ms
+2025-01-02 16:07:27.749 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.5333ms
+2025-01-02 16:07:28.486 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 16:07:28.523 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.5666ms
+2025-01-02 16:07:50.725 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 134
+2025-01-02 16:07:50.739 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:07:50.776 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 16:07:53.754 +05:30 [INF] Executed DbCommand (764ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+ORDER BY [c].[Id] DESC
+2025-01-02 16:07:54.289 +05:30 [INF] Executed DbCommand (356ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [collegeStudents] ([Address], [Age], [DOB], [Email], [Mobile], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-01-02 16:07:54.323 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 16:07:54.351 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 3572.5532ms
+2025-01-02 16:07:54.352 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:07:54.357 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 201 null application/json; charset=utf-8 3632.5652ms
+2025-01-02 16:07:57.209 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 134
+2025-01-02 16:07:57.210 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:07:57.215 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 16:07:57.291 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+ORDER BY [c].[Id] DESC
+2025-01-02 16:07:57.302 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [collegeStudents] ([Address], [Age], [DOB], [Email], [Mobile], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-01-02 16:07:57.303 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 16:07:57.304 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 88.1857ms
+2025-01-02 16:07:57.304 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 16:07:57.304 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 201 null application/json; charset=utf-8 95.0654ms
+2025-01-02 16:09:05.248 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/Students/Update?id=6 - application/json 157
+2025-01-02 16:09:05.256 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 16:09:05.271 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] UpdateStudent(Int32, PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 16:09:05.804 +05:30 [INF] Executed DbCommand (272ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__p_0
+2025-01-02 16:09:05.922 +05:30 [INF] Executed DbCommand (107ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [collegeStudents] SET [Address] = @p0, [Age] = @p1, [DOB] = @p2, [Email] = @p3, [Mobile] = @p4, [Name] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+2025-01-02 16:09:05.924 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 16:09:05.924 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI) in 653.7548ms
+2025-01-02 16:09:05.925 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 16:09:05.925 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/Students/Update?id=6 - 201 null application/json; charset=utf-8 676.9542ms
+2025-01-02 16:09:32.630 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/Students/Update?id=85 - application/json 157
+2025-01-02 16:09:32.636 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 16:09:32.636 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] UpdateStudent(Int32, PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 16:09:32.650 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__p_0
+2025-01-02 16:09:32.654 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-01-02 16:09:32.663 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI) in 27.0994ms
+2025-01-02 16:09:32.664 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 16:09:32.664 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/Students/Update?id=85 - 400 null application/json; charset=utf-8 35.6268ms
+2025-01-02 18:13:55.443 +05:30 [INF] Executed DbCommand (120ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 18:13:55.638 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 18:13:56.416 +05:30 [INF] Executed DbCommand (768ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 18:13:56.740 +05:30 [INF] Executed DbCommand (140ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 18:13:56.790 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 18:13:56.794 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 18:13:57.142 +05:30 [INF] Executed DbCommand (342ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 18:13:57.200 +05:30 [INF] Applying migration '20250102124322_ModifySchema'.
+2025-01-02 18:13:58.458 +05:30 [INF] Executed DbCommand (1,212ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[collegeStudents]') AND [c].[name] = N'Name');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [collegeStudents] DROP CONSTRAINT [' + @var0 + '];');
+UPDATE [collegeStudents] SET [Name] = N'' WHERE [Name] IS NULL;
+ALTER TABLE [collegeStudents] ALTER COLUMN [Name] nvarchar(250) NOT NULL;
+ALTER TABLE [collegeStudents] ADD DEFAULT N'' FOR [Name];
+2025-01-02 18:13:58.637 +05:30 [INF] Executed DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var1 sysname;
+SELECT @var1 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[collegeStudents]') AND [c].[name] = N'Mobile');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [collegeStudents] DROP CONSTRAINT [' + @var1 + '];');
+UPDATE [collegeStudents] SET [Mobile] = N'' WHERE [Mobile] IS NULL;
+ALTER TABLE [collegeStudents] ALTER COLUMN [Mobile] nvarchar(15) NOT NULL;
+ALTER TABLE [collegeStudents] ADD DEFAULT N'' FOR [Mobile];
+2025-01-02 18:13:58.724 +05:30 [INF] Executed DbCommand (87ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var2 sysname;
+SELECT @var2 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[collegeStudents]') AND [c].[name] = N'Address');
+IF @var2 IS NOT NULL EXEC(N'ALTER TABLE [collegeStudents] DROP CONSTRAINT [' + @var2 + '];');
+ALTER TABLE [collegeStudents] ALTER COLUMN [Address] nvarchar(500) NULL;
+2025-01-02 18:13:58.732 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250102124322_ModifySchema', N'9.0.0');
+2025-01-02 18:13:58.834 +05:30 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-01-02 18:54:08.706 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 18:54:08.765 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-01-02 18:54:09.654 +05:30 [INF] Executed DbCommand (865ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-01-02 18:54:09.830 +05:30 [INF] Executed DbCommand (117ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-01-02 18:54:09.843 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-01-02 18:54:09.845 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-01-02 18:54:10.273 +05:30 [INF] Executed DbCommand (427ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-01-02 18:54:10.286 +05:30 [INF] Applying migration '20250102132359_ModifySchema1'.
+2025-01-02 18:54:10.487 +05:30 [INF] Executed DbCommand (189ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [collegeStudents] SET [Address] = N'123 Elm Street', [DOB] = '2001-05-12T00:00:00.0000000', [Email] = N'anmol@example.com'
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2025-01-02 18:54:10.489 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [collegeStudents] SET [Address] = N'456 Oak Avenue', [DOB] = '2002-03-08T00:00:00.0000000', [Email] = N'abhi@example.com'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2025-01-02 18:54:10.490 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [collegeStudents] SET [Address] = N'789 Pine Boulevard', [DOB] = '1995-10-20T00:00:00.0000000', [Email] = N'neeru@example.com'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2025-01-02 18:54:10.492 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [collegeStudents] SET [Address] = N'321 Maple Lane', [DOB] = '1993-01-15T00:00:00.0000000', [Email] = N'akriti@example.com'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2025-01-02 18:54:10.494 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [collegeStudents] SET [Address] = N'987 Willow Drive', [DOB] = '2017-06-05T00:00:00.0000000', [Email] = N'pari@example.com'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2025-01-02 18:54:10.504 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250102132359_ModifySchema1', N'9.0.0');
+2025-01-02 18:54:10.590 +05:30 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-01-02 19:08:16.010 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 19:08:16.068 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 19:08:16.398 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 19:08:16.401 +05:30 [INF] Hosting environment: Development
+2025-01-02 19:08:16.404 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 19:08:17.400 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 19:08:18.203 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 851.1343ms
+2025-01-02 19:08:18.267 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 19:08:18.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 24.03ms
+2025-01-02 19:08:18.556 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 19:08:18.736 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 180.484ms
+2025-01-02 19:08:19.645 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 19:08:19.678 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.1693ms
+2025-01-02 19:08:24.935 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 19:08:24.948 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 19:08:24.984 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:08:33.298 +05:30 [INF] Executed DbCommand (811ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 19:08:33.521 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-02 19:08:33.528 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 8537.7561ms
+2025-01-02 19:08:33.529 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 19:08:33.536 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 400 null text/plain; charset=utf-8 8601.1211ms
+2025-01-02 19:11:08.723 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 19:11:08.756 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 19:11:08.875 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 19:11:08.878 +05:30 [INF] Hosting environment: Development
+2025-01-02 19:11:08.881 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 19:11:09.706 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 19:11:10.028 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 411.7131ms
+2025-01-02 19:11:10.082 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 19:11:10.098 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 16.5016ms
+2025-01-02 19:11:10.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 19:11:10.330 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.113ms
+2025-01-02 19:11:11.109 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 19:11:11.145 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.72ms
+2025-01-02 19:11:15.176 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 19:11:15.195 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 19:11:15.232 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:11:17.150 +05:30 [INF] Executed DbCommand (199ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 19:11:17.379 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-02 19:11:17.383 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 2147.8965ms
+2025-01-02 19:11:17.383 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 19:11:17.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 400 null text/plain; charset=utf-8 2216.6856ms
+2025-01-02 19:36:09.018 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 19:36:09.071 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 19:36:09.205 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 19:36:09.209 +05:30 [INF] Hosting environment: Development
+2025-01-02 19:36:09.212 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 19:36:09.897 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 19:36:10.216 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 332.7595ms
+2025-01-02 19:36:10.519 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 19:36:10.519 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 19:36:10.527 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 7.2808ms
+2025-01-02 19:36:10.575 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.6969ms
+2025-01-02 19:36:11.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 19:36:11.335 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.6342ms
+2025-01-02 19:36:17.912 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 19:36:17.929 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 19:36:17.982 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:36:21.624 +05:30 [INF] Executed DbCommand (1,104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 19:36:21.781 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PracticeAPI.Model.StudentDTO, PracticeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-02 19:36:21.820 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 3833.3444ms
+2025-01-02 19:36:21.820 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 19:36:21.832 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 200 null application/json; charset=utf-8 3921.0062ms
+2025-01-02 19:36:42.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/2 - null null
+2025-01-02 19:36:42.284 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentById (PracticeAPI)'
+2025-01-02 19:36:42.298 +05:30 [INF] Route matched with {action = "GetStudentById", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.CollegeStudent]] GetStudentById(Int32) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:36:42.960 +05:30 [INF] Executed DbCommand (492ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 19:36:42.966 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 19:36:42.967 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudentById (PracticeAPI) in 668.8827ms
+2025-01-02 19:36:42.967 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentById (PracticeAPI)'
+2025-01-02 19:36:42.967 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/2 - 200 null application/json; charset=utf-8 685.4363ms
+2025-01-02 19:36:59.411 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7201/api/Students/7 - null null
+2025-01-02 19:36:59.411 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.DeleteStudentById (PracticeAPI)'
+2025-01-02 19:36:59.414 +05:30 [INF] Route matched with {action = "DeleteStudentById", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] DeleteStudentById(Int32) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:36:59.739 +05:30 [INF] Executed DbCommand (263ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 19:36:59.954 +05:30 [INF] Executed DbCommand (79ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [collegeStudents]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-01-02 19:36:59.971 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PracticeAPI.Model.StudentDTO, PracticeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-02 19:36:59.976 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.DeleteStudentById (PracticeAPI) in 562.1933ms
+2025-01-02 19:36:59.976 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.DeleteStudentById (PracticeAPI)'
+2025-01-02 19:36:59.977 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7201/api/Students/7 - 200 null application/json; charset=utf-8 565.8447ms
+2025-01-02 19:37:26.473 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/Akriti - null null
+2025-01-02 19:37:26.484 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentByName (PracticeAPI)'
+2025-01-02 19:37:26.495 +05:30 [INF] Route matched with {action = "GetStudentByName", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.CollegeStudent]] GetStudentByName(System.String) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:37:27.177 +05:30 [INF] Executed DbCommand (666ms) [Parameters=[@__name_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Name] = @__name_0
+2025-01-02 19:37:27.178 +05:30 [INF] Executing OkObjectResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 19:37:27.179 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudentByName (PracticeAPI) in 684.0096ms
+2025-01-02 19:37:27.179 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudentByName (PracticeAPI)'
+2025-01-02 19:37:27.180 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/Akriti - 200 null application/json; charset=utf-8 737.4845ms
+2025-01-02 19:38:10.021 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 160
+2025-01-02 19:38:10.026 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 19:38:10.039 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:38:10.291 +05:30 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+ORDER BY [c].[Id] DESC
+2025-01-02 19:38:10.905 +05:30 [ERR] Failed executing DbCommand (564ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 500), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 15), @p6='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [collegeStudents] ([Id], [Address], [Age], [DOB], [Email], [Mobile], [Name])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-01-02 19:38:11.155 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PracticeAPI.Context.ApplicationDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'collegeStudents' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:84bd80e7-e496-43ad-8a82-60992f3e5352
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'collegeStudents' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:84bd80e7-e496-43ad-8a82-60992f3e5352
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-01-02 19:38:11.450 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 1410.2854ms
+2025-01-02 19:38:11.451 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 19:38:11.520 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'collegeStudents' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:84bd80e7-e496-43ad-8a82-60992f3e5352
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PracticeAPI.Controllers.StudentsController.CreateStudent(StudentDTO student) in D:\Projects\DSAPrac\NewAPI\PracticeAPI\Controllers\StudentsController.cs:line 135
+   at lambda_method133(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-02 19:38:11.536 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 500 null text/plain; charset=utf-8 1517.3084ms
+2025-01-02 19:39:00.126 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/Students/Update?id=6 - application/json 150
+2025-01-02 19:39:00.126 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:39:00.136 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] UpdateStudent(Int32, PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:39:00.278 +05:30 [INF] Executed DbCommand (121ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 19:39:00.281 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 19:39:00.301 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI) in 164.559ms
+2025-01-02 19:39:00.302 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:39:00.302 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/Students/Update?id=6 - 201 null application/json; charset=utf-8 176.2249ms
+2025-01-02 19:43:35.339 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 19:43:35.370 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 19:43:35.466 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 19:43:35.469 +05:30 [INF] Hosting environment: Development
+2025-01-02 19:43:35.473 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 19:43:36.592 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 19:43:36.841 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 265.0253ms
+2025-01-02 19:43:37.263 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 19:43:37.263 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 19:43:37.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 14.2864ms
+2025-01-02 19:43:37.361 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.1637ms
+2025-01-02 19:43:38.201 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 19:43:38.250 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.9503ms
+2025-01-02 19:44:01.766 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 140
+2025-01-02 19:44:01.774 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 19:44:01.805 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:44:05.062 +05:30 [INF] Executed DbCommand (817ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+ORDER BY [c].[Id] DESC
+2025-01-02 19:44:05.659 +05:30 [ERR] Failed executing DbCommand (340ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 500), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 15), @p6='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [collegeStudents] ([Id], [Address], [Age], [DOB], [Email], [Mobile], [Name])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-01-02 19:44:05.858 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PracticeAPI.Context.ApplicationDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'collegeStudents' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:cb48891d-4c83-4387-b6a6-b6819eac1845
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'collegeStudents' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:cb48891d-4c83-4387-b6a6-b6819eac1845
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-01-02 19:44:06.112 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 4300.6779ms
+2025-01-02 19:44:06.113 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 19:44:06.152 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'collegeStudents' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:cb48891d-4c83-4387-b6a6-b6819eac1845
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PracticeAPI.Controllers.StudentsController.CreateStudent(StudentDTO student) in D:\Projects\DSAPrac\NewAPI\PracticeAPI\Controllers\StudentsController.cs:line 127
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-02 19:44:06.182 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 500 null text/plain; charset=utf-8 4416.1197ms
+2025-01-02 19:44:51.741 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 19:44:51.782 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 19:44:51.892 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 19:44:51.897 +05:30 [INF] Hosting environment: Development
+2025-01-02 19:44:51.900 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 19:44:52.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 19:44:52.529 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 233.5457ms
+2025-01-02 19:44:52.798 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 19:44:52.798 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 19:44:52.803 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 4.6071ms
+2025-01-02 19:44:52.853 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.4203ms
+2025-01-02 19:44:53.427 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 19:44:53.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.5729ms
+2025-01-02 19:45:24.464 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 136
+2025-01-02 19:45:24.475 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 19:45:24.507 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:45:26.571 +05:30 [INF] Executed DbCommand (222ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+ORDER BY [c].[Id] DESC
+2025-01-02 19:45:27.395 +05:30 [INF] Executed DbCommand (567ms) [Parameters=[@p0='?' (Size = 500), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 15), @p5='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [collegeStudents] ([Address], [Age], [DOB], [Email], [Mobile], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-01-02 19:45:27.461 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 19:45:27.510 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 2999.4015ms
+2025-01-02 19:45:27.510 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 19:45:27.519 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 201 null application/json; charset=utf-8 3054.8858ms
+2025-01-02 19:45:50.906 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/api/Students/All - null null
+2025-01-02 19:45:50.908 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 19:45:50.916 +05:30 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PracticeAPI.Model.CollegeStudent]]] GetStudents() on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:45:50.949 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+2025-01-02 19:45:50.962 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PracticeAPI.Model.StudentDTO, PracticeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-02 19:45:50.964 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI) in 48.5172ms
+2025-01-02 19:45:50.965 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.GetStudents (PracticeAPI)'
+2025-01-02 19:45:50.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/api/Students/All - 200 null application/json; charset=utf-8 59.7136ms
+2025-01-02 19:48:18.978 +05:30 [INF] Now listening on: https://localhost:7201
+2025-01-02 19:48:19.013 +05:30 [INF] Now listening on: http://localhost:5150
+2025-01-02 19:48:19.235 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 19:48:19.239 +05:30 [INF] Hosting environment: Development
+2025-01-02 19:48:19.242 +05:30 [INF] Content root path: D:\Projects\DSAPrac\NewAPI\PracticeAPI
+2025-01-02 19:48:20.258 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 19:48:20.503 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 259.1328ms
+2025-01-02 19:48:20.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 19:48:20.572 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 15.4532ms
+2025-01-02 19:48:20.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 19:48:22.658 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1914.1455ms
+2025-01-02 19:48:22.949 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 19:48:23.003 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.8991ms
+2025-01-02 19:48:45.526 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7201/api/Students/Create - application/json 141
+2025-01-02 19:48:45.538 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 19:48:45.685 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] CreateStudent(PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:48:48.203 +05:30 [INF] Executed DbCommand (285ms) [Parameters=[@p0='?' (Size = 500), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 15), @p5='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [collegeStudents] ([Address], [Age], [DOB], [Email], [Mobile], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-01-02 19:48:48.557 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+ORDER BY [c].[Id] DESC
+2025-01-02 19:48:48.572 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 19:48:48.624 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI) in 2934.0054ms
+2025-01-02 19:48:48.624 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.CreateStudent (PracticeAPI)'
+2025-01-02 19:48:48.630 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7201/api/Students/Create - 201 null application/json; charset=utf-8 3108.189ms
+2025-01-02 19:49:52.738 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/Students/Update?id=9 - application/json 160
+2025-01-02 19:49:52.740 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:49:52.755 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] UpdateStudent(Int32, PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:49:53.566 +05:30 [INF] Executed DbCommand (687ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 19:49:53.575 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 19:49:53.576 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI) in 820.8469ms
+2025-01-02 19:49:53.576 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:49:53.576 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/Students/Update?id=9 - 201 null application/json; charset=utf-8 838.4711ms
+2025-01-02 19:51:02.616 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/Students/Update?id=9 - application/json 160
+2025-01-02 19:51:02.618 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:51:02.618 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] UpdateStudent(Int32, PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:51:05.769 +05:30 [INF] Executed DbCommand (120ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 19:53:19.904 +05:30 [INF] Executed DbCommand (347ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 19:53:35.213 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 19:53:35.217 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI) in 152598.3914ms
+2025-01-02 19:53:35.218 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:53:35.218 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/Students/Update?id=9 - 201 null application/json; charset=utf-8 152602.1357ms
+2025-01-02 19:55:57.656 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/Students/Update?id=9 - application/json 160
+2025-01-02 19:55:57.664 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:55:57.780 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] UpdateStudent(Int32, PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:56:02.088 +05:30 [INF] Executed DbCommand (87ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 19:56:02.757 +05:30 [INF] Executed DbCommand (603ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 500), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 15), @p5='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [collegeStudents] SET [Address] = @p0, [Age] = @p1, [DOB] = @p2, [Email] = @p3, [Mobile] = @p4, [Name] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+2025-01-02 19:56:02.775 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 19:56:02.779 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI) in 4999.089ms
+2025-01-02 19:56:02.779 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:56:02.780 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/Students/Update?id=9 - 201 null application/json; charset=utf-8 5124.5173ms
+2025-01-02 19:56:02.806 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/index.html - null null
+2025-01-02 19:56:02.992 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/index.html - 200 null text/html;charset=utf-8 186.1795ms
+2025-01-02 19:56:03.055 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-02 19:56:03.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 3.4922ms
+2025-01-02 19:56:03.375 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/_vs/browserLink - null null
+2025-01-02 19:56:03.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.1553ms
+2025-01-02 19:56:04.255 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - null null
+2025-01-02 19:56:04.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.6454ms
+2025-01-02 19:56:27.087 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7201/api/Students/Update?id=9 - application/json 134
+2025-01-02 19:56:27.088 +05:30 [INF] Executing endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:56:27.092 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PracticeAPI.Model.StudentDTO]] UpdateStudent(Int32, PracticeAPI.Model.StudentDTO) on controller PracticeAPI.Controllers.StudentsController (PracticeAPI).
+2025-01-02 19:56:29.425 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[Age], [c].[DOB], [c].[Email], [c].[Mobile], [c].[Name]
+FROM [collegeStudents] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-01-02 19:56:36.360 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 500), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 15), @p5='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [collegeStudents] SET [Address] = @p0, [Age] = @p1, [DOB] = @p2, [Email] = @p3, [Mobile] = @p4, [Name] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+2025-01-02 19:56:36.362 +05:30 [INF] Executing CreatedAtRouteResult, writing value of type 'PracticeAPI.Model.StudentDTO'.
+2025-01-02 19:56:36.365 +05:30 [INF] Executed action PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI) in 9272.7504ms
+2025-01-02 19:56:36.365 +05:30 [INF] Executed endpoint 'PracticeAPI.Controllers.StudentsController.UpdateStudent (PracticeAPI)'
+2025-01-02 19:56:36.365 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7201/api/Students/Update?id=9 - 201 null application/json; charset=utf-8 9278.3276ms
