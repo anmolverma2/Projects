@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "zClF43k6TJ+DXf3sYny8n2AGzq2xphojSD0V/QKYzpM=",
+  "Source": "FM.Services.ShoppingCart",
+  "BasePath": "_content/FM.Services.ShoppingCart",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

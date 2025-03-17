@@ -1,0 +1,6 @@
+@FM.Services.AuthAPI_HostAddress = http://localhost:5152
+
+GET {{FM.Services.AuthAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

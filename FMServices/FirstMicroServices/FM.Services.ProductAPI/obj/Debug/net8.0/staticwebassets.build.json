@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "wA8B0M3rBgFJKBK/DxOEvFPjUPeRSOCRGXL8yXd2osU=",
+  "Source": "FM.Services.ProductAPI",
+  "BasePath": "_content/FM.Services.ProductAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

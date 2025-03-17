@@ -1,0 +1,112 @@
+[
+  {
+    "ContainingType": "FM.Services.ShoppingCart.Controllers.CartController",
+    "Method": "ApplyCoupon",
+    "RelativePath": "api/cart/ApplyCoupon",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cart",
+        "Type": "FM.Services.ShoppingCart.Models.DTO.CartDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FM.Services.ShoppingCart.Controllers.CartController",
+    "Method": "GetCart",
+    "RelativePath": "api/cart/GetCart/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FM.Services.ShoppingCart.Models.ResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FM.Services.ShoppingCart.Controllers.CartController",
+    "Method": "RemoveCart",
+    "RelativePath": "api/cart/RemoveCart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartDetailsId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FM.Services.ShoppingCart.Models.ResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FM.Services.ShoppingCart.Controllers.CartController",
+    "Method": "RemoveCoupon",
+    "RelativePath": "api/cart/RemoveCoupon",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cart",
+        "Type": "FM.Services.ShoppingCart.Models.DTO.CartDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FM.Services.ShoppingCart.Controllers.CartController",
+    "Method": "Upsert",
+    "RelativePath": "api/cart/Upsert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cart",
+        "Type": "FM.Services.ShoppingCart.Models.DTO.CartDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FM.Services.ShoppingCart.Models.ResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

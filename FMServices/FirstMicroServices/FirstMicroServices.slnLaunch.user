@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FM.Services.ShoppingCart\\FM.Services.ShoppingCart.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\FM.Services.CoupenAPI\\FM.Services.CoupenAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FM.Web\\FM.Web.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FM.Services.AuthAPI\\FM.Services.AuthAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FM.Services.ProductAPI\\FM.Services.ProductAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

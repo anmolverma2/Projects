@@ -1,0 +1,50 @@
+﻿@model FM.Web.Models.RegistrationRequestDTO
+
+<form action="/AuthAPI/Register" method="post">
+
+    <div class="container border p-3">
+        <div class="row text-center">
+            <label>Register</label>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-6 offset-3 pb-2">
+                <input type="text" class="form-control" asp-for="Email" placeholder="Email ..." />
+                <span asp-validation-for="Email" class="text-danger" />
+            </div>
+
+            <div class="col-6 offset-3 pb-2">
+                <input type="text" class="form-control" asp-for="Name" placeholder="Name ..." />
+                <span asp-validation-for="Name" class="text-danger" />
+            </div>
+            <div class="col-6 offset-3 pb-2">
+                <input type="text" class="form-control" asp-for="PhoneNumber" placeholder="PhoneNumber ..." />
+                <span asp-validation-for="PhoneNumber" class="text-danger" />
+            </div>
+
+            <div class="col-6 offset-3 pb-2">
+                <input type="password" class="form-control" asp-for="Password" placeholder="Password ..." />
+                <span asp-validation-for="Password" class="text-danger" />
+
+            </div>
+
+            <div class="col-6 offset-3 pb-2">
+                <select asp-for="RoleName" class="form-select" asp-items="@ViewBag.RoleList">
+                <option disabled selected>-- Select Role --</option>
+                </select>
+            </div>
+
+            <div class="col-6 offset-3 pb-2">
+                <button type="submit" class="form-control btn-success" value="Submit">Register</button>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+
+@section Scripts {
+
+    <partial name="_ValidationScriptsPartial" />
+}

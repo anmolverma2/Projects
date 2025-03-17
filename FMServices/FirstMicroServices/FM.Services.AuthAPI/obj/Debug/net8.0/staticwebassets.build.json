@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "zVINyZXMkdDC1Lqf/DZxoxlORW6HrOkpXH5i6rx5Ijw=",
+  "Source": "FM.Services.AuthAPI",
+  "BasePath": "_content/FM.Services.AuthAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

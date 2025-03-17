@@ -1,0 +1,6 @@
+@FM.Services.CoupenAPI_HostAddress = http://localhost:5058
+
+GET {{FM.Services.CoupenAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
