@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "GadgetShopApi.Controllers.InventoryController",
+    "Method": "DeleteInventoryData",
+    "RelativePath": "api/Inventory",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GadgetShopApi.Controllers.InventoryController",
+    "Method": "GetInventoryData",
+    "RelativePath": "api/Inventory/GetInventoryData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GadgetShopApi.Controllers.InventoryController",
+    "Method": "SaveInventory",
+    "RelativePath": "api/Inventory/SaveInventory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GadgetShopApi.Models.InventoryModelDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GadgetShopApi.Controllers.InventoryController",
+    "Method": "UpdateInventory",
+    "RelativePath": "api/Inventory/UpdateInventory",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GadgetShopApi.Models.InventoryModelDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

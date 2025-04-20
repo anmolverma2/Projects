@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "WgbfwSUcwsbYnh7uDHaokatOLJpaWVPkpy4ucNIUVHc=",
+  "Source": "GadgetShopApi",
+  "BasePath": "_content/GadgetShopApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
